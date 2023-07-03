@@ -1,0 +1,14 @@
+<!--Built up by Milan Singhal-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21 DOC</title>
+</head>
+<body>
+    <h2>21 Days Of Code</h2>
+    <p>21 Days Of Code is an initiative taken by the student chapter UPES ACM & ACM-W where there are 3 domains on which question(s) will be provided each day and we one will have to solve the questions.</p>
+    <img src="pic.jpeg">
+</body>
+</html>
