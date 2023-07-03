@@ -12,6 +12,9 @@ int main(){
     cout << "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"<<endl;
     cout << "Your numbers are "<<endl<< "a = " << a <<endl << "b = " << b <<endl << endl;
     
+    //The logic behind is that when applying bitwise XOR operator on an integer, it considers the binary equivalent of that number.
+    // a^a=0 and a^0 = a
+    // a^b= will give a value c whose binary equvalent will have 1 for all the bits that were different in both the values (a and b)
     int c = a^b;
     a = a^c;
     b = b^c;
