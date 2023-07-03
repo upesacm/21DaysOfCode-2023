@@ -1,0 +1,18 @@
+#include<iostream>
+
+int main()
+{
+  int x,a,sum=0;
+
+  std::cout<<"Enter a no. : ";
+  std::cin>>x;
+
+  while(x>0)
+  {
+      a=x%10;
+      sum=sum+a;
+      x=x/10;
+  }
+
+  std::cout<<"The sum of digits = "<<sum;
+}
