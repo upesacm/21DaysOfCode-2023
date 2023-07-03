@@ -1,2 +1,0 @@
-a= input("Enter your name ");
-print("Hello , {name} !" .format(name = {a}))
