@@ -6,4 +6,5 @@ int main()
 	cout<<"Enter your name: "<<endl;
 	cin>>name;
 	cout<<"HELLO! "<<name<<endl;
+	return 0;
 }
