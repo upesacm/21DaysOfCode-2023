@@ -1,0 +1,31 @@
+                                                          QUE 1
+  
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char name[50];
+    printf("Enter your name\n");
+    fgets(name,50,stdin);
+    printf("HELLO,%s",name);
+    return 0;
+}
+
+                                                         QUE 2
+#include<stdio.h>
+int main()
+{
+    int num,x;
+    int sum=0;
+    printf("enter the 3 digit number\n");
+    scanf("%d",&num);
+    while(num!=0)
+    {
+        x=num%10;
+        sum=sum+x;
+        num=num/10;
+    }
+    printf("sum of the digits of the given number\n");
+    printf("%d",sum);
+    return 0;
+}                                                        
