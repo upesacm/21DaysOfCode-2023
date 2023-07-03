@@ -1,11 +1,10 @@
 // question 1)
 
 #include <stdio.h>
-int mian(){
-  char name;
-  printf("enter your name");
+int main(){
+  char name[30];
+  printf("enter your name:\n");
   scanf("%s", &name);
-  printf("your name is %s", name);
+  printf("your name is %s!", name);
   return 0;
 }
-
