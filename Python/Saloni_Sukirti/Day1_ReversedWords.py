@@ -2,8 +2,14 @@ import re
 
 def reverse_words(sentence):
     words = re.split(r'(\W+)', sentence)  
-    #print(word)
-    reversed_words = [word[::-1] if re.match(r'\w+', word) else word for word in words]  
+
+    reversed_words = []
+    for word in words:
+        if re.match(r'\w+', word):
+            reversed_words.append(word[::-1])
+        else:
+            reversed_words.append(word)
+    
     reversed_sentence = ''.join(reversed_words)
     return reversed_sentence
 
