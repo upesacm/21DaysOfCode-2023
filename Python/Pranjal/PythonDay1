@@ -4,4 +4,12 @@ name = input("Enter your name: ")
 print(f"Hello, {name}")
 
 
-#2. Write a Python program that takes a sentence as input and prints the reverse of each word in the sentence. For example, if the input is "Hello World!", the output should be "olleH dlroW!".
+
+#2. Write a Python program that takes a sentence as input and prints the reverse of each word in the sentence. 
+For example, if the input is "Hello World!", the output should be "olleH dlroW!".
+
+sen = input("Enter a sentence: ")
+words = sen.split()
+reversed_words = [word[::-1] for word in words]
+reversed_sentence = ' '.join(reversed_words)
+print(reversed_sentence)
