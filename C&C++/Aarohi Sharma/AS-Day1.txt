@@ -1,0 +1,22 @@
+Q1. 
+#include<stdio.h>
+int main()
+{
+    char name[15];
+    printf ("Enter your name:");
+    scanf ("%s", name);
+    printf ("HELLO, %s!", name);
+    return 0;
+}
+
+Q2. 
+#include<stdio.h>
+int main()
+{
+    int n1, n2, n3;
+    printf ("Enter two three-digit numbers:");
+    scanf ("%d, %d", &n1, &n2);
+    n3=n1+n2;
+    printf ("Sum of the numbers=%d", n3);
+    return 0;
+}
