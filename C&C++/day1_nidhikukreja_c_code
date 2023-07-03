@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main()
+{
+int num, digit,count;
+printf("Enter a three digit number ");
+scanf("%d" , &num);
+int sum=0;
+while(num>0)
+{
+digit= num%10;
+sum=sum+digit;
+num=num/10;
+}
+count++;
+printf("The sum of the digit is : %d", sum);
+return 0;
+}

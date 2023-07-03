@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+
+void fun(string Name)
+{
+	cout<<"\"Hello"<<","<<" "<<Name<<"!"<<"\"";
+}
+
+int main()
+{
+	string Name;
+	cout<<"Enter your Name ";
+	getline(cin,Name);
+	fun(Name);
+}
