@@ -1,0 +1,8 @@
+#Que1}
+n=input('Please enter your name:')
+print(f"Hello {n}")
+
+#Que2}
+n=input("Enter a sentence")
+rev_n=n[::-1]
+print(rev_n)
