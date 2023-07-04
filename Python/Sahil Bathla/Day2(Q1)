@@ -1,0 +1,7 @@
+print("Day 2 of 21 Days of Code")
+num=int(input("Enter a number:"))
+if(num%2==0):
+    print(f"{num} is even")
+else:
+    print(f"{num} is odd")
+
