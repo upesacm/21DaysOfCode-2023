@@ -16,4 +16,4 @@ a=1
 for i in range(0, length):
     if sentence[i]==' ':
         a+=1
-print(a)
+print(f'The Total number of word in sentence are {a}')
