@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+
+int fun(int num)
+{
+	int rem,sum=0;
+	while(num>0)
+	{
+		rem=num%10;
+		sum=sum+rem;
+		num=num/10;
+	}
+	return sum;
+}
+
+int main()
+{
+	int num,val;
+	cout<<"Enter num ";
+	cin>>num;
+	val=fun(num);
+	cout<<"Total sum of three-digit number "<<val;
+	return 0;
+}
