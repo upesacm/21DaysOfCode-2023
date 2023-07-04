@@ -19,7 +19,7 @@ int main(){
     b = a ^ b;
     a = a ^ b;
      cout<<"after swapping now a is "<<a <<endl<<"and b is "<<b;
-
+return 0;
 
 
 }
