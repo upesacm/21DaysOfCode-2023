@@ -1,0 +1,7 @@
+def count(x):
+    words = x.split()
+    count= len(words)
+    return count
+s=input("Enter a sentence: ")
+words= count(s)
+print(f"The number of words in the sentence is: {words}")
