@@ -1,0 +1,18 @@
+#answer-1
+def check_even_odd(number):
+    if number % 2 == 0:
+        return "Even"
+    else:
+        return "Odd"
+num = int(input("Enter an integer: "))
+result = check_even_odd(num)
+print(f"The number {num} is {result}.")
+
+#answer-2
+def count_words(sentence):
+    words = sentence.split()
+    return len(words)
+sentence = input("Enter a sentence: ")
+word_count = count_words(sentence)
+print(f"The number of words in the sentence is: {word_count}")
+
