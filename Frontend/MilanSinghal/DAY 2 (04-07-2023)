@@ -1,0 +1,21 @@
+<!--Built up by Milan Singhal-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21 DOC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="heading">
+        <h2>21 Days Of Code</h2>
+    </div>
+    <div class="para">
+        <p>21 Days Of Code is an initiative taken by the student chapter UPES ACM & ACM-W where there are 3 domains on which question(s) will be provided each day and we one will have to solve the questions.</p>
+    </div>
+    <div class="ytvid">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/RR2EI8EEOOw" title="Happy and Easy Coding" frameborder="0" frameborder="0" allowfullscreen style="display:block; margin:0 auto;" accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    </body>
+</html>

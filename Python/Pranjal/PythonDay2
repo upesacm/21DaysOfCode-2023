@@ -1,0 +1,20 @@
+#1.Write a Python program that takes an integer as input and determines whether it is even or odd.
+
+no = int(input("Enter an integer: "))
+if no%2==0:
+    print("It's an even integer.")
+else:
+    print("It's an odd integer.")
+
+
+
+#2. Write a Python program that prompts the user to enter a sentence and counts the number of words in the sentence.
+
+sen = input("Enter a sentence: ")
+count=0
+for i in sen:
+    if i != " " :
+        count += 1
+    else:
+        continue
+print("Total words: " +str(count))
