@@ -1,0 +1,5 @@
+Questions for Day - 02 (04-07-2023)
+
+1. Write a Python program that takes an integer as input and determines whether it is even or odd.
+
+2. Write a Python program that prompts the user to enter a sentence and counts the number of words in the sentence.
