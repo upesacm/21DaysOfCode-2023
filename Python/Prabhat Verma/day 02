@@ -1,0 +1,18 @@
+Q1 even or odd
+solution
+  def even_or_odd(num):
+    if num % 2 == 0:
+        print("The number is even.")
+    else:
+        print("The number is odd.")
+
+num = int(input("Enter an integer: "))
+even_or_odd(num)
+Q2  Write a Python program that prompts the user to enter a sentence and counts the number of words in the sentence.
+solution
+          def count_words(sentence):
+    words = sentence.split()
+    return len(words)
+
+sentence = input("Enter a sentence: ")
+print("The number of words in the sentence is:", count_words(sentence))
