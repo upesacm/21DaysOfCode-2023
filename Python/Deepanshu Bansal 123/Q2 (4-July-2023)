@@ -1,0 +1,8 @@
+b=input("Enter str ")
+a=len(b)
+i=0
+count=0
+for i in range(0,a):
+    if b[i]!=' ':
+        count=count+1
+print("Total count number of words in sentence",count)
