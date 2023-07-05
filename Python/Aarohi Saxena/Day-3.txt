@@ -1,0 +1,20 @@
+#Answer-1
+def find_maximum(n1, n2, n3):
+    max_num = max(n1, n2, n3)
+    return max_num
+n1 = float(input("Enter the first number: "))
+n2 = float(input("Enter the second number: "))
+n3 = float(input("Enter the third number: "))
+maximum = find_maximum(n1, n2, n3)
+print("The maximum of the three numbers is:", maximum)
+
+
+#Answer-2
+numbers = []
+while True:
+    num = int(input("Enter an integer (enter a negative number to terminate): "))
+    if num < 0:
+        break
+    numbers.append(num)
+sum_positive = sum(numbers)
+print("Sum of positive integers entered:", sum_positive)
