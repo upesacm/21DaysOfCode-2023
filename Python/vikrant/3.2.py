@@ -1,5 +1,3 @@
-from array import *
-
 sum = 0
 integer = int(input("Enter an integer: "))
 
