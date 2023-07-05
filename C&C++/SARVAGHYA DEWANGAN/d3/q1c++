@@ -8,4 +8,5 @@ int main()
 	cin>>base;
 	cin>>power;
 	cout<<"The value of "<<base<<"^"<<power<<" is "<<pow(base,power);
+	return 0;
 }
