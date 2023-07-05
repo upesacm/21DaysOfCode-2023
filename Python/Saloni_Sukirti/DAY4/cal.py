@@ -2,8 +2,8 @@
 #to enter two numbers and an operator (+, -, *, /). Perform the corresponding operation 
 #on the numbers and display the result.
 
-n1 = 3
-n2 = 6
+n1 = int(input("Enter the 1st no: "))
+n2 = int(input("Enter the 2nd no: "))
 
 operator=input("Enter the operator: ")
 
