@@ -1,0 +1,25 @@
+print("Author: Rajdeep Singh Sidhu")
+print("Date: 05-07-2023")
+#Q1- Write a Python program that takes three numbers as input and prints the maximum of the three.
+
+n1 = int(input("Enter 1st Number: "))
+n2 = int(input("Enter 2nd Number: "))
+n3 = int(input("Enter 3rd Number: "))
+if(n1>=n2 and n1>=n3):
+    print("number "+str(n1)+" is greatest")
+elif(n1<=n2 and n3<=n2):
+    print("number "+str(n2)+" is greatest")
+else:
+    print("number "+str(n3)+" is greatest")
+
+#Q2- Write a Python program that prompts the user to enter a series of integers, one at a time, until they enter a negative number. 
+#The program should then terminate and compute and print the sum of all the positive integers entered by the user.
+n1 = 1
+sum = 0
+while(n1==1):
+    n2 = int(input("Enter a Number: "))
+    if(n2>=0):
+        sum = sum+n2
+    else:
+        n1=0
+print("Total sum of all the non-negative values entered by user: "+ str(sum))
