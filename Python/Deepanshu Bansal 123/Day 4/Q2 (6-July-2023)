@@ -1,0 +1,14 @@
+a=int(input("Enter a "))
+b=int(input("Enter b "))
+c=str(input("Enter operator "))
+if c=='+':
+    print("operator is \"+\" ",a+b)
+
+if c=="-":
+    print("operator \"-\" ",a-b)
+    
+if c=="*":
+    print("operator \"*\" ",a*b)
+    
+if c=="/":
+    print("operator \"/\" ",a/b)    
