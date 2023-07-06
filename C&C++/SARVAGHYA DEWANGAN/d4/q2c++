@@ -1,0 +1,39 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+
+int main()
+{
+	float a,b,c;
+	cout<<"Enter a,b,c to calculate the square root of Quadratic Equation: "<<endl;
+	cin>>a;
+	cin>>b;
+	cin>>c;
+	cout<<"The Equation is: "<<endl<<a<<"x^2"<<" + "<<b<<"x"<<" + "<<c<<endl;
+	float r1,r2,d,im,rp;
+	//d= discriminant
+	//im= imaginary
+	//rp= real part
+	d= (b*b)-(4*a*c);
+	
+	if(d>0)
+	{
+		r1=(-b +sqrt(d))/(2*a);
+        r2=(-b -sqrt(d))/(2*a);
+        cout<<"Roots are real and different."<<endl<<"r1 = "<<r1<<endl<<"r2 = "<<r2<<endl;
+	}
+	else if(d==0)
+	{
+		cout<<"Roots are real and same."<<endl;
+        r1=-b/(2*a);
+        cout<<"r1 = r2 =" <<r1<<endl;
+	}
+	else
+	{
+		rp =-b/(2*a);
+        im =sqrt(-d)/(2*a);
+        cout<<"Roots are complex and different."<<endl;
+        cout<<"r1 = "<<rp<<"+"<<im<<"i"<<endl;
+        cout<<"r2 = "<<rp<<"-"<<im<<"i"<<endl;
+	}
+}

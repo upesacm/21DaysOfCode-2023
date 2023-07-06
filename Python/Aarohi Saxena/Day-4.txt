@@ -1,0 +1,25 @@
+#Answer-1
+cel= float(input("Enter a temperature in Celsius: "))
+fah= (celsius * 9/5) + 32
+print(f"{cel} degrees Celsius is equal to {fah} degrees Fahrenheit.")
+
+  #Answer-2
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+operator = input("Enter an operator (+, -, *, /): ")
+if operator == "+":
+    result = num1 + num2
+elif operator == "-":
+    result = num1 - num2
+elif operator == "*":
+    result = num1 * num2
+elif operator == "/":
+    if num2 != 0:  # Check for division by zero
+        result = num1 / num2
+    else:
+        print("Error: Division by zero is not allowed.")
+        exit()
+else:
+    print("Error: Invalid operator.")
+    exit()
+print("Result:", result)
