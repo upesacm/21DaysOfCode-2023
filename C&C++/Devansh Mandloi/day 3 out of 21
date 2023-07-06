@@ -1,0 +1,31 @@
+//Que1} 
+#include<stdio.h>
+#include<math.h>
+
+int main()
+{
+  int base, power, ans;
+  printf("Enter the value of base:");
+  scanf("%d", &base);
+  printf("Enter the value of power:");
+  scanf("%d", &power);
+  ans=pow(base, power);
+  printf("The answer is %d", ans);
+  return 0;
+}
+
+
+//QUe2}
+#include<stdio.h>
+#include<math.h>
+
+int main()
+{
+  double x;
+  double result;
+
+  printf("Enter the number whose you log you want to find:");
+  scanf("%lf", &x);
+  result=log(x);
+  printf("The natural logarithm of %lf is %lf", x, result);
+}
