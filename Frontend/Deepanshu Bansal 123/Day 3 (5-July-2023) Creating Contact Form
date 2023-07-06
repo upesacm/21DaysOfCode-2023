@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title>Contact Form</title>
+    </head>
+    <style>
+        h1{
+            background-color: rgb(113, 255, 110);
+            text-align: center;
+            height: 40px;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            border-bottom: 2px solid gray;
+            border-top: 2px solid gray;
+        }
+        .name{
+            margin-left: 100px;
+        }
+        .input{
+            width:950px;
+            height:30px;
+            border-radius: 5px;
+        }
+        .name1{
+            margin-left: 100px;
+            margin-right: 120px;
+            border-radius: 5px;
+        }
+        .name2{
+            margin-left: 100px;
+        }
+        .name3{
+            margin-left: 100px;
+        }
+        .name4{
+            margin-left: 100px;
+        }
+        .name5{
+            margin-left: 100px;
+            cursor: pointer;
+        }
+        .input1{
+            width:945px;
+            height:30px;
+            border-radius: 5px;
+        }
+        .input2{
+            width:945px;
+            height:30px;
+            border-radius: 5px;
+        }
+        .input3{
+            width:930px;
+            height:30px;
+            border-radius: 5px;
+        }
+        form{
+            background-color: rgb(198, 198, 198);
+            height:360px;
+            margin-left: 150px;
+            margin-right:100px;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            border-bottom: 2px solid gray;
+            border-left: 2px solid gray;
+            border-right: 2px solid gray;
+        }
+        body{
+            margin-top: 20px;
+        }
+    </style>
+    <body>
+        <form>
+        <h1>Contact Form</h1>
+        <p class="name">Name:  <input type="text" placeholder=" First_LastName" class="input" required></p>
+        <fieldset class="name1"><legend>Gender:</legend>
+            Male <input type="radio" name="Gender"  required>
+            Female <input type="radio" name="Gender"  required>
+        </fieldset>
+        <p class="name2">Sap Id:  <input type="number" name="number" placeholder=" Sap Id" class="input1"  required></p>
+        <p class="name3">Email:  <input type="email" placeholder=" email@gmail.com" class="input2"  required></p>
+        <p class="name4">Message:  <input type="text" placeholder=" Message" class="input3"  required></p>
+        <input type="submit" value="submit" class="name5">
+    </form>
+    </body>
+</html>

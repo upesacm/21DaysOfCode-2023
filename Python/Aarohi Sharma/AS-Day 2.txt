@@ -1,0 +1,14 @@
+Q1. 
+n=int(input("Enter an integer:"))
+if (n%2==0):
+    print(n, "is even")
+else:
+    print (n, "is odd")
+Q2. 
+str=input("Enter a sentence:")
+var=str.split()
+count=0
+for i in var:
+    count=count+1
+    i=i+1
+print("Number of words in sentence are: ", count)

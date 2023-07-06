@@ -1,0 +1,18 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+
+int fun(int a)
+{
+	float c;
+	c=log(a);
+	cout<<"log("<<a<<",base(e)) equal to "<<c;
+}
+
+int main()
+{
+	int a;
+	cout<<"Enter a ";
+	cin>>a;
+	fun(a);
+}
