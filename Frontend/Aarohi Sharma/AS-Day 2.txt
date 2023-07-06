@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Project</title>
+</head>
+<body>
+<h1>Embedding a youtube video</h2>
+<iframe src="https://youtu.be/YbX_5FTOgL8" height="300" width="400" style="border: 4px solid orange">
+</iframe>
+<br>
+This is how you <b>embed a video</b> in a webpage.
+</body>
+</html>

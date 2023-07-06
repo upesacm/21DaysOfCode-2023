@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int year;
+	cout<<"Enter thr year you want to check that it's leap year or not: ";
+	cin>>year;
+	cout<<"The Entered year is: "<<year<<endl;
+	
+	//THE CENTURY YEAR IS DIVISIBLE BY 100 AND 400 BOTH.
+	if(year%100==0 && year%400==0)
+	{
+		cout<<"The Entered year is a century year and according to calculation it's a LEAP year!!"<<endl;
+	}
+	
+	//THE NORMAL YEARS ARE DIVISIBLE ONLY BY 4 AND NOT BY 100.
+	else if(year%100!=0 &&year%4==0)
+	{
+		cout<<"The Entered year is not a century year and according to calculation it's a LEAP year!!"<<endl;
+	}
+	else
+	{
+		cout<<"NOT A LEAP YEAR!!"<<endl;
+	}
+	return 0;
+}

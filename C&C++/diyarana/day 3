@@ -1,0 +1,14 @@
+#include <stdio.h>  
+#include <math.h>  
+int main ()  
+{  
+int b, exp;  
+int res; 
+printf (" Enter the base value from the user: ");  
+scanf (" %d", &b); 
+printf (" Enter the power value for raising the power of base: ");  
+scanf (" %d", &exp); 
+res = pow ( b, exp);  
+printf (" %d to the power of %d is = %d ", b, exp, res);  
+return 0;  
+}  
