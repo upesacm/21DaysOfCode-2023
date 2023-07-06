@@ -1,0 +1,7 @@
+summ = 0
+while True:
+    num = int(input("Enter an integer:"))
+    if num < 0:
+        break
+    summ+= num
+print("Sum of positive integers entered:", summ)
