@@ -5,13 +5,13 @@ int main(){
     cout<<"Enter the sides of triangle:"<<endl;
     cin>>a>>b>>c;
     if(a==b==c){
-        cout<<"Equilateral Triangle";
+        cout<<"It is an Equilateral Triangle";
     }
     else if(a==b||b==c||c==a){
-        cout<<"Isosceles Triangle";
+        cout<<"It is an Isosceles Triangle";
     }
     else{
-        cout<<"Scalene Triangle";
+        cout<<"It is a Scalene Triangle";
     }
     return 0;
 }
