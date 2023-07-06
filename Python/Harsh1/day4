@@ -1,0 +1,32 @@
+# Write a Python program that prompts the user to enter a temperature in Celsius and converts it to Fahrenheit using the formula: Fahrenheit = (Celsius * 9/5) + 32.
+
+#sol
+celsius=int(input('Enter Temprature in Celcius:'))
+fahrenheit = (celsius * 9/5) + 32
+print(f'The temprature of {celsius} celcius is {fahrenheit} fahrenheit')
+
+# Write a Python program that simulates a simple calculator. It should ask the user to enter two numbers and an operator (+, -, *, /). Perform the corresponding operation on the numbers and display the result.
+
+#sol
+def operation(num1, num2, operator):
+    if operator=='+':
+        print(f'The sum of {num1} and {num2} is {num1+num2}')
+    elif operator=='-':
+        print(f'The subtraction of {num1} and {num2} is {num1-num2}')
+    elif operator=='*':
+        print(f'The multiplication of {num1} and {num2} is {num1*num2}')
+    elif operator=='/':
+        if num2==0:
+            print(f'The division of {num1} and {num2} is not defined')
+        else:
+            print(f'The division of {num1} and {num2} is {num1/num2}')
+    else:
+        print('Enter Valid Choice')
+        
+try:
+    num1=int(input('Enter nunmber 1:'))
+    num2=int(input('Enter number 2:'))
+    operator=input('Enter operator(+,-,*,/):')
+    operation(num1, num2, operator)
+except ValueError:
+    print('Enter valid input')
