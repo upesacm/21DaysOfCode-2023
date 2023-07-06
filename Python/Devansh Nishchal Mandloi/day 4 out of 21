@@ -1,0 +1,31 @@
+<!Doctype html>
+<html lang="en">
+
+  
+  <head>
+    <meta charset="UTF-8">
+    
+    <meta name="author" content="Devansh Nishchal Mandloi">
+    
+    <meta name="description" content="This page contain all the things I am learning how to create as I learn HTML"
+   
+    <title>My First Web Page</title>
+    
+    <link rel="icon" href="htmli.png"
+    type="image/x-icon">
+    
+    <link rel="stylesheet" href="main.css" type="text/css"
+  </head>
+
+  <body>
+    <hr>
+
+    <h1>Hello World!!!</h1>
+   
+    <p>This is my first web page. I am so excited to learn more new things like this.</p>
+
+    <hr>
+  </body>
+
+
+</html>
