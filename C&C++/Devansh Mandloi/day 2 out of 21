@@ -1,0 +1,37 @@
+//Que1}
+#include<stdio.h>
+int main()
+{
+  int y;
+  printf("Please enter a year:");
+  scanf("%d", &y);
+  if(y%4==0 && y%100!=0)
+  {
+    printf("The entered year is a leap year.");
+  }
+  else
+  {
+    printf("The entered year is not a leap year");
+  }
+  return 0;
+}
+
+
+
+
+//Que2}
+#include<stdio.h>
+int main()
+{
+  int a, b;
+  printf("Enter the value of 'a':");
+  scanf("%d", &a);
+  printf("Enter the value of 'b':");
+  scanf("%d", &b);
+  printf("The values of a and b before swapping was %d and %d respectively.", a, b);
+  a= a ^ b;
+  b=a ^ b;
+  a=a ^b;
+  printf("The values of a and b after swapping is %d and %d respectively", a, b);
+  return 0;
+}

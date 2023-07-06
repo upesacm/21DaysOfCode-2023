@@ -1,0 +1,27 @@
+#answer-1
+def  check_even_odd(number):
+    if number % 2 == 0:
+        return "Even"
+    else:
+        return "Odd"
+
+# Taking user input
+num = int(input("Enter an integer: "))
+
+# Calling the function and printing the result
+result = check_even_odd(num)
+print(f"The number {num} is {result}.")
+
+  #answer-2
+  def check_even_odd(number):
+    if number % 2 == 0:
+        return "Even"
+    else:
+        return "Odd"
+
+# Taking user input
+num = int(input("Enter an integer: "))
+
+# Calling the function and printing the result
+result = check_even_odd(num)
+print(f"The number {num} is {result}.")
