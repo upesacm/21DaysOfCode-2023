@@ -1,31 +1,26 @@
-<!Doctype html>
-<html lang="en">
+#Que1}
 
-  
-  <head>
-    <meta charset="UTF-8">
-    
-    <meta name="author" content="Devansh Nishchal Mandloi">
-    
-    <meta name="description" content="This page contain all the things I am learning how to create as I learn HTML"
-   
-    <title>My First Web Page</title>
-    
-    <link rel="icon" href="htmli.png"
-    type="image/x-icon">
-    
-    <link rel="stylesheet" href="main.css" type="text/css"
-  </head>
-
-  <body>
-    <hr>
-
-    <h1>Hello World!!!</h1>
-   
-    <p>This is my first web page. I am so excited to learn more new things like this.</p>
-
-    <hr>
-  </body>
+n=float(input("Enter a temperature in celsius:"))
+far= (n*(9/5))+32
+print(f"The  temperature you entered in celsius is equivalent to {far} in fahrenheit.")
 
 
-</html>
+#Que2}
+
+print("Following are the operations that you can perform:\n1.Addition\n2.Subtraction\n3.Multiplication\n4.Division\n")
+n=int(input("Enter your choice by typing the number corresponding to the desired operation"))
+a=int(input("Enter the first operand"))
+b=int(input("Enter the second operand"))
+res=0
+if(n==1):
+    res=a+b
+elif(n==2):
+    res=a-b
+elif(n==3):
+    res=a*b
+elif(n==4):
+    res=a/b
+else:
+    print("The choice you entered is invalid, please re-check and enter again!")
+
+print(f"The result is {res}")
