@@ -21,6 +21,6 @@ int main()
 	}
 	else
 	{
-		cout<<"non equilateral";
+		cout<<"scalene";
 	}
 }
