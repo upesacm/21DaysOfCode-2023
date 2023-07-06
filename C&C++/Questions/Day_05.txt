@@ -1,0 +1,5 @@
+Questions for Day - 05 (07-07-2023)
+
+1. Write a program to print the Fibonacci series up to a given number using a for loop.
+
+2. Write a program to find the LCM (Least Common Multiple) of two numbers using a while loop.

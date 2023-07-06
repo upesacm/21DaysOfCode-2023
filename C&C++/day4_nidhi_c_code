@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+    int a,b,c;
+    printf("Enter the values to determine wheather the triangle is :\n");
+    printf("isosceles\n");
+    printf("equilateral\n");
+    printf("scalene\n");
+    printf("Enter the first number: \n");
+    scanf("%d" ,&a);
+    printf("Enter the second number: \n");
+    scanf("%d" ,&b);
+    printf("Enter the third number: \n");
+    scanf("%d" ,&c);
+    if(a==b && b==c)
+    {
+        printf("equilateral");
+    }
+    else if(a==b|| b==c|| c==a)
+    {
+        printf("isosceles");
+    }
+    else
+    {
+        printf("scalene");
+    }
+    return 0;
+}
