@@ -1,0 +1,18 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+
+int fun(int a,int b)
+{
+	int c;
+	c=pow(a,b);
+	return c;
+}
+
+int main()
+{
+	int a,b;
+	cout<<"Enter a, b ";
+	cin>>a>>b;
+	cout<<"Power a b "<<fun(a,b);
+}
