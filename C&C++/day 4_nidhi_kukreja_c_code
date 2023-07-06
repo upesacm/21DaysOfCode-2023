@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <math.h>
+
+void find_roots(float a, float b, float c) {
+   
+    float discriminant = b*b - 4*a*c;
+    float realPart, imaginaryPart;
+
+    if (discriminant > 0) {
+        
+        float root1 = (-b + sqrt(discriminant)) / (2*a);
+        float root2 = (-b - sqrt(discriminant)) / (2*a);
+        printf("The equation has real and distinct roots:\n");
+        printf("Root 1: %.2f\n", root1);
+        printf("Root 2: %.2f\n", root2);
+    }
+    else if (discriminant == 0) {
+        
+        float root = -b / (2*a);
+        printf("The equation has real and equal roots:\n");
+        printf("Root 1: Root 2: %.2f\n", root);
+    }
+    else {
+       
+        realPart = -b / (2*a);
+        imaginaryPart = sqrt(-discriminant) / (2*a);
+        printf("The equation has imaginary roots:\n");
+        printf("Root 1: %.2f + %.2fi\n", realPart, imaginaryPart);
+        printf("Root 2: %.2f - %.2fi\n", realPart, imaginaryPart);
+    }
+}
+
+int main() {
+    float a, b, c;
+
+   
+    printf("Enter the value of a: ");
+    scanf("%f", &a);
+    printf("Enter the value of b: ");
+    scanf("%f", &b);
+    printf("Enter the value of c: ");
+    scanf("%f", &c);
+
+    find_roots(a, b, c);
+
+    return 0;
+}
