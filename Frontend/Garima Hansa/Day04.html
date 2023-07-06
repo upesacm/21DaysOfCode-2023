@@ -1,0 +1,95 @@
+<!--
+Creating an HTML Table
+
+    1. Create a new HTML file.
+    2. Design an HTML table with a few rows and columns.
+    3. Use the <table>, <tr>, and <td> tags to structure the table.
+    4. Add content to each cell of the table.
+    5. Save the file and open it in a web browser to view your table.
+
+The questions have also been pushed to the main GitHub repo in the respective directories.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table</title>
+    <style>
+        body {
+            background-color: rgb(8, 179, 108);
+        }
+
+        table {
+            border-collapse: collapse;
+            background-color: antiquewhite;
+            width: 50%;
+            margin: 0 auto;
+            border-spacing: 1em;
+            box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.805);
+        }
+
+        th {
+            text-align: left;
+            vertical-align: top;
+            border-spacing: 10em;
+            padding: 5px;
+        }
+    
+        td{
+            padding: 8px;
+        }
+        span{
+            font-size: 0.64rem;
+            font-weight: 700;
+            color: grey;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <table class="recipt">
+        <thead>
+            <tr style="border-bottom: 2px dashed rgb(74, 74, 74);">
+                <th style="width: 60%;">Items</th>
+                <th style="width: 10%;">Qty</th>
+                <th style="width: 20%;">Price per piece</th>
+                <th style="width: 10%; text-align: end;">Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="border-top: 10px;">
+                <td>Pilot Pen Box <span><br>(Blue, Nos 10)</span></td>
+                <td>4</td>
+                <td>650</td>
+                <td>2600</td>
+            </tr>
+            <tr>
+                <td>Cello Tape <span><br>(Single Side, 2in)</span></td>
+                <td>8</td>
+                <td>25</td>
+                <td>200</td>
+            </tr>
+            <tr>
+                <td>Clip File</td>
+                <td>10</td>
+                <td>10</td>
+                <td>100</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr style="border-top: 2px dashed rgb(74, 74, 74);">
+                <td colspan="3" style=" text-align: end; padding-right: 15px;">Grand Total</td>
+                <td>2900</td>
+            </tr>
+        </tfoot>
+
+
+    </table>
+</body>
+
+</html>

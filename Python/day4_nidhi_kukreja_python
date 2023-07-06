@@ -1,0 +1,19 @@
+print("Making a calculator")
+a=input("Enter the operator (+ , - , * , /)\n ")
+match a:
+        case '+':
+            c=int(input("Enter the first value "))
+            b=int(input("Enter the second value "))
+            print("The addition of two numbers are" , c+b)
+        case '-':
+             d=int(input("Enter the first value "))
+             e=int(input("Enter the second value "))
+             print("The subtraction of two numbers are" , d-e)
+        case '*':
+            f=int(input("Enter the first value "))
+            g=int(input("Enter the second value "))
+            print("The multiplication of two numbers are" , f*g)
+        case '/':
+            h=int(input("Enter the first value "))
+            i=int(input("Enter the second value "))
+            print("The division of two numbers are" ,h/i)

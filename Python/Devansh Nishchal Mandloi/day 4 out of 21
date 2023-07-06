@@ -1,0 +1,26 @@
+#Que1}
+
+n=float(input("Enter a temperature in celsius:"))
+far= (n*(9/5))+32
+print(f"The  temperature you entered in celsius is equivalent to {far} in fahrenheit.")
+
+
+#Que2}
+
+print("Following are the operations that you can perform:\n1.Addition\n2.Subtraction\n3.Multiplication\n4.Division\n")
+n=int(input("Enter your choice by typing the number corresponding to the desired operation"))
+a=int(input("Enter the first operand"))
+b=int(input("Enter the second operand"))
+res=0
+if(n==1):
+    res=a+b
+elif(n==2):
+    res=a-b
+elif(n==3):
+    res=a*b
+elif(n==4):
+    res=a/b
+else:
+    print("The choice you entered is invalid, please re-check and enter again!")
+
+print(f"The result is {res}")

@@ -1,0 +1,24 @@
+#1. Write a Python program that prompts the user to enter a temperature in Celsius and converts it to Fahrenheit using the formula: Fahrenheit = (Celsius * 9/5) + 32.
+c = int(input("Enter temperature that in Celsius: "))
+c=(c * 9/5) + 32
+print("temperature in Fahrenheit is "+ str(c)+".")
+
+#2. Write a Python program that simulates a simple calculator. It should ask the user to enter two numbers and an operator (+, -, *, /). Perform the corresponding operation on the numbers and display the result.
+a = int(input("Enter your First number: "))
+b = int(input("Enter your Second number: "))
+op = input("Enter the operation ((+, -, *, /) you want to Perform on the numbers: ")
+if(op == "+"):
+    print("your Result: " + str(a+b))
+
+elif(op == "-"):
+    print("your Result: " + str(a-b))
+
+elif(op == "/"):
+    print("your Result: " + str(a/b))
+
+elif(op == "*"):
+    print("your Result: " + str(a*b))
+
+else:
+    print("Invalid Input!")
+    print("Please Enter a valid Input")
