@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <th>State</th>
+            <th>Capital</th>
+            <th>Year of Establishment</th>
+        </tr>
+        <tr>
+            <td>Andhra Pradesh</td>
+            <td>Amravati</td>
+            <td>2017</td>
+        </tr>
+        <tr>
+            <td>Arunachal Pradesh</td>
+            <td>Itanagar</td>
+            <td>1987</td>
+        </tr>
+        <tr>
+            <td>Aasam</td>
+            <td>Dispur</td>
+            <td>1972</td>
+        </tr>
+        <tr>
+            <td>Bihar</td>
+            <td>Patna</td>
+            <td>1950</td>
+        </tr>
+        <tr>
+            <td>Chhatisgarh</td>
+            <td>Raipur</td>
+            <td>2000</td>
+        </tr>
+        <tr>
+            <td>Goa</td>
+            <td>Panaji</td>
+            <td>1987</td>
+        </tr>
+        <tr>
+            <td>Gujrat</td>
+            <td>Gandhinagar</td>
+            <td>1970</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+
+
+
+CSS FILE
+table 
+{
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+td, th 
+{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+  
+tr:nth-child(even) 
+{
+    background-color: #dddddd;
+}

@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+
+void fun(int n)
+{
+	if(n%4==0)
+	{
+		cout<<n<<" is leap year";
+	}
+	else
+	if(n%400==0 && n%100!=0)
+	{
+		cout<<n<< " is leap year";
+	}
+	else{
+		cout<<n<<" not a leap year";
+	}
+}
+
+int main()
+{
+	int n;
+	cout<<"Enter n for check leap year or not ";
+	cin>>n;
+	fun(n);
+}
