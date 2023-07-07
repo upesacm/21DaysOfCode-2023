@@ -1,9 +1,5 @@
 //Write a program to print the Fibonacci series up to a given number using a for loop.
 
-
-
-
-
 #include <stdio.h>
 
 int main() {
