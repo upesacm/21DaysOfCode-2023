@@ -1,0 +1,49 @@
+                                            QUE 1
+#include<stdio.h>
+int main()
+{
+    int x,y,z;
+    printf("enter the sides of triangle:\n");
+    scanf("%d%d%d",&x,&y,&z);
+    if(x==y && y==z)
+    {
+        printf("EQUILATERAL TRIANGLE");
+    }
+    else if(x==y || y==z || z==x)
+    {
+        printf("ISOCELES TRIANGLE");
+    }
+    else
+    {
+        printf("SCALENE TRIANGLE");
+    }
+    return 0;
+}
+
+                                             QUE 2  
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int a,b,c;
+    double D,root1,root2;
+    printf("enter the value of a,b,c resp where a,b,c are the coeff of quad eq: a(x)^2 + b(x) + c\n");
+    scanf("%d%d%d",&a,&b,&c);
+    D = (pow(b,2)) - 4*a*c;
+    if(D==0)
+    {
+        root1= -b/(2*a);
+        printf("ROOTS ARE REAL AND SAME WHICH IS %lf",root1);
+    }
+    else if(D>0)
+    {
+        root1= (-b + sqrt(D))/(2*a);
+        root2= (-b - sqrt(D))/(2*a);
+        printf("ROOTS ARE REAL AND DISTINCT WHICH ARE %lf and %lf",root1,root2);
+    }
+    else
+    {
+        printf("ROOTS ARE IMAGINARY");
+    }
+    return 0;
+}

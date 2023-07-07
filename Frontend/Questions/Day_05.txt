@@ -1,0 +1,8 @@
+Question for Day - 05 (07-07-2023)
+
+Applying Semantic Tags
+
+1. Create a new HTML file.
+2. Create and identify a paragraph of text or a section of content that can benefit from semantic markup.
+3. Replace generic <div> elements with more appropriate semantic elements like <header>, <nav>, <main>, <article>, <aside>, or <footer>.
+4. Save the file and open it in a web browser to ensure that the content is still displayed correctly.

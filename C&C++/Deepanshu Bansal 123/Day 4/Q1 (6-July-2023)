@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+
+void fun(int s1,int s2,int s3)
+{
+	if(s1==s2 && s2==s3 &&s3==s1)
+	{
+		cout<<"Equilateral Triangle";
+	}
+	if(s1==s2 && s2!=s3 && s1!=s3)
+	{
+		cout<<"Isosceles Triangle";
+	}
+	if(s1!=s2 && s2==s3 && s1!=s3)
+	{
+		cout<<"Isosceles Triangle";
+	}
+	if(s1!=s2 && s2!=s3 && s1==s3)
+	{
+		cout<<"Isosceles Triangle";
+	}
+	if(s1!=s2 && s2!=s3 && s3!=s1)
+	{
+		cout<<"Scalene Triangle";
+	}
+}
+int main()
+{
+	int s1,s2,s3;
+	cout<<"Enter s1,s2,s3 ";
+	cin>>s1>>s2>>s3;
+	fun(s1,s2,s3);
+}
