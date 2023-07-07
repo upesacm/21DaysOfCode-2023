@@ -1,0 +1,143 @@
+<html>
+    <head>
+        <title>Coding-Problems Website</title>
+    </head>
+    <style>
+        body{
+        margin:0px;
+       }
+       .main{
+        font-size:30px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-decoration: none;
+        padding:20px;
+       }
+       .Nav1{
+        background-color: rgb(85, 255, 85);
+        padding:10px;
+        height: 45px;
+       }
+       .main1{
+        text-decoration: none;
+        padding:20px;
+        font-size:large;
+        color: rgb(12, 0, 0);
+       }
+       .main1:hover{
+        color:blue;
+       }
+       #main2{
+        margin-left: 600px;
+       }
+       .hr{
+        margin: 0px;
+       }
+       .select1{
+        padding: 2px;
+        width: 150px;
+        margin-left: 1200px;
+        margin-top: 10px;
+        background-color: rgb(222, 222, 222);
+       }
+       header{
+        background-color:rgb(177, 206, 206);
+        height:110px;
+       }
+       aside{
+        border:1px solid rgba(0, 187, 255, 0.958);
+        padding: 100px;
+        height: 400px;
+        width: 150px;
+        background-color:rgb(249, 231, 158);
+       }
+      main{
+        display: flex;
+       }
+       .topic{
+        margin-top:30px ;
+       }
+       article{
+        text-align: center;
+        margin-left: 400px;
+        margin-top: 225px;
+       }
+       .nav2{
+        background-color: black;
+        padding:7px;
+       }
+       .main3{
+        text-decoration: none;
+        padding: 12px;
+        color:grey;
+       }
+       .main3:hover{
+        color:white;
+       }
+    </style>
+    <body>
+        <header>
+        <nav class="Nav1">
+            <a class="main" href="#">Coding Problems</a>
+            <a id="main2" class="main1" href="#">Home</a>
+            <a class="main1" href="#">Practice Problem</a>
+            <a class="main1" href="#">Certify</a>
+            <a class="main1" href="#">Contact Us</a>
+            <a class="main1" href="#">Profile</a>
+        </nav>
+      <hr class="hr"> 
+      <select class="select1">
+        <option>Select language</option>
+        <option>English</option>
+        <option>Hindi</option>
+        <option>select other</option>
+      </select>
+      </header> 
+      <main>
+      <aside>
+        <h4 class="practice">Practice</h4>
+        <input  type="radio">Solved
+        <br>
+        <input class="unsolved" type="radio">Unsolved
+        <hr>
+        <h4 class="status">Status</h4>
+        <input type="radio">Easy
+        <br>
+        <input type="radio">intermedate
+        <br>
+        <input type="radio">Advanced
+        <hr>
+        <h4 class="topics">Topics</h4>
+        <input type="radio">Array
+        <br>
+        <input type="radio">String
+        <br>
+        <input type="radio">Heap
+        <br>
+        <input type="radio">Hash
+        <br>
+        <input type="radio">Greedy algorithm
+        <br>
+        <input type="radio">Linked list
+        <br>
+        <input type="radio">stack
+        <br>
+        <input type="radio">sorting
+        <br>
+      </aside>
+      <article>
+      <h1 font-size="2000px">🤗Welcome, Coding Problems</h1>
+      <p>Hey, Enjoy practice make your performance good</p>
+      </article>
+      </main>
+      <footer>
+        <nav class="Nav2">
+          <a class="main3" href="#">Information</a>
+          <a class="main3" href="#"></a>
+          <a class="main3" href="#">about us</a>
+          <a class="main3" href="#">copyright &copy; 2023</a>
+          <a class="main3" href="#">Terms and conditions</a>
+          <a class="main3" href="#">Privacy policy</a>
+      </nav>
+      </footer>
+    </body>
+</html>

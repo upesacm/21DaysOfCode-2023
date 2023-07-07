@@ -1,0 +1,26 @@
+#include<stdio.h>
+
+void printFibonacciSeries(int n) {
+    int first = 0, second = 1;
+    
+    printf("Fibonacci Series up to %d terms:\n", n);
+    printf("%d, %d, ", first, second);
+    
+    for (int i = 3; i <= n; i++) {
+        int next = first + second;
+        printf("%d, ", next);
+        first = second;
+        second = next;
+    }
+}
+
+int main() {
+    int numTerms;
+    
+    printf("Enter the number of terms: ");
+    scanf("%d", &numTerms);
+    
+    printFibonacciSeries(numTerms);
+    
+    return 0;
+}
