@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Things ChatGPT can and can't do</h1>
+    <nav>
+        <div class="navpane">
+            <ul>
+                <li>My Profile</li>
+                <li>Home</li>
+            </ul>
+        </div>
+    </nav>
+    <div class="header">
+        <header>Can do v/s Can't do</header>
+    </div>
+    <div class="footer">
+        <footer>Built up by Milan Singhal</footer>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CSS FILE
+h1{
+    text-align: center;
+    color: #03ffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+*{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-image: url(AI.png);
+    background-size: cover;
+    background-color: black;
+    color: azure;
+}
+
+.ul{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    color: aliceblue;
+}
+
+.header{
+    color: beige;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.footer{
+    text-align: right;
+    margin-top: 650px;
+    padding-bottom: 10px;
+    font-size: x-large;
+}
