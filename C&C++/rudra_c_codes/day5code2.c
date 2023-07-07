@@ -1,12 +1,5 @@
 //Write a program to find the LCM (Least Common Multiple) of two numbers using a while loop.
 
-
-
-
-
-
-
-
 #include <stdio.h>
 
 int main() {
