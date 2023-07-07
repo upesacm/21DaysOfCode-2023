@@ -2,31 +2,26 @@
 #include <iostream>
 using namespace std;
 
-int calculateGCD(int a, int b) {
-    if (b == 0)
-        return a;
-    else
-        return calculateGCD(b, a % b);
-}
+int main()
+{
+    int n1, n2, max;
 
-int calculateLCM(int a, int b) {
-    int gcd = calculateGCD(a, b);
-    int lcm = (a * b) / gcd;
-    return lcm;
-}
+    cout << "Enter two numbers: ";
+    cin >> n1 >> n2;
+    
+    // maximum value between n1 and n2 is stored in max
+    max = (n1 > n2) ? n1 : n2;
 
-int main() {
-    int num1, num2;
-
-    cout << "Enter first number: ";
-    cin >> num1;
-
-    cout << "Enter second number: ";
-    cin >> num2;
-
-    int lcm = calculateLCM(num1, num2);
-
-    cout << "LCM of " << num1 << " and " << num2 << " is " << lcm << endl;
-
+    do
+    {
+        if (max % n1 == 0 && max % n2 == 0)
+        {
+            cout << "LCM = " << max;
+            break;
+        }
+        else
+            ++max;
+    } while (true);
+    
     return 0;
 }
