@@ -1,0 +1,5 @@
+Questions for Day - 06 (08-07-2023)
+
+1. Write a C/C++ program to find the second smallest element in an integer array.
+
+2. Write a C/C++ program to sort an integer array in ascending order using a sorting algorithm (e.g., bubble sort, insertion sort).
