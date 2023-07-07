@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Project</title>
+<style>
+h1 {font-size: 50 px; text-align: centre;}
+h2 {font-size: 20 px; text-align:none; margin-bottom:0 px;}
+p {font-size: 25 px; text-align: left; margin-top:-40 px;}
+</style>
+</head>
+<body>
+<article>
+<header>
+<h2>India and its Uniqueness</h2>
+</header>
+<h1>Indian Culture</h1>
+<p>One of the most Seasoned and Particular</p>
+</article>
+<aside>
+<h2>The Culture</h2>
+<p>In India, there's sublime social decent variety all through the nation.</p>

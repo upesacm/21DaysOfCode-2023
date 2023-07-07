@@ -1,0 +1,15 @@
+Q1. 
+score=float(input("Enter student's score:"))
+if score>=60:
+    print("Student has passed")
+else:
+    print("Student has failed")
+Q2. 
+n1=int(input("Enter initial number of range:"))
+n2=int(input("Enter end number of range:"))
+for i in range (n1,n2):
+    for j in range (2, i):
+        if i%j==0:
+            break
+        else:
+            print(i)
