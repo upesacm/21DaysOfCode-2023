@@ -1,0 +1,10 @@
+#include <stdio.h>
+#include <math.h>
+int main() 
+{
+    int input;
+    printf("Enter the number to find it's power: ");
+    scanf("%d", &input);
+    printf("The power of the number is %d " , (int)pow(input, 3));
+    return 0;
+}
