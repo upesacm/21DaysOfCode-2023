@@ -1,0 +1,18 @@
+#Que1}
+n=int(input("Enter the number of integrers you want to insert"))
+l=[]
+for i in range(n):
+    s=int(input("Enter an Integer:"))
+    l.append(s)
+
+largest = max(l)
+print(f"The largest Integer in the list is {largest}")
+
+#Que2}
+n=int(input("Enter the number of elements you want to insert in the list:"))
+l=[]
+for i in range(n):
+    e=int(input("Enter an element:"))
+    l.append(e)
+
+print(f"The smallest element of the list is {min(l)}")
