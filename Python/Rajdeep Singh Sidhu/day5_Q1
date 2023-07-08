@@ -1,0 +1,8 @@
+#1. Write a Python program that takes a student's score as input and determines whether the student has passed or failed. Assume that the passing score is 60 or greater
+st = int(input("Enter your total score: "))
+if(st>=60):
+    print("PASS")
+elif(st>=0) and (st<60):
+    print("FAIL")
+else:
+    print("Fail")
