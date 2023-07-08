@@ -1,0 +1,35 @@
+#Answer-1
+def find_largest(numbers):
+    if len(numbers) == 0:
+        return None 
+    largest = numbers[0]  
+    for num in numbers:
+        if num > largest:
+            largest = num
+    return largest
+list=[1,7,19,20,22]
+result=find_largest(list)
+print(result)
+
+#Answer-2
+def find_second_smallest(numbers):
+    if len(numbers) < 2:
+        return None 
+    smallest = float('inf') 
+    second_smallest = float('inf')
+    for num in numbers:
+        if num < smallest:
+            second_smallest = smallest
+            smallest = num
+        elif num < second_smallest and num != smallest:
+            second_smallest = num
+    return second_smallest
+my_list = [10, 25, 5, 100, 30]
+result = find_second_smallest(my_list)
+if result is not None:
+    message = f"The second smallest element in the list is: {result}"
+else:
+    message = "The list does not have a second smallest element."
+print(message)
+
+
