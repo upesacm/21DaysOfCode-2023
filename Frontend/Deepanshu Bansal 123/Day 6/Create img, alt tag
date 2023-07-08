@@ -1,0 +1,102 @@
+<html>
+  <head>
+    <title>Flowers images</title>
+  </head>
+  <link rel="icon" src="icon.png">
+  <style>
+    h1{
+     text-align:center;
+     margin-top: 50px;
+    margin-bottom: 20px;
+    }
+   .first{
+    border:1px solid none;
+    background-color: rgb(255, 230, 0);
+    width:250px;
+    border-radius: 10px;
+    margin-left: 50px;
+   }
+   .h21{
+    text-align: center;
+   }
+   .img1{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+   }
+   .second{
+    border:1px solid none;
+    background-color: rgb(255, 151, 169);
+    width:250px;
+    border-radius: 10px;
+    margin-left: 50px;
+   }
+   .third{
+    border:1px solid none;
+    background-color: rgb(255, 0, 0);
+    width:250px;
+    border-radius: 10px;
+    margin-left: 50px;
+   }
+   .fourth{
+    border:1px solid none;
+    background-color:azure;
+    width:250px;
+    border-radius: 10px;
+    margin-left: 50px;
+   }
+   .fifth{
+    border:1px solid none;
+    background-color:rgb(255, 255, 89);
+    width:250px;
+    border-radius: 10px;
+    margin-left: 50px;
+   }
+   .sixth{
+    border:1px solid none;
+    background-color:rgb(217, 217, 217);
+    width:250px;
+    border-radius: 10px;
+    margin-left: 50px;
+   }
+   .main1,.main2{
+    display: flex;
+    justify-content: space-around;
+   }
+   .main2{
+    margin-top: 50px;
+   }
+  </style>
+  <body>
+    <h1>Flowers Types</h1>
+    <br>
+    <br>
+    <main class="main1">
+    <header class="first">
+    <h2 class="h21">Sunflower</h2>
+    <img src="flower-1.jpg"  alt="This ia an Sunflower image" width="250px" height="250px" class="img1">
+  </header>
+  <header class="second">
+    <h2 class="h21">Lotus</h2>
+    <img src="flower-22.jpg"  alt="This ia an Lotus image" width="250px" height="250px" class="img1">
+  </header>
+  <header class="third">
+    <h2 class="h21">Rose</h2>
+    <img src="flower-3.jpg"  alt="This ia an Rose image" width="250px" height="250px" class="img1">
+  </header>
+    </main>
+    <main class="main2">
+  <header class="fourth">
+    <h2 class="h21">Periwinkle</h2>
+    <img src="flower-44.jpg"  alt="This ia an Periwinkle image" width="250px" height="250px" class="img1">
+  </header>
+  <header class="fifth">
+    <h2 class="h21">Marigold</h2>
+    <img src="flower-5.jpg"  alt="This ia an Marigold image" width="250px" height="250px" class="img1">
+  </header>
+  <header class="sixth">
+    <h2 class="h21">Daisy</h2>
+    <img src="flower-6.jpg"  alt="This ia an Daisy image" width="250px" height="250px" class="img1">
+  </header>
+  </main>
+  </body>
+</html>
