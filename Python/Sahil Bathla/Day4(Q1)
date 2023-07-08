@@ -1,0 +1,5 @@
+print("Day 4 of 21DOC")
+C=float(input("Enter the temperature in celsius:"))
+F=(C*9/5)+ 32
+print("The Temperature in farheneit is:",F)
+
