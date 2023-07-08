@@ -30,10 +30,12 @@ int main()
                 arr[j] = temp;
             }
         }
-    }    
-    cout<<"\nArray after sorting: ";   
-   for(int i=0; i<size; i++)
-      cout<<arr[i]<<" ";
+    }
+    
+    cout<<"\nArray after sorting: ";
+   
+    for(int i=0; i<size; i++)
+      cout<<arr[i]<<" "<<endl;
       // second smallest element
       cout<<"The second smallest element is: "<<arr[1];
     return 0;
