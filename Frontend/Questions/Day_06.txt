@@ -1,0 +1,9 @@
+Question for Day - 06 (08-07-2023)
+
+Adding Alt Text to Images
+
+1. Create a new HTML file.
+2. Include multiple <img> elements in your HTML document.
+3. Add descriptive alt attributes to each image to provide alternative text for screen readers and improve accessibility.
+4. Ensure that the alt text accurately describes the content or purpose of each image.
+5. Save the file and open it in a web browser to verify that the images are displayed correctly and that the alt text is visible when images are not loaded.
