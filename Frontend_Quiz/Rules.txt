@@ -1,1 +1,15 @@
-Rules
+Rules:
+
+For Quiz-01, you have been given three HTML files name Q1, Q2, and contact and an image. The HTML webpages are supposed to look like the snapshots provided to you in the below drive link but at present they have several issues.
+
+
+Task 01 - You are supposed to modify file Q1 in such a way that it exactly resembles the webpage in the below drive link.
+
+
+Task 02 - You are supposed to modify file Q2 and contact in such a way that it exactly resembles the webpage in the below drive link.
+
+
+Drive Link: https://drive.google.com/drive/folders/1jm2yN2CSwUXM4fhzir2Nsk2A5KyWH7GB?usp=sharing
+
+
+You will be marked on the basis of how close you get to the snapshots provided in the drive link.
