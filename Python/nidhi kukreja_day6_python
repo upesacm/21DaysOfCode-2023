@@ -1,0 +1,21 @@
+def find_second_smallest(numbers):
+    if len(numbers) < 2:
+        return None
+
+    smallest = min(numbers)
+    second_smallest = float('inf')
+
+    for number in numbers:
+        if number > smallest and number < second_smallest:
+            second_smallest = number
+
+    return second_smallest
+
+# Example usage:
+numbers = [5, 2, 7, 1, 9, 3]
+second_smallest = find_second_smallest(numbers)
+
+if second_smallest is not None:
+    print(f"The second smallest element is: {second_smallest}")
+else:
+    print("No second smallest element found.")

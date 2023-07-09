@@ -1,0 +1,74 @@
+//Que1}
+#include<stdio.h>
+#include<limits.h>
+
+int findSecondSmallest(int arr[], int size) {
+    int smallest = arr[0];              
+    int secondSmallest = INT_MAX;       
+
+    for (int i = 1; i < size; i++) {
+        if (arr[i] < smallest) {
+            secondSmallest = smallest;  
+            smallest = arr[i];         
+        } else if (arr[i] < secondSmallest && arr[i] != smallest) {
+            secondSmallest = arr[i];   
+        }
+    }
+
+    return secondSmallest;
+}
+
+int main() {
+    int size;
+    printf("Enter the size of the array: ");
+    scanf("%d", &size);
+
+    int arr[size];
+
+    printf("Enter the elements of the array: ");
+    for (int i = 0; i < size; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    int secondSmallest = findSecondSmallest(arr, size);
+    printf("The second smallest element in the array is: %d\n", secondSmallest);
+
+    return 0;
+
+
+
+//Que2}
+#include <stdio.h>
+
+void bubbleSort(int arr[], int n) {
+    int i, j, temp;
+    for(i = 0; i < n-1; i++) {
+        for(j = 0; j < n-i-1; j++) {
+            if(arr[j] > arr[j+1]) {
+                temp = arr[j];
+                arr[j] = arr[j+1];
+                arr[j+1] = temp;
+            }
+        }
+    }
+}
+
+int main() {
+    int arr[] = {2, 8, 4, 9, 1, 0};
+    int n = sizeof(arr) / sizeof(arr[0]);
+    int i;
+
+    printf("Array before sorting: ");
+    for(i = 0; i < n; i++) {
+        printf("%d ", arr[i]);
+    }
+
+    bubbleSort(arr, n);
+
+    printf("\nArray after sorting in ascending order: ");
+    for(i = 0; i < n; i++) {
+        printf("%d ", arr[i]);
+    }
+
+    return 0;
+}
