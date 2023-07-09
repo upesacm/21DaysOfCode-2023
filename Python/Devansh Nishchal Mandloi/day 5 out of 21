@@ -1,0 +1,27 @@
+#Que1}
+
+n=int(input("Please enter your score:"))
+if(n>=60):
+    print("Passing criteria met, You have passed the exam!")
+else:
+    print("Passing criteria not met, You are failed!")
+
+
+#Que2}
+
+def is_prime(num):
+    if num<2:
+        return False
+    for i in range(2, int(num/2) + 1):
+        if num%i==0:
+            return False
+
+    return True
+
+
+l=int(input("Enter the lower limit"))
+u=int(input("Enter upper limit"))
+print("Prime numbers between", l, "and", u, "are:" )
+for num in range(l,u+1):
+    if is_prime(num):
+        print(num)

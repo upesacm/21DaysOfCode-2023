@@ -1,0 +1,49 @@
+#include<iostream>
+using namespace std;
+
+void fun(int a,int b)
+{
+	int max,i,mul=1,flag=0;
+	if(a>b){
+	max=a;	
+	}
+	else{
+	max=b;	
+	}
+	i=2;
+	while(i<=max)
+	{
+		flag=0;
+		if(a%i==0)
+		{
+			flag=1;
+			a=a/i;
+		}
+		if(b%i==0)
+		{
+			flag=1;
+			b=b/i;
+		}
+		if(flag==1){
+			mul=mul*i;
+			i=i;
+		}
+		if(flag==0)
+		{
+		i++;	
+		}
+		if(a==1 && b==1)
+		{
+			break;
+		}
+	}
+	cout<<"LCM of a, b "<<mul;
+}
+
+int main()
+{
+	int a,b;
+	cout<<"Enter n number of fibonacci series ";
+	cin>>a>>b;
+	fun(a,b);
+}
