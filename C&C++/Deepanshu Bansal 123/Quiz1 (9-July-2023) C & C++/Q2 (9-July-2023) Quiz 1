@@ -1,0 +1,44 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include<string>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+     string s,str;
+    int i,j;
+    getline(cin,s);
+    int n=s.length();
+    for(i=n-1;i>=0;i--)
+    {
+        if(s[i]==' ')
+        {
+            for(j=i+1;j<n;j++)
+            {
+                if(s[j]==' ')
+                {
+                    str.push_back(' ');
+                    break;
+                }
+                str.push_back(s[j]);
+                if(j==n-1)
+                {
+                    str.push_back(' ');
+                }
+            }
+        }
+    }
+    for(i=0;i<n;i++)
+    {
+        if(s[i]==' ')
+        {
+            break;
+        }
+        str.push_back(s[i]);
+    }
+    cout<<str;
+    return 0;
+}
