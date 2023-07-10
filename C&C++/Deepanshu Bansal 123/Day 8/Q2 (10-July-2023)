@@ -1,0 +1,50 @@
+#include<iostream>
+#include<vector>
+using namespace std;
+int main()
+{
+	int array[100][100],i,j,n,m,count=0,sum=0,add=0;
+	cout<<"Enter n-columb, m-rows ";
+	cin>>n>>m;
+	for(i=0;i<n;i++)
+	{
+		for(j=0;j<m;j++)
+		{
+			cin>>array[i][j];
+		}
+	}
+	cout<<"Sum of each rows "<<"\n";
+	for(i=0;i<n;i++)
+	{
+		sum=0;
+		for(j=0;j<m;j++)
+		{
+			sum=sum+array[i][j];
+		}
+		cout<<"Sum of row "<<i+1<<" "<<sum<<"\n";
+	}
+	cout<<"\n";
+	sum=0;
+	cout<<"Sum of each columns "<<"\n";
+	for(i=0;i<n;i++)
+	{
+		sum=0;
+		for(j=0;j<m;j++)
+		{
+			sum=sum+array[j][i];
+		}
+		cout<<"Sum of column "<<i+1<<" "<<sum<<"\n";
+	}
+	cout<<"\n";
+	sum=0;
+	cout<<"Sum of all elements in 2D array "<<"\n";
+	for(i=0;i<n;i++)
+	{
+		for(j=0;j<m;j++)
+		{
+			sum=sum+array[i][j];
+		}
+	}
+	cout<<"Sum of all element in 2D array "<<sum;
+	return 0;
+}
