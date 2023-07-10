@@ -1,0 +1,10 @@
+names = list(input("Enter the names separated by commas: ").split(","))
+marks1 = list(map(int, input("Enter marks for subject 1: ").split(",")))
+marks2 = list(map(int, input("Enter marks for subject 2: ").split(",")))
+marks3 = list(map(int, input("Enter marks for subject 3: ").split(",")))
+
+marks = tuple(zip(marks1, marks2, marks3))
+newdata = tuple(zip(names, marks1, marks2, marks3))
+
+average = sum(sum(sub) for sub in marks) / (len(marks) * len(marks[0]))
+print("Average marks: ", average)
