@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<header>
+<div id="top-header">
+<h1>Indian Culture</h1>
+<h3>This is my header</h3>
+<nav>
+<div id="navigation bar">
+<ul>
+<li class="active">
+<a href="#">Home</a>
+</li>
+<li>
+<a href="#">About Us</a>
+</li>
+<li>
+<a href="#">Our Products</a>
+</li>
+<li>
+<a href="#">Careers</a>
+</li>
+<li>
+<a href="#">Contact Us</a>
+</li>
+</ul>
+</div>
+</nav>
+</div>
+</header>
+<style>
+top-header {text-align:center; color: aqua; font-size:30 px}
+navigation bar {font-size:16 px; color: red}
+</style>
