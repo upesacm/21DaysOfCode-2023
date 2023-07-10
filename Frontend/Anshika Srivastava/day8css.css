@@ -1,0 +1,11 @@
+header{
+    background-color: aqua;
+}
+
+nav{
+    font-size: 16px;
+}
+
+.content{
+    border: 1px solid black ;
+}
