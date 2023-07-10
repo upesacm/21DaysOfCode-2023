@@ -1,0 +1,9 @@
+Question for Day - 08 (10-07-2023)
+
+Applying CSS styles to HTML
+
+1. Create a new HTML file.
+2. Design a webpage with a header, a navigation menu, and a content section using appropriate HTML elements.
+3. Apply a CSS style to change the background color of the header to aqua.
+4. Apply a CSS style to change the font size of the navigation menu to 16 pixels.
+5. Apply a CSS style to add a 1-pixel border around the content section.
