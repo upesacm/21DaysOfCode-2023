@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>About John</title>
+  
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    h1, h3 {
+      font-family: "Times New Roman", serif;
+    }
+
+    p {
+      font-family: Verdana, Geneva, sans-serif;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    table, th, td {
+      border: 1px solid black;
+    }
+
+    th, td {
+      text-align: left;
+    }
+
+    marquee {
+      background-color: yellow;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <marquee behavior="scroll" direction="left">Welcome to my website!</marquee>
+
+  <table cellspacing="20">
+    <tr>
+      <td><img src="john_pic.png" alt="John's profile picture"></td>
+      <td>
+        <h1>John Smith</h1>
+        <p> <strong>Technology Enthusiast</strong> <br>
+          <em>Web Development</em> | <em>Python</em> | <em>Data Science</em> <br>
+          <p><i>Aspiring <b>Full Stack Web Developer</b></i></p>
+        </p>
+        <p>Hello there! I'm John. I have a passion for all things tech and love exploring new ideas and concepts.</p>
+      </td>
+    </tr>
+  </table>
+
+  <h3>Education</h3>
+  <ul>
+    <li>ABC High School</li>
+    <li>XYZ College</li>
+  </ul>
+
+  <hr>
+
+  <h3>Certifications</h3>
+  <table cellspacing="5">
+    <tr>
+      <td><strong>10th January, 2022</strong></td>
+      <td>Web Development Course by ABC Institute</td>
+    </tr>
+    <tr>
+      <td><strong>16th February, 2022</strong></td>
+      <td>Python Programming Certification by XYZ Academy</td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <h3>Skills</h3>
+  <table cellspacing="10">
+    <tr>
+      <td>Web Development</td>
+      <td>⭐⭐⭐⭐</td>
+    </tr>
+    <tr>
+      <td>Python</td>
+      <td>⭐⭐⭐⭐</td>
+    </tr>
+    <tr>
+      <td>Data Science</td>
+      <td>⭐⭐⭐</td>
+    </tr>
+    <tr>
+      <td>Java</td>
+      <td>⭐⭐⭐</td>
+    </tr>
+    <tr>
+      <td>UI/UX Design</td>
+      <td>⭐⭐</td>
+    </tr>
+    <tr>
+      <td>Problem Solving</td>
+      <td>⭐⭐⭐⭐</td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <h3>Hobbies</h3>
+  <ol>
+    <li>Reading</li>
+    <li>Learning new technologies</li>
+    <li>Writing code</li>
+    <li>Playing chess</li>
+  </ol>
+
+  <hr size="3" noshade>
+
+  <p>
+    <strong>Connect with me:</strong>
+    <a href="https://www.instagram.com/johnsmith">Instagram</a>
+    <a href="https://twitter.com/johnsmith">Twitter</a>
+  </p>
+
+  <p>
+    <strong><a href="contacts.html">Contact Me!</a></strong>
+  </p>
+
+</body>
+
+</html>
