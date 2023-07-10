@@ -1,29 +1,53 @@
-/TASK1
+#TASK1
 #include<stdio.h>
-int main(){
-char FullName[30];
-printf("enter your name ");
-scanf("%s",&FullName);
-printf("Hello %s",FullName);
-return 0;
-}
-//TASK2
+#include<limits.h>
+int secSmallest(int n,int arr[]);
+{
+    int smallest=arr[0];
+    for(int i=0;i<n;i++){
+        if(arr[i]<smallest)
+        smallest=arr[i];
 
+    }
+    int sec_smallest=int_max;
+    for(int i=0;i<n;i++){
+                if(arr[i] != smallest && arr[i] < sec_smallest)
+            sec_smallest = arr[i];
+    }
+    return sec_smallest;
+}
+    int main(){
+        int arr[]={70,40,20,30,80,90};
+        int len=sizeof(arr)/sizeof(arr[0]);
+        printf("The 2nd smallest : %d",secSmallest(arr, len));
+    }
+}
+
+#TASK2
 #include<stdio.h>
 int main() {
-    int number1;
-    printf("enter your number1");
-    scanf("%d",&number1);
-    int number2;
-    printf("enter your number2");
-    scanf("%d",&number2);
-    int number3;
-    printf("enter you number3");
-    scanf("%d",&number3);
-    int add;
-    add=number1+number2+number3;
-    scanf("12%d",&add);
-    return 0;
+    int arr[]={2,3,4,5};
+    int temp=0;
+    int length= sizeof (arr)/sizeof(arr[0]);
+    printf("elements of original array");
+    for(int i=0;i<length;i++) {
+        printf("%d",arr[i]);
 
+    }
+    for(int i=0;i<length;i++){
+        for(int j=0;j<length;j++){
+            if(arr[i]>arr[j]){
+                temp=arr[i];
+                arr[i]=arr[j];
+                arr[j]=temp;
 
+            }
+        }
+    }
+    printf("\n");
+    printf("elements sorted in ascending array");
+    for(int i=0;i<length;i++) {
+        printf("%d",arr[i]);
+        return 0;
+    }
 }
