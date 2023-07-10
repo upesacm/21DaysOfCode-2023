@@ -4,21 +4,29 @@ using namespace std;
 
 int main()
 {
-    int n;
-    cout<<"How many numbers you would like to enter: ";
-    cin>>n;
+    int row , col;
+    cout<<"\nEnter numebr of row: ";
+    cin>>row;
+    cout<<"\nEnter number of columns: ";
+    cin>>col;
 
-    vector<int> array;
+    vector<vector<int>> array;
+
+    array.resize(row, vector<int>(col));
 
     int worker=0 , flag=0;
-    for(int i=0 ; i<n ; i++)
+    for(int i=0 ; i<row ; i++)
     {
-        cin>>worker;
-        array.push_back(worker);
-
-        if (array[i]%2==0 && array[i]>0)
+        cout<<"\nPlease enter row "<<(i+1)<<": ";
+        for(int j=0 ; j<col ; j++)
         {
-            flag++;
+            cin>>worker;
+            array[i][j]=worker;
+
+            if (array[i][j]%2==0 && array[i][j]>0)
+            {
+                flag++;
+            }
         }
     }
 
