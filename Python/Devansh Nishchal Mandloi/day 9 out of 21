@@ -1,0 +1,37 @@
+#Que1}
+def count_word_frequency(s):
+    words=s.split()
+    word_frequency={}
+
+    for word in words:
+        if word in word_frequency:
+            word_frequency[word]+=1
+        else:
+            word_frequency[word]=1
+
+    return word_frequency
+
+s=input('Please enter a string:')
+freq_dict=count_word_frequency(s)
+print("Word frequencies:")
+for word, frequency in freq_dict.items():
+    print(f"{word}:{frequency}")
+
+
+#Que2}
+def check_pangram(sentence):
+    for letter in alphabets:
+        if letter in sentence:
+           continue
+        else:
+            return False
+
+sentence=input("Enter a string:")
+alphabets='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+if check_pangram(sentence)==False:
+    print("The sentence you entered is not a Pangram.")
+else:
+    print('The sentence you entered is pangram i.e it contains all the letters of the alphabets.')
+
+
+
