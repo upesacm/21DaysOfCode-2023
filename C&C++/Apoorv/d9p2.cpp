@@ -3,6 +3,18 @@
 
 using namespace std;
 
+// Approch used 
+// I will use vector hence it will will be easier to insert and erase any element in between the array without worrying the size of array
+// step 1: find the first negative number
+// step 2: find the find the index available for negative number to insert
+// step 3: insert in that index position and pop out from previous position
+// step 4: repeat step 1,2,3 till all numbers are arranged
+
+// Advantage of using this approch
+// 1: no need to worry about array size , allocaion and de-allocaion because vector will handle it
+// 2: we only need to focus on negative numbers in this approch and positive numbers will will be untouched .
+// Hence, preserving the relative order of both the positive and negative numbers
+
 
 int correctOrder(vector<int>& list , int size)
 {
@@ -42,7 +54,7 @@ int main()
     vector<int> array;
     int work=0;
 
-    for(int i=0 ; i<n ; i++)
+    for(int i=0 ; i<n ; i++)    // Insert
     {
         cin>>work;
         array.push_back(work);
@@ -50,9 +62,9 @@ int main()
 
     int size=n;
 
-    correctOrder(array, size);
+    correctOrder(array, size);    // Function to sort
 
-    for(int i=0 ; i<n ; i++)
+    for(int i=0 ; i<n ; i++)    // display
     {
         cout<<array[i]<<" ";
     }
