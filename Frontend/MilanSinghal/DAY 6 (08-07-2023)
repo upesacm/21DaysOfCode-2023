@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 6 of 21 DOC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Tourist spots in Rajasthan</h1>
+    <div class="r1">
+        <img src="c.webp">
+    </div>
+    <div class="img2">
+        <img src="c.webp">
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CSS FILE
+*{
+    background-color: azure;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+    font-style: oblique;
+    text-shadow: 2px 2px grey;
+    font-size: xx-large;
+}
+
+.r1{
+    width: 300px;
+    height: 300px;
+    background-color: aquamarine;
+    background-image: url(c.webp);
+    align-items: center;
+    border-radius: 25px;
+    box-shadow: 7px 7px gray;
+}

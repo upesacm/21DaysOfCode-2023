@@ -1,0 +1,25 @@
+n=int(input("Enter n number elements in list "))
+list1=[]
+list2=[]
+for i in range(0,n):
+    val=int(input("Enter list1 array "))
+    list1.append(val)
+   
+for i in range(0,n):
+    val=str(input("Enter list2 array "))
+    list2.append(val)
+    
+for i in range(0,len(list1)):
+    for j in range(0,len(list1)):
+        if list1[i]<list1[j]:
+            temp=list1[j];
+            list1[j]=list1[i];
+            list1[i]=temp;
+            
+for i in range(0,len(list1)-1):
+    if list1[i]!=list1[i+1]:
+        print("Second smallest elenemt in list1",list1[i+1])
+        print("descriptive Message")
+        print("Index in list1:",i+1 )
+        print("list2 at index",i+1,"information","\"",list2[i+1],"\"")
+        break

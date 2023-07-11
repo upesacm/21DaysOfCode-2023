@@ -1,0 +1,18 @@
+Q1. 
+list = []
+num = int(input("Enter number of elements in list: "))
+for i in range(1, num + 1):
+	ele = int(input("Enter elements: "))
+	list.append(ele)
+print("Largest element is:", max(list))
+Q2. 
+def secsmall(list):
+    list.sort()
+    return list[1]
+list=[]
+n=int(input("Enter number of integers\n"))
+for i in range (n):
+    p=int(input("Enter number\n"))
+    list.append(p)    
+a=secsmall(L)
+print(a)

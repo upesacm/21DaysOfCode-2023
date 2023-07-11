@@ -1,0 +1,55 @@
+#include<iostream>
+#include<vector>
+#include<algorithm>
+using namespace std;
+
+void fun(int array[],int n)
+{
+
+	// insertion sort
+	for(int i=0;i<n;i++)
+	{
+		for(int j=i+1;j<n;j++)
+		{
+			if(array[i]>array[j])
+			{
+				swap(array[i],array[j]);
+			}
+		}
+	}
+
+    //bubble sort
+    int b=n;
+    int i=0;
+    while(b>0)
+    {
+    	for(int j=i+1;j<n;j++)
+    	{
+    		if(array[i]>array[j])
+    		{
+    			swap(array[i],array[j]);
+			}
+		}
+		i++;
+    	b--;
+	}
+	
+	cout<<"Sorted array ";
+	for(int i=0;i<n;i++)
+	{
+		cout<<array[i]<<" ";
+	}
+}
+
+int main()
+{
+    int n,array[100],i;
+    cout<<"Enter n number of array ";
+    cin>>n;
+    for(int i=0;i<n;i++)
+    {
+    	cout<<"Enter array "<<i+1<<" ";
+    	cin>>array[i];
+	}
+	fun(array,n);
+}

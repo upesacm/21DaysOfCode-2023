@@ -1,0 +1,43 @@
+#1. Write a function that accepts a list of integers and returns the largest number from the list.
+
+def find_largest_number(numbers):
+    if not numbers:  # Check if the list is empty
+        return None
+    
+    largest = numbers[0]  # Assume the first number is the largest
+    
+    for num in numbers:
+        if num > largest:
+            largest = num
+    
+    return largest
+
+my_numbers = [5, 10, 3, 8, 2]
+largest_number = find_largest_number(my_numbers)
+print(largest_number)
+
+
+
+#2. Write a Python program that finds the second smallest element in a given list and displays it with a descriptive message.
+
+def find_second_smallest(numbers):
+    if len(numbers) < 2:  # Check if the list has at least two elements
+        return None
+    
+    smallest = min(numbers)  # Find the smallest element
+    
+    second_smallest = float('inf')  # Set an initial value as infinity
+    
+    for num in numbers:
+        if num > smallest and num < second_smallest:
+            second_smallest = num
+    
+    return second_smallest
+
+my_numbers = [5, 10, 3, 8, 2]
+second_smallest = find_second_smallest(my_numbers)
+
+if second_smallest is None:
+    print("The list does not have a second smallest element.")
+else:
+    print("The second smallest element in the list is:", second_smallest)
