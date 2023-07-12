@@ -1,0 +1,19 @@
+Q1. 
+sen=input("Enter string:")
+list=[]
+list=sen.split()
+words=[list.count(p) for p in list]
+print(dict(zip(list,words)))
+Q2. 
+def pan(str):
+	alphabet = "abcdefghijklmnopqrstuvwxyz"
+	for char in alphabet:
+		if char not in str.lower():
+			return False
+		else:
+		    return True
+string = input("Enter a string:")
+if(pan(string) == True):
+	print("Yes")
+else:
+	print("No")
