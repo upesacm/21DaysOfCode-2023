@@ -1,0 +1,65 @@
+                                                        QUE 1
+#include<stdio.h>
+int func(int n,int arr[])
+{
+    int avg;
+    int sum=0;
+    for(int i=0;i<n;i++)
+    {
+        sum=sum+arr[i];
+    }
+    avg=sum/n;
+    return avg;
+}
+int main()
+{
+    int avg,n;
+    printf("enter the size\n");
+    scanf("%d",&n);
+    int arr[n];
+    printf("enter the elelments of array\n");
+    for(int i=0;i<n;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    avg=func(n,arr);
+    printf("average of the array elements is %d",avg);
+    return 0;
+}
+
+                                                    QUE 2
+#include<stdio.h>
+void order(int n,int arr[])
+{
+    for(int i=0;i<n;i++)
+    {
+        for(int j=i+1;j<n;j++)
+        {
+            if(arr[j]<arr[i])
+            {
+                int temp=arr[i];
+                arr[i]=arr[j];
+                arr[j]=temp;
+            }
+        }
+    }
+    printf("rearranged array is\n");
+    for(int i=0;i<n;i++)
+    {
+        printf("  %d",arr[i]);
+    }
+}
+int main()
+{
+    int n;
+    printf("enter the value of n");
+    scanf("%d",&n);
+    int arr[n];
+    printf("enter the elemnets of array\n ");
+    for(int i=0;i<n;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    order(n,arr);
+    return 0;
+}
