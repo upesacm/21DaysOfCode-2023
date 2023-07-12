@@ -1,0 +1,26 @@
+1. Write a Python program that counts the frequency of each word in a given sentence and stores the result in a dictionary. Display the dictionary with word frequencies.
+def count_words(sentence):
+    words = sentence.split()
+    freq_dict = {}
+    for word in words:
+        if word in freq_dict:
+            freq_dict[word] += 1
+        else:
+            freq_dict[word] = 1
+    return freq_dict
+
+sentence = "the quick brown fox jumps over the lazy dog"
+print(count_words(sentence))
+
+2. Write a Python program that checks if a given sentence is a pangram (contains every letter of the alphabet). Display an appropriate message.
+import string
+
+def is_pangram(sentence):
+    alphabet = set(string.ascii_lowercase)
+    return set(sentence.lower()) >= alphabet
+
+sentence = "The quick brown fox jumps over the lazy dog"
+if is_pangram(sentence):
+    print("The sentence is a pangram.")
+else:
+    print("The sentence is not a pangram.")

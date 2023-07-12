@@ -1,0 +1,47 @@
+#Que1}
+n=int(input("Enter the number of students:"))
+
+student_dict={}
+for i in range(n):
+    name=input("Enter your name:")
+    marks=int(input("Enter your marks:"))
+    student_dict.update({name:marks})
+print('The follow are the names of the students with their corresponding marks')
+print(student_dict)
+print('Required format for output is:')
+li=[]
+lj=[]
+for i in student_dict.keys():
+    li.append(i)
+for j in student_dict.values():
+    lj.append(j)
+
+r=0
+while(r<len(li)):
+    print(li[r], ":", lj[r])
+    r+=1
+
+
+#Que2}
+def calculate_avg_grades(students):
+    for student in students:
+        name = student[0]
+        grades = student[1:]
+        average_grade = sum(grades) / len(grades)
+        print(f"{name}: {average_grade:.2f}")
+
+
+n= int(input("Enter the number of students:"))
+students = []
+for _ in range(n):
+    name = input("Enter student's name: ")
+    grade1 = float(input("Enter grade 1: "))
+    grade2 = float(input("Enter grade 2: "))
+    grade3 = float(input("Enter grade 3: "))
+    student = (name, grade1, grade2, grade3)
+    students.append(student)
+
+calculate_avg_grades(students)
+
+
+
