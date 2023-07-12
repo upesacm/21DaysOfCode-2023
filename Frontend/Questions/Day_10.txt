@@ -1,0 +1,9 @@
+Questions for Day - 10 (12-07-2023)
+
+Typography properties and styles
+
+1. Create a new HTML file.
+2. Design a webpage with a heading element that displays the text "Welcome to my website".
+3. Apply CSS styles to change the font family of the heading to "Arial, sans-serif".
+4. Apply CSS styles to change the text color of the heading to red.
+5. Apply CSS styles to add an underline to the heading text.
