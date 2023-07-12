@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Project</title>
+<style>
+.myDiv {width: 500 px; height: 300 px; padding: 20 px; border: 2 px outset red; margin: 10 px; background-color: aqua; text-align: center;}
+</style>
+</head>
+<body>
+<h1>Indian Culture</h1>
+<div class="myDiv">
+<h2>The culture of India is one of the most seasoned and particular.</h2>
+In India, there's sublime social decent variety all through the nation.
+</div>
+The <i>South, North, and Northeast</i> have their own unmistakable societies and almost every state has craven out its social speciality.
+</body>
+</html>
