@@ -1,0 +1,15 @@
+string=str(input("Enter string "))
+list1=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','x','y','z']
+flag=0
+for i in range(0,len(list1)):
+    flag=0
+    for j in range(0,len(string)):
+        if list1[i]==string[j]:
+            flag=1
+            
+    if flag==0:
+        print("String is not pangram")
+        break
+
+if flag==1:
+    print("String is pangram")        
