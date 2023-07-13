@@ -60,6 +60,7 @@ int main()
     cout<<"\nEnter the year: ";
     cin>>first.year;
 
+    
     cout<<"\n\nLets enter Second date details: ";
     cout<<"\nEnter the date: ";
     cin>>second.day;
@@ -71,7 +72,6 @@ int main()
     compare_dates(first , second);
 
     return 0;
-    
 
 }
 
