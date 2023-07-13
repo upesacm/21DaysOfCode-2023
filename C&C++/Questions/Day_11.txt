@@ -1,0 +1,5 @@
+Questions for Day - 11 (13-07-2023)
+
+1. Define a structure called "Book" with members for title, author, and publication year. Write a function to display the details of a book using this structure.
+
+2. Define a structure called "Date" with members for day, month, and year. Write a function to compare two dates and determine which one is earlier. 
