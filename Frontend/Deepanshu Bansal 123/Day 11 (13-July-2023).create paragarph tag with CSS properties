@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>Paraghaph Element</title>
+  </head>
+  <style>
+    .highlight{
+      font-weight: bold;
+      text-align: center;
+      margin-top: 200px;
+      background-color: yellow;
+      margin-left: 445px;
+      margin-right: 445px;
+      padding: 10px;
+      border-radius: 10px;
+      color: blue;
+    }
+  </style>
+  <body>
+  <p class="highlight">Welcome, In Paragraph Element Web Page with class="highlight" to apply CSS properties </p>
+  </body>
+</html>
