@@ -1,0 +1,52 @@
+TASK1
+#include<stdio.h>
+struct Book {
+    char author[100];
+    char title[100];
+    int publicationyear;
+
+};
+void displaybook(struct Book book)
+{
+    printf("title:%s",book.title);
+    printf("author:%s",book.author);
+    printf("publication:%d",book.publicationyear);
+
+
+
+    
+};
+int main() {
+    struct Book mybook;
+    strcpy(mybook.title,"THE SEX LIFE");
+    strcpy(mybook.author,"JONNY SINS");
+    mybook.publicationyear=1969;
+    displaybook(mybook);
+    return 0;
+
+
+}
+#TASK2
+#include<stdio.h>
+struct date {
+    int date1;
+    int month;
+    int year;
+
+};
+void displaydate(struct date Date){
+    printf("date1:%s",Date.date1);
+    printf("month :%s",Date.month);
+    printf("year:%s",Date.year);
+
+};
+int main() {
+        struct date Date;
+    strcpy(Date.date1,"6");
+    strcpy(Date.month,"9");
+    Date.year=1969;
+    displaybook(Date);
+    return 0;
+
+
+}
