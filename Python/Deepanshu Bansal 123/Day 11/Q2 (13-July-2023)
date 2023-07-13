@@ -1,0 +1,37 @@
+n=int(input("Enter n number of array "))
+list1=[]
+list2=[]
+list3=[]
+list4=[]
+list5=[]
+for i in range(0,1):
+    num=str(input("Enter array "))
+    list1.append(num)
+    num=str(input("Enter array "))
+    list2.append(num)
+    num=str(input("Enter array "))
+    list3.append(num)
+    num=str(input("Enter array "))
+    list4.append(num)
+    num=str(input("Enter array "))
+    list5.append(num)
+    
+sum1=0    
+for i in range(0,n):
+    sum1=0
+    num=str(input("Enter array "))
+    list1.append(num)
+    num=int(input("Enter array "))
+    sum1=sum1+num
+    list2.append(num)
+    num1=int(input("Enter array "))
+    sum1=sum1+num1
+    list3.append(num1)
+    num2=int(input("Enter array "))
+    sum1=sum1+num2
+    list4.append(num2)
+    val=sum1/3
+    list5.append(round(val,2))
+    
+for i in range(0,n+1):
+    print(list1[i]," ",list2[i]," ",list3[i]," ",list4[i]," ",list5[i])
