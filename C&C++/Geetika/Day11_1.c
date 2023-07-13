@@ -1,3 +1,5 @@
+//1. Define a structure called "Book" with members for title, author, and publication year. Write a function to display the details of a book using this structure. 
+
 #include <stdio.h>
 
 struct Book {
