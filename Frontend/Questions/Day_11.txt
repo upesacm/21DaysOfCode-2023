@@ -1,0 +1,7 @@
+Question for Day - 11 (13-07-2023)
+
+1. Create a new HTML file.
+2. Design a webpage with a paragraph element that has the class "highlight".
+3. Apply CSS styles to change the font weight of the paragraph with the class "highlight" to bold.
+4. Apply CSS styles to change the background color of the paragraph with the class "highlight" to yellow.
+5. Apply CSS styles to change the text color of the paragraph with the class "highlight" to blue.
