@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Project</title>
+<style>
+h1 {font-family: Arial, sans-serif; color: red; background-color: yellow; text-align:center; text-decoration: underline}
+</style>
+</head>
+<body>
+<h1>Welcome to my Website</h1>
+</body>
+</html>
