@@ -1,0 +1,44 @@
+#TASK1
+#include<stdio.h>
+void printFab(int n){
+    static int n1=0,n2=1,n3;
+    if(n>0){
+        n3=n2+n1;
+        n1=n2;
+        n2=n3;
+        printf("%d",&n3);
+        printFab(n-1);
+
+    }
+}
+int main() {
+    int n;
+    printf("Enter the number of elements");
+    scanf("%d",&n);
+    printf("Fabbionaci Series");
+    scanf("%d %d",&0,1);
+    printFab(n-2);
+    return 0;
+}
+#TASK2
+#include<stdio.h>
+int arraysorted(int arr[],int n){
+    if(n==1||n==0)
+    return 1;
+    if(arr[n-1]<arr[n-2])
+    return 0;
+    return arraysorted(arr,n-1)
+
+}
+int main() {
+    int arr[]={1,2,3,4,5};
+    int n=sizeof(arr)/sizeof(arr[0]);
+    if(arraysorted(arr,n)){
+        printf("YES");
+
+    }
+    else{
+        printf("NO");
+        
+    }
+}
