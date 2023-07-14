@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Typography Properties and Styles</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            font-family: Arial, sans-serif;
+            color: red;
+            text-decoration: underline;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        p {
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            margin-top: 20px;
+        }
+
+        .container {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 30px;
+        }
+
+        .box {
+            background-color: #fff;
+            border: 2px solid #333;
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+
+        .box .title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .box .content {
+            color: #666;
+        }
+
+        .box .content a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .box .content a:hover {
+            text-decoration: underline;
+        }
+
+        .box .content p:last-child {
+            margin-bottom: 0;
+        }
+
+        .box .content ul {
+            padding-left: 20px;
+            list-style-type: square;
+        }
+
+        .box .content li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to my website</h1>
+
+    <p>This is an example webpage showcasing typography properties and styles. Here, you will find various elements
+        styled
+        with different CSS properties to create an appealing and well-structured design.</p>
+
+    <div class="container">
+        <div class="box">
+            <h2 class="title">About Me</h2>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et consequat mi. Sed non massa ut nunc
+                    interdum
+                    tincidunt. Pellentesque quis orci consequat, rhoncus dui eu, pharetra nulla. Donec convallis nisi
+                    sit amet
+                    malesuada pellentesque.</p>
+                <p>Visit my <a href="https://www.example.com">website</a> for more information.</p>
+                <ul>
+                    <li>Experience: 5 years</li>
+                    <li>Location: City, Country</li>
+                    <li>Skills: HTML, CSS, JavaScript</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="box">
+            <h2 class="title">Contact Information</h2>
+            <div class="content">
+                <p>Email: example@example.com</p>
+                <p>Phone: +123456789</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
