@@ -1,0 +1,5 @@
+Questions for Day - 12 (14-07-2023)
+
+1. Write a Python program that handles a division by zero error using a try-except block. Display a user-friendly error message.
+
+2. Write a Python program that prompts the user to enter a filename and tries to open the file. Handle the FileNotFoundError exception and display an appropriate message.
