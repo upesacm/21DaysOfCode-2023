@@ -1,0 +1,79 @@
+                                                    QUE 1
+#include<stdio.h>
+#include<strings.h>
+struct book
+{
+    char title[50];
+    char author[50];
+    int pub_year;
+}b1;
+void display(struct book b1)
+{
+    printf("TITLE:%s\n",b1.title);
+    printf("AUTHOR:%s\n",b1.author);
+    printf("PUBLICATION YEAR:%d",b1.pub_year);
+}
+int main()
+{
+    printf("enter the name of book,it's author name and it's publication year\n");
+    fgets(b1.title,50,stdin);
+    fgets(b1.author,50,stdin);
+    scanf("%d",&b1.pub_year);
+    display(b1);
+    return 0;
+}
+
+                                                           QUE 2
+#include<stdio.h>
+struct date
+{
+    int day;
+    int month;
+    int year;
+}d1,d2;
+void compare(struct date d1,struct date d2)
+{
+    if(d1.year<d2.year)
+    {
+        printf("first date is earlier");
+    }
+    else if(d1.year>d2.year)
+    {
+        printf("second date is earlier");
+    }
+    else
+    {
+        if(d1.month<d2.month)
+        {
+            printf("first date is earlier");
+        }
+        else if(d1.month>d2.month)
+        {
+            printf("second date is erlier");
+        }
+        else
+        {
+            if(d1.day<d2.day)
+            {
+                printf("first date is earlier");
+            }
+            else if(d1.day>d2.day)
+            {
+                printf("second date is erlier");
+            }
+            else
+            {
+                printf("both dates are same");
+            }
+        }
+    }
+}
+int main()
+{
+    printf("enter the first date\n");
+    scanf("%d/%d/%d",&d1.day,&d1.month,&d1.year);
+    printf("enter the second date\n");
+    scanf("%d/%d/%d",&d2.day,&d2.month,&d2.year);
+    compare(d1,d2);
+    return 0;
+}

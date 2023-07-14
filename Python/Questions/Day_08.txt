@@ -1,0 +1,16 @@
+Questions for Day - 08 (10-07-2023)
+
+1. Write a Python program that takes a list of tuples containing student names and their corresponding marks. Unpack the tuples and display each student's name with their marks.
+Example - 
+Input: students = [('Alice', 80), ('Bob', 90), ('Charlie', 75)]
+Output: Alice: 80
+Bob: 90
+Charlie: 75.
+
+2. Write a Python program that takes a list of tuples, where each tuple represents a student's name and their corresponding grades in three subjects. The program should calculate and print the average grade for each student. The average grade should be rounded to two decimal places.
+Example -
+Input: [('Alice', 80, 90, 75), ('Bob', 85, 95, 92), ('Charlie', 78, 85, 80)]
+Output:
+Alice: 81.67
+Bob: 90.67
+Charlie: 81.00

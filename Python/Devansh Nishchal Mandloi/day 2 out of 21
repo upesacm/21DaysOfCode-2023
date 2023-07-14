@@ -1,0 +1,15 @@
+#Que1}
+n=int(input('Please enter a number:'))
+even=0
+odd=0
+
+if(n%2==0):
+    print('The number you entered is even')
+else:
+    print('The number you entered is odd')
+
+#Que2}
+s=input("Please enter a sentence:")
+words=s.split(" ")
+count=len(words)
+print(f"The number of words in the sentence are {count}")

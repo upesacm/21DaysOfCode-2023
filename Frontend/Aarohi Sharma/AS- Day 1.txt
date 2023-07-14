@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Project</title>
+</head>
+<body>
+<h1>Indian Culture</h1>
+<img src="C:\Users\Aarohi\Desktop\indian-culture.jpg">
+<br>
+<br>
+The culture of India is one of the most seasoned and particular. In India, there's sublime social decent variety all through the nation.
+<br>
+The <i>South, North, and Northeast</i> have their own unmistakable societies and almost every state has craven out its social speciality.
+<br>
+Celebrations in India are distinguished by <b>their shading, bliss, energy, supplications, and functions</b>. The old-style custom of music in India incorporates <b>Carnatic and Hindustani music</b>.
+<br>
+<h2>Here are 16 fascinating Indian Culture, Traditions and customs:</h2>
+<ul type="circle">
+<li>Greetings</li>
+<li>Religious Customs</li>
+<li>Festivals of India</li>
+<li>Family Structure & Marriage</li>
+<li>Symbols</li> 
+<li>Cuisine & Food</li> 
+<li>Traditional Clothing</li> 
+<li>Dances of India</li>
+<li>Epics & Mythology</li>
+<li>Martial Arts</li> 
+<li>Languages</li>
+</ul>
+</body>
+</html>

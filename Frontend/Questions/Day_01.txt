@@ -1,0 +1,9 @@
+Question for Day - 01 (03-07-2023)
+
+Building a Basic Webpage:
+
+1. Create a new HTML file.
+2. Build a basic webpage with a heading, paragraph, and an image.
+3. Use appropriate HTML tags and attributes to structure the content.
+4. Add meaningful text and a relevant image to your webpage.
+5. Save the file and open it in a web browser to view your webpage.

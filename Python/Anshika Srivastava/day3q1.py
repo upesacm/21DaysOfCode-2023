@@ -1,0 +1,5 @@
+a=int(input("Enter first number\n"))
+b=int(input("Enter second number\n"))
+c=int(input("Enter third number\n"))
+max= a if (a > b and a > c) else (b if b> c else c)
+print("Greatest of the three numbers is ",max)
