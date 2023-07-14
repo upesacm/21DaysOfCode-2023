@@ -1,0 +1,6 @@
+Questions for Day - 12 (14-07-2023)
+
+1. Write a program that sorts an array of integers in ascending order using the bubble sort algorithm.
+
+2. Create an enumeration called "Colors" with constants representing different colors (Red, Green, Blue, etc.). 
+Write a program that asks the user to enter their favorite color and displays a message based on their choice.

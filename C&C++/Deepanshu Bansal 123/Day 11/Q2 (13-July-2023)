@@ -1,0 +1,60 @@
+#include<iostream>
+using namespace std;
+struct Date{
+    int Day[100];
+	int Month[100];
+	int Year[100];
+}compare;
+
+
+void fun(int Day[],int Month[],int Year[])
+{
+	if(compare.Month[1]<compare.Month[2] || compare.Year[1]<compare.Year[2])
+	{
+		cout<<"Earlier ";
+		cout<<compare.Day[1]<<"-"<<compare.Month[1]<<"-"<<compare.Year[1];
+		exit(0);
+	}
+	
+	if(compare.Month[1]>compare.Month[2] || compare.Year[1]>compare.Year[2])
+	{
+		cout<<"Earlier ";
+		cout<<compare.Day[2]<<"-"<<compare.Month[2]<<"-"<<compare.Year[2];
+		exit(0);
+	}
+	if(compare.Day[1]<compare.Day[2])
+	{
+		cout<<"Earlier ";
+		cout<<compare.Day[1]<<"-"<<compare.Month[1]<<"-"<<compare.Year[1];
+		exit(0);
+	}
+	if(compare.Day[1]>compare.Day[2])
+	{
+		cout<<"Earlier ";
+		cout<<compare.Day[2]<<"-"<<compare.Month[2]<<"-"<<compare.Year[2];
+		exit(0);
+	}
+	if(compare.Day[1]==compare.Day[2])
+	{
+		cout<<"Both Dates Same";
+	}
+}
+
+int main()
+{
+	cout<<"Enter Day 1 ";
+	cin>>compare.Day[1];
+	cout<<"Enter Month 1 ";
+	cin>>compare.Month[1];
+	cout<<"Enter Year 1 ";
+	cin>>compare.Year[1];
+    
+    cout<<"Enter Day 2 ";
+	cin>>compare.Day[2];
+	cout<<"Enter Month 2 ";
+	cin>>compare.Month[2];
+	cout<<"Enter Year 2 ";
+	cin>>compare.Year[2];
+	
+	fun(compare.Day,compare.Month,compare.Year);
+}
