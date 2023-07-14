@@ -1,0 +1,49 @@
+#include<stdio.h>
+#include<stdlib.h>
+int a[100][100],b[100][100],c[100][100];
+
+void fun(int n)
+{
+	int sum=0;
+	for(int i=0;i<n;i++)
+	{
+		sum=0;
+		for(int j=0;j<n;j++)
+		{
+			sum=0;
+			for(int k=0;k<n;k++)
+			{
+				sum=sum+a[i][k]*b[k][j];
+		    }
+		    c[i][j]=sum;
+		}
+	}
+	printf("Multiply of matrix a[][], b[][] \n");
+	for(int i=0;i<n;i++)
+	{
+		for(int j=0;j<n;j++)
+		{
+			printf("%d ",c[i][j]);
+		}
+		printf("\n");
+	}
+}
+
+int main()
+{
+	int *p,n;
+	printf("Enter n for n*n array ");
+	scanf("%d",&n);
+	p=(int*)malloc(n*sizeof(int));
+	for(int i=0;i<n;i++)
+	{
+		for(int j=0;j<n;j++)
+		{
+			printf("Enter array %d",i);
+			scanf("%d",&a[i][j]);
+			b[i][j]=a[i][j];
+		}
+	}
+	fun(n);
+	return 0;
+}
