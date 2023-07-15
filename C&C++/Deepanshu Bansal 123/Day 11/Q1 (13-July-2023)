@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+struct Book{
+	string TiTle;
+	string Author;
+	int PubYear;
+}book;
+
+
+void fun(string TiTle,string Author,int PubYear)
+{
+	cout<<"TiTle: "<<book.TiTle<<"\n";
+	cout<<"Author: "<<book.Author<<"\n";
+	cout<<"PubYear: "<<book.PubYear;
+}
+
+int main()
+{
+	cout<<"Enter TiTle ";
+	getline(cin,book.TiTle);
+	cout<<"Enter Author ";
+	getline(cin,book.Author);
+	cout<<"Enter PubYear ";
+	cin>>book.PubYear;
+	
+	fun(book.TiTle,book.Author,book.PubYear);
+}

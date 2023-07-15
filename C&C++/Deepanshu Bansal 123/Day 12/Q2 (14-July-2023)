@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+enum Colors{
+	Red=1,
+	Green=2,
+	Blue=3,
+	yellow=4
+};
+
+int main()
+{
+	int str=Red;
+	if(str==1)
+	{
+		cout<<"Your favourite color is red";
+	}
+	if(str==2)
+	{
+		cout<<"Your favourite color is green";
+	}
+	if(str==3)
+	{
+		cout<<"Your favourite color is blue";
+	}
+	if(str==4)
+	{
+		cout<<"Your favourite color is yellow";
+	}
+}

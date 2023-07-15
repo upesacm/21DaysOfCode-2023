@@ -1,0 +1,13 @@
+1. Write a Python function called "calculate_discount" that takes an item's price and a discount percentage as input. Calculate the final price after the discount and return it.
+def calculate_discount(price: float, discount_percentage: float) -> float:
+    return price - (price * discount_percentage / 100)
+
+2. Write a Python program that defines a function is_palindrome(word) which takes a string as input and checks if it is a palindrome. A palindrome is a word that reads the same forwards and backward. The function should return True if the word is a palindrome and False otherwise. The program should prompt the user to enter a word and display whether it is a palindrome or not.
+def is_palindrome(word: str) -> bool:
+    return word == word[::-1]
+
+word = input("Enter a word: ")
+if is_palindrome(word):
+    print(f"{word} is a palindrome.")
+else:
+    print(f"{word} is not a palindrome.")

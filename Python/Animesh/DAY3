@@ -1,0 +1,16 @@
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+num3 = float(input("Enter the third number: "))
+
+max_number = max(num1, num2, num3)
+
+print("The maximum number is:", max_number)
+total = 0
+
+while True:
+    num = int(input("Enter an integer (enter a negative number to exit): "))
+    if num < 0:
+        break
+    total += num
+
+print("The sum of the positive integers entered is:", total)

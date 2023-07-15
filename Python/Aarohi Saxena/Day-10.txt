@@ -1,0 +1,18 @@
+#Answer-1
+def calculate_discount(price, discount_percentage):
+    discount = price * (discount_percentage / 100)
+    final_price = price - discount
+    return final_price
+
+#Answer-2
+def is_palindrome(word):
+    word = word.lower()
+    if word == word[::-1]:
+        return True
+    else:
+        return False
+word = input("Enter a word: ")
+if is_palindrome(word):
+    print(f"{word} is a palindrome.")
+else:
+    print(f"{word} is not a palindrome.")

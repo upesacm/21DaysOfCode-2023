@@ -1,0 +1,23 @@
+n=int(input("Enter n number of array "))
+list1=[]
+evennum=[]
+oddnum=[]
+for i in range(0,n):
+    num=int(input("Enter array "))
+    list1.append(num)
+    
+for i in range(0,n):
+    if list1[i]%2==0:
+        evennum.append(list1[i])
+    else:
+        oddnum.append(list1[i])
+        
+string=str(input("Enter string as filename "))
+if string=='evennum':
+    print("Even num file")
+    for i in range(0,len(evennum)):
+        print(evennum[i])
+else:
+    print("Odd num file")
+    for i in range(0,len(oddnum)):
+        print(oddnum[i])

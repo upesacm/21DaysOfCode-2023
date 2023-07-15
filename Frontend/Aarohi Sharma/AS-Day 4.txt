@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Project</title>
+<style>
+table,
+th,
+td{
+border: 1px solid black;
+}
+</style>
+</head>
+<body>
+<table style="width:100%">
+<tr>
+<th>Firstname</th>
+<th>Lastname</th>
+<th>Class</th>
+</tr>
+<tr>
+<td>Priya</td>
+<td>Sharma</td>
+<td>5th</td>
+</tr>
+<tr>
+<td>Arun</td>
+<td>Singh</td>
+<td>2nd</td>
+</tr>
+<tr>
+<td>Sam</td>
+<td>Watson</td>
+<td>1st</td>
+</tr>
+</table>
+</body>
+</html>
