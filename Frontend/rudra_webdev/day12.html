@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flexbox Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f1f1f1;
+        }
+
+        .container {
+            display: flex;
+            background-color: #ffffff;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        .child {
+            flex: 1;
+            margin-right: 10px;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border: 1px solid #e1e1e1;
+            border-radius: 3px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .child:last-child {
+            margin-right: 0;
+        }
+
+        h1 {
+            color: #333333;
+            margin-top: 0;
+        }
+
+        p {
+            color: #666666;
+            margin-bottom: 10px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #337ab7;
+            color: #ffffff;
+            border-radius: 3px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #23527c;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Flexbox Layout Example</h1>
+    <p>This is a flexbox layout with a container div and three child divs.</p>
+    <div class="container">
+        <div class="child">
+            <h2>Child 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed fringilla turpis.</p>
+            <a href="#" class="button">Read More</a>
+        </div>
+        <div class="child">
+            <h2>Child 2</h2>
+            <p>Sed aliquam nisi eget nunc varius rhoncus. Fusce sodales nunc in lacus feugiat, ac fringilla nisi hendrerit.</p>
+            <a href="#" class="button">Read More</a>
+        </div>
+        <div class="child">
+            <h2>Child 3</h2>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+            <a href="#" class="button">Read More</a>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Your Website. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
+
