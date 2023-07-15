@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Project</title>
+<style>
+.container {display: flex;}
+.container > div {flex: 1; margin-right: 10px; background-color: yellow; padding: 20px; box-sizing: border-box; text-color: red}
+</style>
+</head>
+<body>
+<div class="container">
+<div>Child 1</div>
+<div>Child 2</div>
+<div>Child 3</div>
+</div>
+</body>
+</html>
