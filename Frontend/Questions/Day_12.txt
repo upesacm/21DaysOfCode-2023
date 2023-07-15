@@ -1,0 +1,9 @@
+Question for Day - 12 (14-07-2023)
+
+Flexbox layout
+
+1. Create a new HTML file.
+2. Design a webpage with a container div and three child div elements inside it.
+3. Apply CSS styles to the container div to create a flexbox layout with the child divs displayed in a row.
+4. Apply CSS styles to the child divs to make them take up an equal amount of space within the container.
+5. Apply CSS styles to add a 10-pixel gap between the child divs.
