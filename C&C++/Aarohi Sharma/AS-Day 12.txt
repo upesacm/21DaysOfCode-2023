@@ -1,0 +1,66 @@
+Q1.
+#include <stdio.h>
+void bubbleSort(int array[], int size) {
+  for (int step = 0; step < size - 1; ++step) {
+    for (int i = 0; i < size - step - 1; ++i) {
+      if (array[i] > array[i + 1]) {
+        int temp = array[i];
+        array[i] = array[i + 1];
+        array[i + 1] = temp;
+      }
+    }
+  }
+}
+void printArray(int array[], int size) {
+  for (int i = 0; i < size; ++i) {
+    printf("%d  ", array[i]);
+  }
+  printf("\n");
+}
+int main() {
+  int data[] = {-2, 45, 0, 11, -9};
+  int size = sizeof(data) / sizeof(data[0]);
+  bubbleSort(data, size); 
+  printf("Sorted Array in Ascending Order:\n");
+  printArray(data, size);
+}
+Q2. 
+#include <stdio.h>
+enum Colors {
+    Red,
+    Green,
+    Blue,
+    Yellow,
+    Purple
+};
+int main() {
+    int favoriteColor;
+    printf("Enter your favorite color:\n");
+    printf("0 - Red\n");
+    printf("1 - Green\n");
+    printf("2 - Blue\n");
+    printf("3 - Yellow\n");
+    printf("4 - Purple\n");
+    scanf("%d", &favoriteColor);
+    switch (favoriteColor) {
+        case Red:
+            printf("Red is a bright color!\n");
+            break;
+        case Green:
+            printf("Green is a cool color!\n");
+            break;
+        case Blue:
+            printf("Blue is the sky's color!\n");
+            break;
+        case Yellow:
+            printf("Yellow is a warm color!\n");
+            break;
+        case Purple:
+            printf("Purple is a regal color!\n");
+            break;
+        default:
+            printf("Invalid choice!\n");
+            break;
+    }
+    return 0;
+}

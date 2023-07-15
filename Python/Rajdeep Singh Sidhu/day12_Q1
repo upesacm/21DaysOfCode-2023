@@ -1,0 +1,13 @@
+# Write a Python program that handles a division by zero error using a try-except block. Display a user-friendly error message.
+try:
+    print("Enter 2 numbers for Divison")
+    a = int(input("Enter 1st number: "))
+    b = int(input("Enter 2nd number: "))
+    c = a/b
+    print("Result: ")
+    print(c)
+except ZeroDivisionError as e:
+    print("Invalid Input, division by Zero is not possible.")
+    print("Please Try again")
+except Exception as e:
+    print("Invalid Input, "+ e)

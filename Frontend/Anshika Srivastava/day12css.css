@@ -1,0 +1,117 @@
+body{
+background:black;
+color:white;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.parent{   /* DAY-12 */
+    display: flex;
+    flex-direction: row; /* by default */
+    gap: 10px; 
+}
+
+.child{     /* DAY-12 */
+    flex:1;
+    background-color: brown;
+    border: 2px solid white;
+    padding: 10px;
+    height:100px;
+    width: 100px;
+    text-align: center;
+    margin-top: 20px;
+}
+    
+
+header{
+height:100vh;
+background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(images/header-image.png); 
+background-size: cover;
+background-position: center;
+position: relative;
+padding: 10px 5%; 
+}
+
+nav{
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    cursor: pointer;
+    width:170px;
+}
+
+nav button{
+    cursor: pointer;
+    background: red;
+    color: white; 
+    padding: 7px 17px; 
+    font-size: 15px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.language{
+    align-items: center;
+    padding: 10px 20px;
+    background: transparent;
+    border: 1px solid white;
+}
+.custom-style{ 
+    margin-left: 10px;
+}
+
+.content{
+  position: relative;
+  top:40%; 
+  left:50%;
+  transform: translate(-50%,-50%); 
+  text-align: center;
+  margin-top:90px;
+}
+
+.content h1{
+    font-size: 50px;
+    font-weight: 600;
+    margin:0px;
+}
+
+.content h3{
+    font-size: 25px;
+    margin-bottom: 30px; 
+}
+
+.content p{
+    font-size: 20px;
+}
+
+.Email{  
+    background: rgba(22, 22, 22,0.7);
+    border-radius: 5px;
+    flex:1;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 5px;
+    width:40%;
+    padding: 20px;
+    border: 2px solid grey;
+    overflow: hidden; 
+    cursor: pointer;
+    color: azure;
+}
+
+.getstarted{ 
+    cursor: pointer;
+    border: 0;
+    outline:0;
+    background: red;
+    color:white;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 18px 30px;
+    padding-top: 14px;
+    border-radius: 5px;
+    display: inline-flex;
+}

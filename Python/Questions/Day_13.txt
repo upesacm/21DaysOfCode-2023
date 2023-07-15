@@ -1,0 +1,7 @@
+Questions for Day - 13 (15-07-2023)
+
+1. Create two sets, "set1" and "set2," with some common elements. Print the union of the two sets with a descriptive message.
+
+2. Write a Python program that takes two sets of integers as input and determines if one set is a subset of the other set. 
+The program should display whether the first set is a subset of the second set, the second set is a subset of the first set, or if they have no subset relationship.
+

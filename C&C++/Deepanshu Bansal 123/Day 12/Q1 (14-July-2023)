@@ -1,0 +1,41 @@
+#include<iostream>
+using namespace std;
+
+void fun(int arr[],int n)
+{
+	int a,b,i;
+	b=0;
+	a=0;
+	while(b<n)
+	{
+		a=0;
+		while(a<n)
+		{
+		for(i=0;i<n-1;i++)
+		{
+			if(arr[i]>arr[i+1])
+			{
+				swap(arr[i],arr[i+1]);
+			}
+		}
+		a++;
+	    }
+		b++;
+	}
+	cout<<"Array sorted by bubble ";
+	for(i=0;i<n;i++)
+	{
+		cout<<arr[i]<<" ";
+	}
+}
+
+int main()
+{
+	int n,arr[100],i;
+	cin>>n;
+	for(int i=0;i<n;i++)
+	{
+		cin>>arr[i];
+	}
+	fun(arr,n);	
+}
