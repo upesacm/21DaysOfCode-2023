@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Day 13</title>
+  <style>
+    /* Button Styles */
+    .button {
+      padding: 10px 20px;
+      background-color: #FFC107;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      transition: background-color 1s ease; /* Transition effect for background color */
+    }
+
+    /* Button Hover Styles */
+    .button:hover {
+      background-color: #FF5722;
+    }
+
+    /* Keyframe Animation */
+    @keyframes buttonAnimation {
+      0% {
+        transform: scale(1); /* Initial scale */
+      }
+      50% {
+        transform: scale(1.2); /* Scale up */
+      }
+      100% {
+        transform: scale(1); /* Scale back to initial size */
+      }
+    }
+
+    /* Apply Animation to Button */
+    .button.animated {
+      animation: buttonAnimation 2s infinite; /* Apply keyframe animation to button */
+    }
+  </style>
+</head>
+<body>
+  <button class="button animated">Click Me</button>
+</body>
+</html>
