@@ -1,0 +1,9 @@
+Rules for Frontend Quiz-02:
+
+For Frontend Quiz-02, your task is to style a webpage. You have been provided with an HTML file and a CSS file (containing some starter code and colors used) and a video showcasing the final result. The HTML code is complete, your goal is to write CSS that replicates the finished webpage as closely as possible. Your performance will be evaluated based on the similarity between your work and the final result.
+
+All the links in the webpage should work, they can point to anywhere. Do check out the given CSS file too for the colors used.
+
+Drive link for said video: https://drive.google.com/file/d/1wx5vazivc0mJk8yBu9Q7jo-LG-FcEH3Z/view?usp=sharing
+
+To submit your work, create a folder with your name in the submissions folder of the same directory this file is in i.e. Quiz - 02, push your finished CSS file there, and create a pull request. The deadline is 11 PM.
