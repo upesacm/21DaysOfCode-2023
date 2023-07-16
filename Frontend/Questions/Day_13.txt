@@ -1,0 +1,10 @@
+Question for Day - 13 (15-07-2023)
+
+CSS transitions
+Keyframe animations
+
+1. Create a new HTML file.
+2. Design a webpage with a button element.
+3. Apply CSS styles to add a transition effect to the button's background color, with a duration of 1 second.
+4. Apply CSS styles to change the button's background color when hovering over it.
+5. Apply CSS styles to add a keyframe animation to the button that scales it up and down continuously.

@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <title>Flexbox Layout in div container </title>
+  </head>
+  <style>
+    .div1{
+      display: flex;
+      justify-content:center; /* use Justify-content without 10-pixels gap with child*/
+      margin-top: 300px;
+      border: 1px solid black;
+      padding: 20px;
+      margin:300px;
+      background-color: rgb(191, 191, 191);
+    }
+    .div2,.div3,.div4{
+ padding: 10px;
+    }
+    .div2{
+      background-color: yellow;
+      font-weight: bold;
+    }
+    .div3{
+      background-color: rgb(77, 249, 77);
+      font-weight: bold;
+    }
+    .div4{
+      background-color: rgb(89, 89, 245);
+      font-weight: bold;
+    }
+  </style>
+  <body>
+    <div class="div1">
+      <div class="div2">First child of div tag</div>
+      <div class="div3">Second child of div tag</div>
+      <div class="div4">Third child of div tag</div>
+    </div>
+  </body>
+</html>

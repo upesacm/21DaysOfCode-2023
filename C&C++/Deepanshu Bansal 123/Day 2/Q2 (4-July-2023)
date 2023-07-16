@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+
+void fun(int a,int b)
+{
+	a=a^b;
+	b=b^a;
+	a=a^b;
+	cout<<"a= "<<a<<"\n";
+	cout<<"b= "<<b;
+}
+
+int main()
+{
+	int a,b;
+	cout<<"Enter a, b ";
+	cin>>a>>b;
+	fun(a,b);
+}

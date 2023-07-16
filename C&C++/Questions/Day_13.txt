@@ -1,0 +1,7 @@
+Questions for Day - 13 (15-07-2023)
+
+1. Write a program that dynamically allocates memory for a two-dimensional array of integers with user-defined rows and columns. 
+Populate the array with values entered by the user and print the sum of all elements.
+
+2. Create a program that dynamically allocates memory for a matrix of integers. Allow the user to enter the dimensions of the matrix and populate it with values. 
+Perform matrix multiplication and print the result.

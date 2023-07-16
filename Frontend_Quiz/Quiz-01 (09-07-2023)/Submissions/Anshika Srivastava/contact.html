@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Contact Me!</h2>
+    <form action="mailto:mdarslan7@gmail.com" method="post" enctype="text/plain">
+        <label for="yourName">Your Name:</label>
+        <input type="text" name="Your Name" id=""><br>
+        <label for="youremail">Your Email:</label>
+        <input type="text" name="Your Email" id=""><br>
+        <label for="yourMessage">Your Message:</label><br>
+        <textarea name="Your Message" id="" cols="30" rows="10"></textarea><br>
+
+        <fieldset>
+        <legend>Interests:</legend>
+        <input type="checkbox" name="interest" value="webdev"> Web Development<br>
+        <input type="checkbox" name="interest" value="python"> Python<br>
+        <input type="checkbox" name="interest" value="datasci"> Data Science<br>
+    </fieldset>
+    <fieldset>
+        <legend>Preferred programming language:</legend>
+        <input type="radio" name="language" value="python"> Python<br>
+        <input type="radio" name="language" value="java"> Java<br>
+        <input type="radio" name="language" value="javascript"> JavaScript<br>
+    </fieldset>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>

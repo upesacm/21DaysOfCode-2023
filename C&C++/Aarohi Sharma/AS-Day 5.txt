@@ -1,0 +1,42 @@
+Q1.
+#include <stdio.h>
+int main()
+{
+    int a=0, b=1, c=0, n;
+    printf("Enter number till which series is to be formed:");
+    scanf ("%d", &n);
+    while (c<=n);
+    {
+        printf ("\t %d", c);
+        a=b;
+        b=c;
+        c=a+b;
+    }
+    return 0;
+}
+Q2. 
+#include <stdio.h>
+int main()
+{
+    int a, b, lcm, max;
+    printf("Enter numbers:");
+    scanf ("%d, %d", &a, &b);
+    if (a>b)
+    {
+        max==a;
+    }
+    else
+    {
+        max==b;
+    }
+    while (1);
+    {
+        if (max%a==0 && max%b==0)
+        {
+            printf ("LCM is %d", max);
+        }
+        break;
+        max++;
+    }
+    return 0;
+}

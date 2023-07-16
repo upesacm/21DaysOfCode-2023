@@ -1,0 +1,15 @@
+Rules:
+
+For Quiz-01, you have been given three HTML files namely Q1, Q2, and contact and an image. These web pages are broken i.e. have some issues. You are supposed to resolve those issues and make these web pages look exactly like the snapshots provided to you in the below drive link.
+
+Task 01 - Modify the Q1 HTML file in such a way that it looks exactly like the pictures provided in the drive link.
+
+Task 02 - Modify the Q2 and contact HTML files in such a way that they look exactly like the video provided in the drive link.
+
+Start Time: 10 PM      Time Limit: 45 min
+
+Drive Link: https://drive.google.com/drive/folders/1jm2yN2CSwUXM4fhzir2Nsk2A5KyWH7GB?usp=sharing
+
+The web pages should look exactly like in the drive link. All the links and images should work too. You shall be marked on the basis of how close your modified web pages get to the original.
+
+To submit your finished files, you will have to create a folder with your name inside the Submissions folder and create a pull request in due time. We won't accept any submissions after 10:45 PM.

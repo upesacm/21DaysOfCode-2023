@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <title>
+      Typography properties and styles
+    </title>
+    <style>
+      body,header{
+        margin: 0px;
+      }
+      header{
+        background-color: rgb(93, 248, 82);
+        padding: 10px;
+      }
+      h1{
+        text-align: center;
+        margin-top: 25px;
+        font-family:Arial, sans-serif;
+        color: red;
+        text-decoration: underline;
+      }
+      .hr1{
+        margin:0px;
+      }
+      main{
+        margin-left: 575px;
+        margin-top: 150px;
+        border: 1px solid black;
+        width:350px;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to my website</h1>
+    </header>
+    <hr class="hr1">
+    <main>
+      <h4>Create heading "Welcome to my website"</h4>
+      <h4>Apply CSS style font-family "Arial, sans-serif"</h4>
+      <h4>Apply CSS text color red</h4>
+      <h4>Apply CSS text-decoration underline</h4>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+def calculate_discount(item_price,dis):
+    item_price = item_price - (item_price*dis/100)
+    return item_price
+    
+item = input("Enter the name of the Item: ")
+item_price= int(input("Enter the price: "))
+dis = int(input("Enter the % discount: "))
+final_price = calculate_discount(item_price, dis)
+print("final price of "+item+" is : ")
+print(final_price)

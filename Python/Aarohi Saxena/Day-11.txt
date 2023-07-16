@@ -1,0 +1,67 @@
+#Answer-1
+import csv
+def calc_avg_grade(filename):
+    tt_grade = 0
+    num_grades = 0
+
+    with open(filename, 'r') as file:
+        reader = csv.reader(file)
+        next(reader)  
+
+        for row in reader:
+            if len(row) == 2:
+                try:
+                    grade = float(row[1])
+                    tt_grade += grade
+                    num_grades += 1
+                except ValueError:
+                    print(f"Skipping invalid grade for student: {row[0]}")
+
+    if num_grades > 0:
+        avg_grade = tt_grade / num_grades
+        return avg_grade
+    else:
+        return None
+
+filename = "grades.csv"
+average = calc_avg_grade(filename)
+
+if average is not None:
+    message = f"The average grade is: {average:.2f}"
+else:
+    message = "No grades found in the file."
+
+print(message)
+
+#Answer-2
+
+def get_integer_list():
+    while True:
+        try:
+            intg= input("Enter a list of integers (separated by spaces): ")
+            intg_list = [int(x) for x in integers.split()]
+            return integer_list
+        except ValueError:
+            print("Invalid input. Please enter a list of integers.")
+
+def lst_file(filename, num_list):
+    with open(filename, 'w') as file:
+        for num in num_list:
+            file.write(str(num) + "\n")
+
+input_filename = input("Enter the filename for the input file: ")
+output_even_filename = input("Enter the filename for the output file containing even numbers: ")
+output_odd_filename = input("Enter the filename for the output file containing odd numbers: ")
+
+intg_list = get_integer_list()
+
+even_numbers = [num for num in integer_list if num % 2 == 0]
+odd_numbers = [num for num in integer_list if num % 2 != 0]
+
+lst_file(output_even_filename, even_numbers)
+lst_file(output_odd_filename, odd_numbers)
+
+print(f"The even numbers have been written to {output_even_filename}.")
+print(f"The odd numbers have been written to {output_odd_filename}.")
+
+

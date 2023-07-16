@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int n1,n2;
+	cout<<"Enter the number for LCM: "<<endl;
+	
+	cin>>n1>>n2;
+	int c=n1>n2?n1:n2;
+	
+	while(1)
+	{
+		if(c%n1==0 && c%n2==0)
+		{
+			cout<<"the lcm is "<<c<<endl;
+			break;
+		}
+		++c;
+	}
+}

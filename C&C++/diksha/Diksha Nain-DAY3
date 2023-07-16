@@ -1,0 +1,26 @@
+                                                    QUE 1
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int a,b,c;
+    printf("Enter the number and the power u want to find:\n");
+    scanf("%d %d",&a,&b);
+    c=pow(a,b);
+    printf("%d^%d=%d",a,b,c);
+    return 0;
+}
+
+                                                  QUE 2
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    double num,result;
+    printf("enter the number:\n");
+    scanf("%lf",&num);
+    result=log(num);
+    printf("log(%lf) = %lf",num,result);
+    return 0;
+
+}

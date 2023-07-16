@@ -1,0 +1,46 @@
+Q1. 
+#include<stdio.h>
+int main()
+{
+    float s1, s2, s3;
+    printf ("Enter the length of the sides of the triangle:");
+    scanf ("%f, %f, %f", &s1, &s2, &s3);
+    if (s1==s2 && s2==s3)
+    {
+        printf ("It is equilateral triangle");
+    }
+    else if (s1!=s2 && s2!=s3 && s1!=s3)
+    {
+        printf ("It is a scalene triangle");
+    }
+    else 
+    {
+        printf ("It is a isosceles triangle");
+    }
+    return 0;
+}
+Q2. 
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    float a, b, c, d, r1, r2;
+    printf ("Enter the coefficients of quadratic equation:");
+    scanf ("%f, %f, %f", &a, &b, &c);
+    d=((b*b)-(4*a*c));
+    r1=((-b+sqrt(d))/(2*a));
+    r2=((-b-sqrt(d))/(2*a));
+    if (d=0)
+    {
+        printf ("Roots are real and equal and r1=%f, r2=%f", r1, r2);
+    }
+    else if (d>0)
+    {
+        printf ("Roots are real and distinct and r1=%f, r2=%f", r1, r2);
+    }
+    else if (d<0)
+    {
+        printf ("Roots are imaginary");
+    }
+    return 0;
+}
