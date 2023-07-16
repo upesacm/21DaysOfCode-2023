@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cstring>
-
+using namespace std;
 void countVowels(const char* sentence, int vowelCounts[][2]) {
     
     if (*sentence == '\0') {
@@ -45,23 +45,23 @@ void countVowels(const char* sentence, int vowelCounts[][2]) {
 
 int main() {
     char sentence[1000];
-    std::cin.getline(sentence, sizeof(sentence));
+    cin.getline(sentence, sizeof(sentence));
 
     int vowelCounts[5][2] = {{0}};
 
     countVowels(sentence, vowelCounts);
 
-    std::cout << "Count" << std::endl;
-    std::cout << "A-" << vowelCounts[0][0] << std::endl;
-    std::cout << "a-" << vowelCounts[0][1] << std::endl;
-    std::cout << "E-" << vowelCounts[1][0] << std::endl;
-    std::cout << "e-" << vowelCounts[1][1] << std::endl;
-    std::cout << "I-" << vowelCounts[2][0] << std::endl;
-    std::cout << "i-" << vowelCounts[2][1] << std::endl;
-    std::cout << "O-" << vowelCounts[3][0] << std::endl;
-    std::cout << "o-" << vowelCounts[3][1] << std::endl;
-    std::cout << "U-" << vowelCounts[4][0] << std::endl;
-    std::cout << "u-" << vowelCounts[4][1] << std::endl;
+    cout << "Count" << std::endl;
+    cout << "A-" << vowelCounts[0][0] << std::endl;
+    cout << "a-" << vowelCounts[0][1] << std::endl;
+    cout << "E-" << vowelCounts[1][0] << std::endl;
+    cout << "e-" << vowelCounts[1][1] << std::endl;
+   cout << "I-" << vowelCounts[2][0] << std::endl;
+    cout << "i-" << vowelCounts[2][1] << std::endl;
+cout << "O-" << vowelCounts[3][0] << std::endl;
+    cout << "o-" << vowelCounts[3][1] << std::endl;
+   cout << "U-" << vowelCounts[4][0] << std::endl;
+    cout << "u-" << vowelCounts[4][1] << std::endl;
 
 
     return 0;
