@@ -1,2 +1,25 @@
 Hello Everyone,
 Rajdeep here and i want to learn more about python
+code:
+#include <stdio.h>
+
+int main(void) {
+	// your code goes here
+	int t;
+	scanf("%d",&t);
+	for(int i=0; i<t; i++)
+	{
+	    int x;
+	    scanf("%d", &x);
+	    if(x>=30)
+	    {
+	        printf("YES\n");
+	    }
+	    else
+	    {
+	        printf("NO\n");
+	    }
+	}
+	return 0;
+}
+
