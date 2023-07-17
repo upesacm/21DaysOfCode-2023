@@ -1,0 +1,66 @@
+1) 
+def find_longest_common_subsequence(seq1, seq2):
+    m = len(seq1)
+    n = len(seq2)
+    dp = [[0] * (n + 1) for _ in range(m + 1)]
+    for i in range(1, m + 1):
+        for j in range(1, n + 1):
+            if seq1[i - 1] == seq2[j - 1]:
+                dp[i][j] = dp[i - 1][j - 1] + 1
+            else:
+                dp[i][j] = max(dp[i - 1][j], dp[i][j - 1])
+    lcs = ''
+    i, j = m, n
+    while i > 0 and j > 0:
+        if seq1[i - 1] == seq2[j - 1]:
+            lcs = seq1[i - 1] + lcs
+            i -= 1
+            j -= 1
+        elif dp[i - 1][j] > dp[i][j - 1]:
+            i -= 1
+        else:
+            j -= 1
+    return lcs
+seq1 = "AGGTAC"
+seq2 = "GCTAGC"
+result = find_longest_common_subsequence(seq1, seq2)
+print(result)
+2)
+def transform_matrix(matrix):
+    transformed_matrix = []
+    
+    for row in matrix:
+        row_sum = sum(row)
+        transformed_row = [row_sum ** 2] * len(row)
+        transformed_matrix.append(transformed_row)
+    
+    # Print the transformed matrix
+    for row in transformed_matrix:
+        print(' '.join(str(element) for element in row))
+
+matrix = [[4, 7, 2], [1, 5, 9], [6, 3, 8]]
+transform_matrix(matrix)
+
+3)
+def max_palindrome_string(s: str) -> str:
+    def expand_around_center(left: int, right: int) -> str:
+        while left >= 0 and right < len(s) and s[left] == s[right]:
+            left -= 1
+            right += 1
+        return s[left + 1:right]
+
+    result = ""
+    for i in range(len(s)):
+        
+        palindrome1 = expand_around_center(i, i)
+        
+        palindrome2 = expand_around_center(i, i + 1)
+        
+        palindrome = palindrome1 if len(palindrome1) > len(palindrome2) else palindrome2
+        
+        if len(palindrome) > len(result):
+            result = palindrome
+    return result
+
+
+print(max_palindrome_string("babad"))
