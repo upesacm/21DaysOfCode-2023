@@ -1,0 +1,5 @@
+Questions for Day - 16 (18-07-2023)
+
+1. Write a program that reads a text file line by line and prints each line to the console.
+
+2. Write a program that copies the contents of one file to another file.

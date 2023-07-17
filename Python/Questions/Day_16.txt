@@ -1,0 +1,5 @@
+Questions for Day - 16 (18-07-2023)
+
+1. Create a NumPy array of shape (3, 3) filled with random integers between 1 and 10. Print the array with a descriptive message.
+
+2. Write a Python program that uses NumPy to generate a set of 100 random numbers between 0 and 1. Calculate their mean and standard deviation, and display the results with descriptive messages.
