@@ -1,0 +1,5 @@
+sentence = input("Enter a sentence: ")
+words = sentence.split()
+x= [word[::-1] for word in words]
+sentence = " ".join(x)
+print(sentence)

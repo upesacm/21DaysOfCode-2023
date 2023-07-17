@@ -1,0 +1,22 @@
+1. Write a function that accepts a list of integers and returns the largest number from the list.
+def find_largest(lst):
+    return max(lst)
+
+lst = [1, 2, 3, 4, 5]
+print(find_largest(lst))
+
+2. Write a Python program that finds the second smallest element in a given list and displays it with a descriptive message
+def find_second_smallest(lst):
+    lst.sort()
+    return lst[1]
+
+lst = [1, 2, 3, 4, 5]
+print(f"The second smallest element in {lst} is {find_second_smallest(lst)}")
+
+def find_second_smallest_v2(lst):
+    temp_lst = lst.copy()
+    temp_lst.remove(min(temp_lst))
+    return min(temp_lst)
+
+lst = [1, 2, 3, 4, 5]
+print(f"The second smallest element in {lst} is {find_second_smallest_v2(lst)}")

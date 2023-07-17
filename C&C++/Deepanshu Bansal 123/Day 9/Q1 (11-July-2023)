@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+
+int fun(int array[],int n)
+{
+	int sum=0;
+	for(int i=0;i<n;i++)
+	{
+		sum=sum+array[i];
+	}
+	return sum/n;
+}
+int main()
+{
+	int array[100],i,n;
+	cout<<"Enter n number of array elements ";
+	cin>>n;
+	for(i=0;i<n;i++)
+	{
+		cout<<"Enter array element ";
+		cin>>array[i];
+	}
+	cout<<"Average of elements in array "<<fun(array,n);
+}               

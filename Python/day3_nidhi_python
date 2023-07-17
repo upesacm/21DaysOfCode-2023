@@ -1,0 +1,12 @@
+def calculate_sum_of_positive_integers():
+    total_sum = 0
+    while True:
+        number = int(input("Enter an integer (enter a negative number to exit): "))
+        if number < 0:
+            break
+        total_sum += number
+
+    print("The sum of positive integers entered is:", total_sum)
+
+
+calculate_sum_of_positive_integers()

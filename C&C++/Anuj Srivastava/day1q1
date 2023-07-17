@@ -1,0 +1,9 @@
+#include iostream>
+
+int main()
+{
+    string s;
+    cout<<"Enter Your Name";
+    cin>>s;
+    return 0;
+}

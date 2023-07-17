@@ -1,0 +1,61 @@
+Q1. 
+#include<stdio.h>
+int avg(int arr[], int n)
+{
+    int sum=0;
+    int avg;
+    for (int i=0; i<=n; i++)
+    {
+        sum+=arr[i];
+    }
+    avg=sum/n;
+    printf("Average is %d", avg);
+    return avg;
+}
+int main()
+{
+    int n; 
+    int arr[100];
+    printf("Enter size of array:");
+    scanf("%d", &n);
+    printf("Enter elements:");
+    for (int i=0; i<=n; i++)
+    {
+        scanf("%d", &arr[i]);
+    }
+    avg(arr, n);
+    return 0;
+}
+Q2. 
+#include <stdio.h>
+int arrange(int arr[], int n)
+{
+    for (int i=0; i<=n; i++)
+    {
+        if (arr[i]<0)
+        {
+            printf("%d", arr[i]);
+        }
+    }
+    for (int j=0; j<=n; j++)
+    {
+        if (arr[j]>=0)
+        {
+            printf("%d", arr[j]);
+        }
+    }
+}
+int main()
+{
+    int arr[100];
+    int n;
+    printf("Enter size of array:");
+    scanf("%d", &n);
+    printf("Enter elements:");
+    for (int i=0; i<=n; i++)
+    {
+        scanf("%d", &arr[i]);
+    }
+    arrange(arr, n);
+    return 0;
+}

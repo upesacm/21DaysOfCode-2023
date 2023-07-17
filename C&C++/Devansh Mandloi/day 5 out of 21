@@ -1,0 +1,40 @@
+//Que1}
+
+#include<stdio.h>    
+int main()    
+{    
+ int num1=0,num2=1,n3,i,number;    
+ printf("Enter the number of elements:");    
+ scanf("%d",&number);    
+ printf("\n%d %d",num1,num2);  
+ for(i=2;i<number;++i)
+ {    
+  n3=num1+num2;    
+  printf(" %d",n3);    
+  num1=num2;    
+  num2=n3;    
+ }  
+  return 0;  
+ }    
+
+
+//Que2}
+
+#include <stdio.h>
+
+int main() {
+
+    int num1, num2, maximum;
+
+    printf("Enter two positive integers: ");
+    scanf("%d %d", &num1, &num2);
+    maximum = (num1 > num2) ? num1 : num2;
+
+    while (1) {
+        if ((maximum % num1 == 0) && (maximum % num2 == 0)) {
+            printf("The LCM of %d and %d is %d.", num1, num2, maximum);
+            break;
+        }
+        ++maximum;
+    }
+    return 0;

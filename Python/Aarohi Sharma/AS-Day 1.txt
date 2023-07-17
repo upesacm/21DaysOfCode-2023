@@ -1,0 +1,12 @@
+Q1. 
+name=input("Enter your name:")
+print ("Hello, ", name)
+Q2. 
+str=input("Enter a string:")
+def reverse(str):
+    str1=" "
+    for i in str:
+        str1=i+str1
+    return str1
+print("Reversed string is:", end=" ")
+print(reverse(str))

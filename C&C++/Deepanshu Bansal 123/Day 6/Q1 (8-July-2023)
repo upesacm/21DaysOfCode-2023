@@ -1,0 +1,29 @@
+#include<iostream>
+#include<vector>
+#include<algorithm>
+using namespace std;
+
+int fun(int array[],int n)
+{
+	sort(array,array+n);
+	for(int i=0;i<n;i++)
+	{
+		if(array[i]!=array[i+1])
+		{
+			cout<<"Second smallest element in array "<<array[i+1];
+			return 0;
+		}
+	}
+}
+int main()
+{
+    int n,array[100],i;
+    cout<<"Enter n number of array ";
+    cin>>n;
+    for(int i=0;i<n;i++)
+    {
+    	cout<<"Enter array "<<i+1<<" ";
+    	cin>>array[i];
+	}
+	fun(array,n);
+}

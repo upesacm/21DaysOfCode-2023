@@ -1,0 +1,130 @@
+//Que1}
+
+#include <stdio.h>
+
+struct Date {
+    int day;
+    int month;
+    int year;
+};
+
+int datechecker(struct Date d1, struct Date d2) {
+    if (d1.year < d2.year) {
+        return -1;
+    } else if (d1.year > d2.year) {
+        return 1;
+    } else {
+        if (d1.month < d2.month) {
+            return -1;
+        } else if (d1.month > d2.month) {
+            return 1;
+        } else {
+            if (d1.day < d2.day) {
+                return -1;
+            } else if (d1.day > d2.day) {
+                return 1;
+            } else {
+                return 0; // Dates are equal
+            }
+        }
+    }
+}
+
+int main() {
+    struct Date d1 = { 12, 6, 2022 };
+    struct Date d2 = { 25, 12, 2021 };
+    
+    int result = datechecker(d1, d2);
+    
+    if (result < 0) {
+        printf("Date 1 is earlier\n");
+    } else if (result > 0) {
+        printf("Date 2 is earlier\n");
+    } else {
+        printf("Both dates are equal\n");
+    }
+    
+    return 0;
+}
+
+
+
+//Que2}
+
+#include<stdio.h>
+
+
+struct date
+{
+
+  int day;
+  int month;
+  int year;
+
+};
+
+void date_checker(struct date d1, struct date d2)
+{
+  
+
+  if(d1.year>d2.year)
+  {
+    printf("The date which is earlier is: %d-%d-%d", d2.day, d2.month, d2.year);
+  }
+
+  else
+  {
+    printf("The date which is earlier is: %d-%d-%d", d1.day, d1.month, d1.year);
+  }
+
+  
+
+  if(d1.year==d2.year & d1.month>d2.month)
+  {
+    printf("The date which is earlier is: %d-%d-%d", d1.day, d1.month, d1.year);
+  }
+  else
+  {
+    printf("The date which is earlier is: %d-%d-%d", d2.day, d2.month, d2.year);
+  }
+
+}
+
+
+int main()
+{
+
+  
+
+  struct date d1;
+  struct date d2;
+
+  //First date
+  printf("Enter the first date:");
+ 
+  printf("Enter year:");
+  scanf("%d", &d1.day);
+ 
+  printf("Enter month:");
+  scanf("%d", &d1.month);
+ 
+  printf("Enter day:");
+  scanf("%d", &d1.day);
+
+  //second date
+  printf("Enter the second date:");
+ 
+  printf("Enter year:");
+  scanf("%d", &d2.day);
+ 
+  printf("Enter month:");
+  scanf("%d", &d2.month);
+ 
+  printf("Enter day:");
+  scanf("%d", &d2.day);
+
+  date_checker(d1, d2);
+
+  return 0;
+
+}

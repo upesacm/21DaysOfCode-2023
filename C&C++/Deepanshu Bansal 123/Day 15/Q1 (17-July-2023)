@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+
+void fun(string search)
+{
+	try{
+		if(search=="file1_txt")
+		{
+			cout<<"File1_txt exists";;
+		}
+		else{
+			throw(search);
+		}
+	}
+	
+    catch(string search){
+		cout<<search<<" doesn't exist";
+	}
+}
+
+int main()
+{
+	string file1_txt="File 1 C++";
+	string search;
+	cout<<"Enter fileName for search ";
+	getline(cin,search);
+	fun(search);
+	return 0;
+}

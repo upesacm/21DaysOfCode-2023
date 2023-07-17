@@ -1,0 +1,83 @@
+#1
+def sort_and_remove_duplicates(numbers):
+    sorted_numbers = sorted(numbers)
+    unique_numbers = []
+    for num in sorted_numbers:
+        if num not in unique_numbers:
+            unique_numbers.append(num)
+    return unique_numbers
+
+user_input = input()
+
+try:
+    numbers = [int(num) for num in user_input.split()]
+except ValueError:
+    print("Invalid input. Please enter integers only.")
+    exit()
+
+result = sort_and_remove_duplicates(numbers)
+
+print("The Sorted Non-Duplicate List:", result)
+
+
+
+#2
+
+def largest_product(numbers):
+    if len(numbers) < 2:
+        return -1
+    
+    largest = max(numbers[0], numbers[1])
+    second_largest = min(numbers[0], numbers[1])
+
+    for i in range(2, len(numbers)):
+        if numbers[i] > largest:
+            second_largest = largest
+            largest = numbers[i]
+        elif numbers[i] > second_largest:
+            second_largest = numbers[i]
+
+    return largest * second_largest
+
+user_input = input()
+
+try:
+    numbers = [int(num) for num in user_input.split()]
+except ValueError:
+    print("Invalid input. Please enter integers only.")
+    exit()
+
+result = largest_product(numbers)
+
+print("Product Of Largest Distinct Numbers:", result)
+
+
+
+
+#3
+
+def triplet_exists(a, b, c):
+    if a == 0 or b == 0 or c == 0:
+        return "Triplet Doesn't Exist"
+
+    if c % gcd(a, b) == 0:
+        return "Triplet Exists"
+    else:
+        return "Triplet Doesn't Exist"
+
+def gcd(a, b):
+    while b != 0:
+        a, b = b, a % b
+    return a
+
+user_input = input()
+
+try:
+    a, b, c = map(int, user_input.split())
+except ValueError:
+    print("Invalid input. Please enter three integers only.")
+    exit()
+
+result = triplet_exists(a, b, c)
+
+print(result)

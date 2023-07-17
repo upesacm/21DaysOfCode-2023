@@ -1,0 +1,11 @@
+Questions for Day - 09 (11-07-2023)
+
+Frontend
+
+CSS box model and properties
+
+1. Create a new HTML file.
+2. Design a webpage with a container div that has a width of 500 pixels and a height of 300 pixels.
+3. Apply CSS styles to add 20-pixel padding to the container div.
+4. Apply CSS styles to add a 2-pixel border to the container div with a solid line style.
+5. Apply CSS styles to add a 10-pixel margin to the container div.
