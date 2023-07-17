@@ -1,0 +1,140 @@
+//Que1}
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int rows, columns;
+    printf("Enter the number of rows: ");
+    scanf("%d", &rows);
+    printf("Enter the number of columns: ");
+    scanf("%d", &columns);
+
+    
+    int **array = (int **)malloc(rows * sizeof(int *));
+    for (int i = 0; i < rows; i++) {
+        array[i] = (int *)malloc(columns * sizeof(int));
+    }
+
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < columns; j++) {
+            printf("Enter the value for array[%d][%d]: ", i, j);
+            scanf("%d", &array[i][j]);
+        }
+    }
+
+   
+    int sum = 0;
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < columns; j++) {
+            sum += array[i][j];
+        }
+    }
+
+
+    printf("Sum of all elements: %d\n", sum);
+
+
+    for (int i = 0; i < rows; i++) {
+        free(array[i]);
+    }
+    free(array);
+
+    return 0;
+}
+
+
+//Que2}
+
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int** createMatrix(int rows, int columns) {
+    int** matrix = (int**)malloc(rows * sizeof(int*));
+    for (int i = 0; i < rows; i++) {
+        matrix[i] = (int*)malloc(columns * sizeof(int));
+    }
+    return matrix;
+}
+
+void freeMatrix(int** matrix, int rows) {
+    for (int i = 0; i < rows; i++) {
+        free(matrix[i]);
+    }
+    free(matrix);
+}
+
+void populateMatrix(int** matrix, int rows, int columns) {
+    printf("Enter the values for the matrix:\n");
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < columns; j++) {
+            printf("Enter the value for matrix[%d][%d]: ", i, j);
+            scanf("%d", &matrix[i][j]);
+        }
+    }
+}
+
+
+int** multiplyMatrices(int** matrix1, int rows1, int columns1,
+                       int** matrix2, int rows2, int columns2) {
+    if (columns1 != rows2) {
+        printf("Matrix multiplication not possible!\n");
+        return NULL;
+    }
+
+    int** result = createMatrix(rows1, columns2);
+    for (int i = 0; i < rows1; i++) {
+        for (int j = 0; j < columns2; j++) {
+            result[i][j] = 0;
+            for (int k = 0; k < columns1; k++) {
+                result[i][j] += matrix1[i][k] * matrix2[k][j];
+            }
+        }
+    }
+    return result;
+}
+
+
+void printMatrix(int** matrix, int rows, int columns) {
+    printf("Matrix:\n");
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < columns; j++) {
+            printf("%d\t", matrix[i][j]);
+        }
+        printf("\n");
+    }
+}
+
+int main() {
+    int rows1, columns1;
+    printf("Enter the dimensions of the first matrix:\n");
+    printf("Rows: ");
+    scanf("%d", &rows1);
+    printf("Columns: ");
+    scanf("%d", &columns1);
+
+    int** matrix1 = createMatrix(rows1, columns1);
+    populateMatrix(matrix1, rows1, columns1);
+
+    int rows2, columns2;
+    printf("Enter the dimensions of the second matrix:\n");
+    printf("Rows: ");
+    scanf("%d", &rows2);
+    printf("Columns: ");
+    scanf("%d", &columns2);
+
+    int** matrix2 = createMatrix(rows2, columns2);
+    populateMatrix(matrix2, rows2, columns2);
+
+    int** result = multiplyMatrices(matrix1, rows1, columns1, matrix2, rows2, columns2);
+    if (result != NULL) {
+        printMatrix(result, rows1, columns2);
+        freeMatrix(result, rows1);
+    }
+
+    freeMatrix(matrix1, rows1);
+    freeMatrix(matrix2, rows2);
+
+    return 0;
+}
