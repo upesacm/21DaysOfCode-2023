@@ -1,0 +1,73 @@
+#TASK1
+#include<stdio.h>
+int main() {
+    char filename[100];
+    FILE *file;
+    printf("ENTER THE FILE NAME TO CHECK WHETHER IF IT EXIST");
+    scanf("%s",filename);
+    file=fopen(filename,"r");
+    if(file==NULL{
+        printf("ERROR:THIS FILE "%s" DOES NOT EXIST,",filename);
+
+    }
+    else {
+        printf("File '%s' exist\n",filename );
+        fclose(file);
+        return 0;
+    }
+    )
+
+}
+
+#TASK2
+#include <stdio.h>
+
+// Define custom error codes as enumerated constants
+typedef enum {
+    ERR_FILE_NOT_FOUND,
+    ERR_FILE_PERMISSION,
+    ERR_INVALID_INPUT,
+    ERR_UNKNOWN
+} ErrorCode;
+
+// Function to check if the file exists
+ErrorCode checkFileExistence(const char* filename) {
+    FILE* file = fopen(filename, "r");
+    if (file == NULL) {
+        return ERR_FILE_NOT_FOUND;
+    } else {
+        fclose(file);
+        return ERR_UNKNOWN;
+    }
+}
+
+int main() {
+    char filename[100];
+    ErrorCode error;
+
+    printf("Enter the filename to check if it exists: ");
+    scanf("%s", filename);
+
+    // Check if the file exists and handle the error accordingly
+    error = checkFileExistence(filename);
+
+    switch (error) {
+        case ERR_FILE_NOT_FOUND:
+            printf("Error: File '%s' does not exist or could not be opened.\n", filename);
+            break;
+        case ERR_FILE_PERMISSION:
+            printf("Error: File '%s' could not be opened due to permission issues.\n", filename);
+            break;
+        case ERR_INVALID_INPUT:
+            printf("Error: Invalid input or unexpected error occurred.\n");
+            break;
+        case ERR_UNKNOWN:
+            printf("File '%s' exists.\n", filename);
+            break;
+        default:
+            printf("Error: Unknown error occurred.\n");
+            break;
+    }
+
+    return 0;
+}
