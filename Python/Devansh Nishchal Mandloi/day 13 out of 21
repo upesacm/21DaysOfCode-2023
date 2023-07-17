@@ -1,0 +1,26 @@
+#Que1}
+
+name1={'Devansh', 'Yashi', 'John', 'Shamsher', 'Karan'}
+name2={'Devansh', 'Yashi', 'Kabir', 'Vasundhra', 'Bhimsen'}
+
+
+print(f"The union of the given sets will be {name1.union(name2)}")
+
+#Que2}
+
+def subset_relationship(set1, set2):
+    if set1.issubset(set2) and set2.issubset(set1):
+        return "The two sets are equal."
+    elif set1.issubset(set2):
+        return "The first set is a subset of the second set."
+    elif set2.issubset(set1):
+        return "The second set is a subset of the first set."
+    else:
+        return "The two sets have no subset relationship."
+
+# Example usage:
+set1 = set([1, 2, 3, 4])
+set2 = set([3, 4, 5, 6])
+
+result = subset_relationship(set1, set2)
+print(result)
