@@ -1,0 +1,43 @@
+#include<iostream>
+using namespace std;
+
+void fun(int arr[],int n,int val)
+{
+	int flag=0;
+	try{
+		for(int i=0;i<n;i++)
+		{
+			if(arr[i]==val)
+			{
+				flag=1;
+			}
+		}
+		if(flag==1)
+		{
+			cout<<"val found in array";
+		}
+		else{
+			throw(val);
+		}
+	}
+	
+    catch(int val){
+		cout<<"Error 404"<<"\n"<<"Not Found...";
+	}
+}
+
+int main()
+{
+	int arr[100],n,val;
+	cout<<"Enter n number of element in array ";
+	cin>>n;
+	for(int i=0;i<n;i++)
+	{
+		cout<<"Enter arr ";
+		cin>>arr[i];
+	}
+	cout<<"Enter val for search in array ";
+	cin>>val;
+	fun(arr,n,val);
+	return 0;
+}

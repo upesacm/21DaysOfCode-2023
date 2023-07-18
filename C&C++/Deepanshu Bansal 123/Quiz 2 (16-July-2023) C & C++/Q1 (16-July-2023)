@@ -1,0 +1,37 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    int arr[1000][1000],n,m,i,j;
+    long int sum=0;
+    vector<int> v;
+    cin>>n>>m;
+    for(i=0;i<n;i++)
+    {
+        for(j=0;j<m;j++)
+        {
+            cin>>arr[i][j];
+            v.push_back(arr[i][j]);
+        }
+    }
+    sort(v.begin(),v.end());
+    int a=v[v.size()-1];
+    for(i=0;i<n;i++)
+    {
+        for(j=0;j<m;j++)
+        {
+          if(arr[i][j]%a==0)
+          {
+              sum=sum+arr[i][j];
+          }
+        }
+    }
+    cout<<"Maximum Element: "<<a<<"\n";
+    cout<<"Sum of Divisible Elements: "<<sum;
+    return 0;
+}
