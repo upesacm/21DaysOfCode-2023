@@ -1,0 +1,5 @@
+Questions for Day - 17 (19-07-2023)
+
+1. Implement a program to check if a given string is a palindrome using string functions.
+
+2. Create a program to split a sentence into words and count the number of words using string functions.
