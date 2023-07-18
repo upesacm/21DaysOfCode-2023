@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Button element with animation</title>
+  </head>
+  <style>
+    button{
+      padding: 10px;
+      margin-left: 600px;
+      margin-top: 200px;
+      border: 1px solid green;
+      background-color: rgb(41, 241, 41);
+      position: relative;
+      transition: width 10s,height 10s, background 1s;
+      cursor: pointer;
+      animation: mymove 1s infinite;
+    }
+    @keyframes mymove{
+      0% {top :0px;}
+      50% {top:10px; down:100px;}
+      100% {top :0px;}
+    }
+    button:hover{
+      width:200px;
+      height:200px;
+      font-size: large;
+      font-weight: bold;
+      background-color: yellow;
+    }
+  </style>
+  <body>
+    <button>Botton</button>
+  </body>
+</html>
