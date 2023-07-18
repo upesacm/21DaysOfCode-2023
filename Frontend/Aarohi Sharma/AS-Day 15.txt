@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Project</title>
+<style>
+{box-sizing: border-box;}
+body {margin: 0; padding: 0; font-family: Arial, sans-serif;}
+.container {display: flex; flex-direction: column; min-height: 100vh;}
+header, footer {background-img src: "C:\Users\Aarohi\Desktop\download.jpeg"; background-size: cover; color: blue; padding: 20px; transition: background-image 0.3s ease;}
+header:hover {background-img src: "C:\Users\Aarohi\Desktop\download (1).jpeg";}
+nav {background-color: #333; padding: 10px;}
+nav ul {list-style-type: none; margin: 0; padding: 0; display: flex;}
+nav ul li {margin-right: 10px;}
+nav ul li a {color: #fff; text-decoration: none; font-size: 16px;}
+.content {flex: 1; padding: 20px; border: 1px solid #ccc;}
+footer {animation: rotateFooter 4s infinite linear;}
+@keyframes rotateFooter {0% {transform: rotate(0deg);} 100% {transform: rotate(180deg);}}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<h1>My Webpage</h1>
+</header>
+<nav>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Services</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</nav>
+<div class="content">
+<h2>Welcome to my webpage</h2>
+<p>The culture of India is one of the most seasoned and particular. In India, there's sublime social decent variety all through the nation.</p>
+</div>
+<footer>
+<p>&copy; 2023 My Webpage. All rights reserved.</p>
+</footer>
+</div>
+</body>
+</html>
