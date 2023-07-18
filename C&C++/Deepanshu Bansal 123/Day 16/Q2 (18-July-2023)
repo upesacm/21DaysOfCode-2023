@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+string s="(i) line-1 in file 1";
+string a;
+
+void fun(string b)
+{
+	if(b=="copy")
+	{
+		a=s;
+		cout<<"File copied";
+	}
+	else{
+		cout<<"write \"copy\" for copy file one to second";
+	}
+}
+
+int main()
+{
+	string b;
+	cout<<"Enter b to copy file one to second ";
+	getline(cin,b);
+	fun(b);
+}
