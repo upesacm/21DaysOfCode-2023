@@ -1,0 +1,11 @@
+# Write a Python function that takes two lists as input and returns a new list containing only the common elements between the two input lists.
+
+def common_elements(list1, list2):
+    # Use set intersection to find common elements
+    common = list(set(list1) & set(list2))
+    return common
+
+list1 = [1, 2, 3, 4, 5]
+list2 = [3, 4, 5, 9, 8]
+common = common_elements(list1, list2)
+print(common)
