@@ -1,0 +1,134 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+  }
+  
+  h1 {
+    color: #007bff;
+  }
+  
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: #007bff;
+    transition: width 1s ease-in-out, transform 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    animation: rotate 4s linear infinite;
+    margin: 30px auto;
+  }
+  
+  .box:hover {
+    width: 200px;
+    transform: rotate(360deg);
+  }
+  
+  .rotate-animation {
+    animation-play-state: paused;
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 20px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+  }
+  
+  .fade-in {
+    opacity: 0;
+    animation: fade 2s ease-in forwards;
+  }
+  
+  @keyframes fade {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  #user-form {
+    margin-top: 30px;
+  }
+  
+  label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  input[type="text"],
+  input[type="email"] {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+  }
+  
+  #result {
+    display: none;
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    animation: slide-in 1s forwards;
+  }
+  
+  @keyframes slide-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
