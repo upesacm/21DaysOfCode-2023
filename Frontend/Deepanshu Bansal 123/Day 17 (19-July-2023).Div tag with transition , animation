@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <title>Div tag with transition, animation</title>
+  </head>
+  <style>
+    div{
+      border: 2px solid black;
+      width:350px;
+      padding:20px;
+      margin-left:500px;
+      margin-top: 200px;
+      transition: width 2s, background 2s; 
+      transition-timing-function: ease-in-out;
+      animation:mymove 2s infinite;
+    }
+    div:hover{
+      width:450px;
+    }
+    @keyframes mymove{
+      100%{transform: rotate(360deg);}
+    }
+  </style>
+  <body>
+    <div>Hey, Welcome in webpage
+      <ul>In this webpage following designs: -
+        <br>
+        <br>
+        <li>Transition with 2s for change width <!-- use ease-in-out--></li> 
+        <li>div tag use change width on hovering</li>
+        <li>Animation on div with rotate tab</li>
+      </ul>
+    </div>
+  </body>
+</html>
