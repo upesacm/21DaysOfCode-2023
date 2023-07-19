@@ -1,0 +1,5 @@
+Questions for Day - 09 (11-07-2023)
+
+1. Write a Python program that counts the frequency of each word in a given sentence and stores the result in a dictionary. Display the dictionary with word frequencies.
+
+2. Write a Python program that checks if a given sentence is a pangram (contains every letter of the alphabet). Display an appropriate message.

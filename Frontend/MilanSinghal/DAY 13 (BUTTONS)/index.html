@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Button Animation</title>
+<style>
+button {
+  background-color: #000;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 1s;
+}
+
+button:hover {
+  background-color: #d5bebe;
+}
+
+@keyframes scale-button {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+button.animated {
+  animation: scale-button 2s infinite;
+}
+</style>
+</head>
+<body>
+<button class="animated">Click Me!</button>
+</body>
+</html>

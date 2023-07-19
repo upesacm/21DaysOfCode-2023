@@ -1,0 +1,21 @@
+Q1. 
+def calculate_discount(price,percent):
+    finalp=price-((percent/100)*price)
+    print("The final price is ", finalp)
+price=float(input("Enter the price:"))
+percent=float(input("Enter the discount percent:"))
+calculate_discount(price,percent)
+Q2. 
+def is_palindrome(word):
+    for i in range(0, int(len(word))):
+        for char in word:
+            if char[i]==char[len(word)-i-1]:
+                return True
+            else:
+                return False
+word=input("Enter the word:")
+ans=is_palindrome(word)
+if (ans):
+    print("yes")
+else:
+    print("no")

@@ -1,0 +1,8 @@
+Q1. 
+Input = [('Ram', 30),('Priya', 41),('Seema', 62
+for x in Input:
+    print (x[0],x[1])
+Q2. 
+Input = [('Ram', 30, 40, 67),('Priya', 41, 52, 18),('Seema', 62, 78, 98)]
+for x in Input:
+    print (x[0],((x[1]+x[2]+x[3])/3))

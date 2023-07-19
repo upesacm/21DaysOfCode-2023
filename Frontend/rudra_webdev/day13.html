@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Transitions and Keyframe Animations</title>
+    <style>
+        button {
+            padding: 10px 20px;
+            background-color: #337ab7;
+            color: #ffffff;
+            border: none;
+            border-radius: 3px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 1s ease;
+            animation: scale 2s infinite alternate;
+        }
+
+        button:hover {
+            background-color: #23527c;
+        }
+
+        @keyframes scale {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.2);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <button>Click Me</button>
+</body>
+
+</html>
+

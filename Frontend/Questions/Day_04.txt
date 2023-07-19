@@ -1,0 +1,9 @@
+Questions for Day - 04 (06-07-2023)
+
+Creating an HTML Table
+
+1. Create a new HTML file.
+2. Design an HTML table with a few rows and columns.
+3. Use the <table>, <tr>, and <td> tags to structure the table.
+4. Add content to each cell of the table.
+5. Save the file and open it in a web browser to view your table.

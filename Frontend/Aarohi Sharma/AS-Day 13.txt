@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Project</title>
+<style>
+.button {padding: 10px 20px; background-color: aqua; text-color: white; border: none; transition: background-color 1s ease; animation: scaleAnimation 2s infinite;}
+.my-button:hover {background-color: pink;}
+@keyframes scaleAnimation { 0% { transform: scale(1); } 50% { transform: scale(1.2); } 100% { transform: scale(1); }}
+</style>
+</head>
+<body>
+<button class="my-button">Click me</button>
+</body>
+</html>

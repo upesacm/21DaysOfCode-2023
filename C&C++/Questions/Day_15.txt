@@ -1,0 +1,5 @@
+Questions for Day - 15 (17-07-2023)
+
+1. Write a program that uses error handling to check if a file exists. Print an error message if the file does not exist.
+
+2. Implement a program that handles multiple types of errors using error codes. Define custom error codes and handle each error appropriately.

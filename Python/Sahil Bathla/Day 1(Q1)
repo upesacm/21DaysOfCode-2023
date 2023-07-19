@@ -1,0 +1,5 @@
+print("Day 1 of ACM'S 21 Days of Code")
+name=input("Enter your name:")
+greet="Hello, {}!".format(name)
+print(greet)
+

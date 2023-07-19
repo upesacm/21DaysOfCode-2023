@@ -1,0 +1,25 @@
+#Answer-1
+def check_pf(score):
+    if score >= 60:
+        return "Pass"
+    else:
+        return "Fail"
+score = float(input("Enter the student's score: "))
+result = check_pf(score)
+print("Result: " + result)
+
+#Answer-2
+def is_prime(num):
+    if num < 2:
+        return False
+    for i in range(2, int(num ** 0.5) + 1):
+        if num % i == 0:
+            return False
+    return True
+start = int(input("Enter the starting number: "))
+end = int(input("Enter the ending number: "))
+print("Prime numbers between", start, "and", end, "are:")
+for num in range(start, end + 1):
+    if is_prime(num):
+        print(num)
+

@@ -1,0 +1,6 @@
+Questions for Day - 06 (08-07-2023)
+
+
+1. Write a function that accepts a list of integers and returns the largest number from the list.
+  
+2. Write a Python program that finds the second smallest element in a given list and displays it with a descriptive message.

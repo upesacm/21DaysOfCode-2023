@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roadmap for MERN Stack Development</title>
+  <link rel="stylesheet" href="styles.css">
+<style>
+.roadmap-card {display: flex;}
+.roadmap-card > div {background-color: #f1f1f1; box-sizing: border-box;}
+.resources {display: flex;}
+.resources > div {background-color: #eee; box-sizing: border-box; link-colour: #333;}
+.resources:hover:<a> {background-color: #007bff;}
+.footer {display: flex;}
+.footer > div {background colour: #333; colour: #fff;}
+</style>
+</head>
+<body>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+/* Colors Used:   
+
+Header background colour - #333
+Header color - #fff
+Roadmap card background colour - #f1f1f1
+
+
+  <header>
+    <h1>Roadmap for MERN Stack Development</h1>
+    <p>Learn the skills needed to become a proficient MERN stack developer!</p>
+  </header>
+
+  <section class="roadmap">
+    <h2>Roadmap</h2>
+    <div class="roadmap-card">
+<div>
+      <h3>HTML & CSS</h3>
+      <p>Learn the fundamentals of web development with HTML and CSS.</p>
+</div>
+</div>
+    <div class="roadmap-card">
+<div>
+      <h3>JavaScript & ES6+</h3>
+      <p>Master JavaScript and modern ES6+ features for dynamic web development.</p>
+    </div>
+</div>
+    <div class="roadmap-card">
+<div>
+      <h3>React</h3>
+      <p>Build interactive user interfaces with the React library.</p>
+    </div>
+</div>
+    <div class="roadmap-card">
+<div>
+      <h3>Node.js</h3>
+      <p>Learn server-side JavaScript with Node.js.</p>
+    </div>
+</div>
+    <div class="roadmap-card">
+<div>
+      <h3>Express.js</h3>
+      <p>Create web applications and APIs using the Express.js framework.</p>
+    </div>
+</div>
+    <div class="roadmap-card">
+<div>
+      <h3>MongoDB</h3>
+      <p>Master NoSQL database management with MongoDB.</p>
+    </div>
+</div>
+    <div class="roadmap-card">
+<div>
+      <h3>RESTful APIs</h3>
+      <p>Understand the concepts and design principles of RESTful APIs.</p>
+    </div>
+</div>
+    <div class="roadmap-card">
+<div>
+      <h3>Authentication & Authorization</h3>
+      <p>Implement user authentication and authorization in your applications.</p>
+    </div>
+</div>
+    <div class="roadmap-card">
+<div>
+      <h3>Deployment & DevOps</h3>
+      <p>Learn how to deploy and manage your MERN stack applications.</p>
+    </div>
+</div>
+  </section>
+
+  <section class="resources">
+<div class="resources">
+<div>
+    <h2>Resources</h2>
+    <ul>
+      <li><a href="#">FreeCodeCamp</a> - Provides interactive coding challenges and projects for learning web development.</li>
+      <li><a href="#">MDN Web Docs</a> - A comprehensive resource for web development documentation and tutorials.</li>
+      <li><a href="#">React Docs</a> - Official documentation for React library, an integral part of the MERN stack.</li>
+      <li><a href="#">Node.js Docs</a> - Official documentation for Node.js.</li>
+      <li><a href="#">MongoDB University</a> - Offers free online courses for learning MongoDB.</li>
+    </ul>
+</div>
+  </section>
+
+  <footer>
+<div class="footer">
+<div>
+    <p>&copy; 2023 Roadmap for MERN Stack Development. All rights reserved.</p>
+</div>
+  </footer>
+</body>
+</html>

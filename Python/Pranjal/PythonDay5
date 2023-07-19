@@ -1,0 +1,29 @@
+#1. Write a Python program that takes a student's score as input and determines whether the student has passed or failed. Assume that the passing score is 60 or greater.
+
+score = int(input("Enter your score: "))
+if score >59 and score < 101:
+    print("Passed :)")
+elif score < 60 and score >0 :
+    print("Failed :(")
+else:
+    print("Invalid input!")
+
+
+
+#2. Write a Python program that prints all the prime numbers between two given numbers provided by the user.
+
+def is_prime(n):
+    if n < 2:
+        return False
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+start = int(input("Enter the starting number: "))
+end = int(input("Enter the ending number: "))
+
+print("Prime numbers between", start, "and", end, "are:")
+for num in range(start, end ):
+    if is_prime(num):
+        print(num)

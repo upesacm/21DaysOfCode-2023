@@ -1,0 +1,72 @@
+#Answer-1
+def sort_and_remove_duplicates(lst):
+    sorted_list = sorted(lst)
+    unique_list = []
+    
+    for num in sorted_list:
+        if num not in unique_list:
+            unique_list.append(num)
+    
+    return unique_list
+
+def main():
+    user_input = input("")
+    
+    if user_input.strip() == "":
+        print("Empty list")
+        return
+    
+    try:
+        numbers = [int(num) for num in user_input.split()]
+        result = sort_and_remove_duplicates(numbers)
+        print("The Sorted Non-Duplicate List:", result)
+    except ValueError:
+        print("Invalid input. Please enter integers separated by spaces.")
+
+if __name__ == "__main__":
+    main()
+#Answer-2
+def largest_product(lst):
+    try:
+        numbers = list(map(int, lst.split()))
+    except ValueError:
+        print("Invalid input. Please enter space-separated integers only.")
+        return -1
+
+    numbers.sort(reverse=True)
+
+    largest_product = -1
+    n = len(numbers)
+    if n >= 2:
+        largest_product = numbers[0] * numbers[1]
+
+    return largest_product
+
+user_input = input("")
+
+result = largest_product(user_input)
+
+print("Product Of Largest Distinct Numbers:", result)
+
+#Answer-3
+def check_triplet(a, b, c):
+
+    for x in range(1, 101):
+        for y in range(1, 101):
+            for z in range(1, 101):
+                if x % a == 0 and y % b == 0 and z % c == 0 and x + y > z:
+                    return True
+    return False
+
+user_input = input("")
+
+try:
+    a, b, c = map(int, user_input.split())
+except ValueError:
+    print("Invalid input. Please enter three space-separated integers.")
+    exit()
+
+if check_triplet(a, b, c):
+    print("Triplet Exists")
+else:
+    print("Triplet Doesn't Exist")
