@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-image: url('https://www.watermeetsmoney.com/wp-content/uploads/2017/11/Header-background-2.png');
+    background-size: cover;
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-size 0.3s ease-in-out;
+  }
+  
+  header:hover {
+    background-size: 110%;
+  }
+  
+  nav {
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  nav a:hover {
+    color: #ffcc00;
+  }
+  
+  main {
+    padding: 20px;
+    border: 1px solid #ccc;
+    flex: 1;
+  }
+  
+  section {
+    border: 2px solid #aaa;
+    padding: 20px;
+  }
+  
+  footer {
+    background-image: url("https://ohcbrands.com/wp-content/uploads/2018/04/69648590-header-wallpapers.jpg");
+    background-size: cover;
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotateFooter 10s linear infinite;
+    transform-origin: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  @keyframes rotateFooter {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-20deg);
+    }
+  }
+  

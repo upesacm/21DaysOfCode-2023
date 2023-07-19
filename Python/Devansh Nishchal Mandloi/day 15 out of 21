@@ -1,0 +1,14 @@
+#Que1}
+
+def find_common_elements(list1, list2):
+    common_elements = list(set(list1) & set(list2))
+    return common_elements
+
+
+#Que2}
+
+def fibonacci(n):
+    if n <= 1:
+        return n
+    else:
+        return fibonacci(n-1) + fibonacci(n-2)
