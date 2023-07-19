@@ -1,0 +1,7 @@
+Question for Day - 17 (19-07-2023)
+
+1. Create a new HTML file.
+2. Design a webpage with a div element.
+3. Apply CSS styles to add a transition effect to the div's width, with a duration of 2 seconds and an ease-in-out timing function.
+4. Apply CSS styles to change the div's width when hovering over it.
+5. Apply CSS styles to add a keyframe animation to the div that rotates it continuously.
