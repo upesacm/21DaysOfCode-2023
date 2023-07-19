@@ -1,0 +1,5 @@
+Questions for Day - 17 (19-07-2023)
+
+1. Write a Python function that takes two lists as input and returns a new list containing only the common elements between the two input lists.
+
+2. Write a Python program to count the frequency of each element in a list and return a dictionary with the elements as keys and their frequencies as values.
