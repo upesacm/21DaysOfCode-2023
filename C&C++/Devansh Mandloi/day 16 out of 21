@@ -1,0 +1,57 @@
+//Que1}
+
+
+#include<stdio.h>
+
+int main()
+{
+
+  FILE* file=fopen("day16.txt", "r");
+  if(file==NULL)
+  {
+    printf("Failed to open the desired file, check the file name and try again!");
+
+    return 1;
+  }
+
+  char line[200];
+  while(fgets(line, sizeof(line), file)!=NULL)
+  {
+    printf("%s", line);
+  }
+
+  fclose(file);
+
+  return 0;
+
+}
+
+
+
+//Que2
+
+
+#include <stdio.h>
+
+int main() {
+    FILE *file1 = fopen("day16.txt", "rb");
+
+    if (file1 == NULL) {
+        printf("Failed to open the desired file. Please check the name of the file and try again!\n");
+        return 1;
+    }
+
+    FILE *file2 = fopen("day16-2.txt", "wb");
+    int ch;
+
+    while ((ch = fgetc(file1)) != EOF) {
+        fputc(ch, file2);
+    }
+
+    fclose(file1);
+    fclose(file2);
+
+    printf("Content of the file is copied successfully!\n");
+
+    return 0;
+}
