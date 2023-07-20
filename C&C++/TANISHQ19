@@ -1,0 +1,83 @@
+TASK1
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+
+int is_palindrome(const char *input_string) {
+    // Calculate the length of the input string
+    size_t length = strlen(input_string);
+    
+    // Allocate memory for the cleaned string (without non-alphanumeric characters) and initialize to lowercase
+    char cleaned_string[length + 1];
+    size_t cleaned_index = 0;
+    for (size_t i = 0; i < length; i++) {
+        if (isalnum(input_string[i])) {
+            cleaned_string[cleaned_index++] = tolower(input_string[i]);
+        }
+    }
+    cleaned_string[cleaned_index] = '\0';
+    
+    // Compare the original and reversed strings
+    for (size_t i = 0; i < cleaned_index / 2; i++) {
+        if (cleaned_string[i] != cleaned_string[cleaned_index - i - 1]) {
+            return 0; // Not a palindrome
+        }
+    }
+    
+    return 1; // It's a palindrome
+}
+
+int main() {
+    const char *test_strings[] = {
+        "A man, a plan, a canal, Panama!",
+        "Racecar",
+        "Hello, World!",
+        "Never odd or even.",
+    };
+    size_t num_tests = sizeof(test_strings) / sizeof(test_strings[0]);
+    
+    for (size_t i = 0; i < num_tests; i++) {
+        if (is_palindrome(test_strings[i])) {
+            printf("'%s' is a palindrome.\n", test_strings[i]);
+        } else {
+            printf("'%s' is not a palindrome.\n", test_strings[i]);
+        }
+    }
+    
+    return 0;
+}
+TASK2
+#include <stdio.h>
+#include <string.h>
+
+#define MAX_WORDS 100
+
+int main() {
+    char sentence[1000];
+    printf("Enter a sentence: ");
+    fgets(sentence, sizeof(sentence), stdin);
+
+    // Remove the newline character from the input
+    sentence[strcspn(sentence, "\n")] = '\0';
+
+    // Tokenize the sentence into words using strtok
+    char *word_list[MAX_WORDS];
+    char *delimiters = " \t\n";
+    char *word = strtok(sentence, delimiters);
+    int word_count = 0;
+
+    while (word != NULL && word_count < MAX_WORDS) {
+        word_list[word_count++] = word;
+        word = strtok(NULL, delimiters);
+    }
+
+    // Print the words and count
+    printf("Words in the sentence:\n");
+    for (int i = 0; i < word_count; i++) {
+        printf("%s\n", word_list[i]);
+    }
+
+    printf("Number of words: %d\n", word_count);
+
+    return 0;
+}

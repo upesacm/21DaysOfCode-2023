@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #333;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+header {
+    background-color: aqua;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+.hero {
+    background-image: url("https://www.chitkarauniversity.edu.in/wp-content/uploads/2021/07/computing-virtualisation-technology-Header-Image.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #ff5555;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #ff3333;
+}
+
+.about {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+}
+
+.about h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    margin-bottom: 40px;
+}
+
+.services {
+    background-color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.service-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.service-item img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.contact {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+}
+
+.contact h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    margin-top: 20px;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.contact button {
+    background-color: #333;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact button:hover {
+    background-color: #222;
+}
+
+footer {
+    background-color: aqua;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    color: #333;
+}
+
+@media (max-width: 768px) {
+   
+    nav ul {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+    }
+    nav ul li {
+      margin: 10px 0;
+    }
+    nav ul li a {
+      font-size: 20px;
+    }
+    .burger-menu {
+      display: block;
+    }
+  }
+  
+  @media (min-width: 769px) {
+
+    .burger-menu {
+      display: none;
+    }
+  }
+  

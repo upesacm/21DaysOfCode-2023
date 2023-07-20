@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Day 16</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 3fr; /* Explicit grid with two columns, first column is 1 fraction, second column is 3 fractions */
+      grid-template-rows: 100px 1fr 50px; /* Explicit grid with three rows, first row is 100 pixels, second row is 1 fraction, third row is 50 pixels */
+      grid-template-areas:
+        "header header"
+        "nav main"
+        "sidebar sidebar"
+        "footer footer"; /* Defining the grid areas for each section */
+      min-height: 100vh; /* Set minimum height to fill the viewport */
+    }
+
+    /* Styling for each grid area */
+    .header {
+      grid-area: header;
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px;
+    }
+
+    .nav {
+      grid-area: nav;
+      background-color: #2196F3;
+      color: white;
+      padding: 10px;
+    }
+
+    .main {
+      grid-area: main;
+      background-color: #f1f1f1;
+      padding: 10px;
+    }
+
+    .sidebar {
+      grid-area: sidebar;
+      background-color: #f44336;
+      color: white;
+      padding: 10px;
+    }
+
+    .footer {
+      grid-area: footer;
+      background-color: #555;
+      color: white;
+      padding: 10px;
+    }
+
+    /* Responsive layout: Change grid-template-columns for smaller screens */
+    @media (max-width: 768px) {
+      .container {
+        grid-template-columns: 1fr; /* Change to a single column layout */
+        grid-template-rows: 100px 1fr 1fr 1fr 50px; /* Adjust the row sizes for the single column layout */
+        grid-template-areas:
+          "header"
+          "nav"
+          "main"
+          "sidebar"
+          "footer"; /* Reorganize the grid areas for smaller screens */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="header">Header</header>
+    <nav class="nav">Navigation</nav>
+    <main class="main">Main Content</main>
+    <aside class="sidebar">Sidebar</aside>
+    <footer class="footer">Footer</footer>
+  </div>
+</body>
+</html>

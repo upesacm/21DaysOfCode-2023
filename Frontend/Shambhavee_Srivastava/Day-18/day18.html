@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+header {
+    background-color: #13b19f;
+    color: #000000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 1rem;
+}
+nav {
+    background-color: #225149;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    font-family:cursive;
+    align-items: center;
+    padding: 0.7rem;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+}
+nav li {
+    margin-right: 1rem;
+}
+nav li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+main {
+    padding: 2rem;
+}
+footer {
+    background-color: #280000;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+@media screen and (max-width: 768px) {  /* for burger menu */
+    nav ul {
+        display: none;
+    }
+    .burger-menu {
+        display: block;
+        cursor: pointer;
+    }
+    .bar {
+        width: 25px;
+        height: 3px;
+        background-color: #fff;
+        margin: 5px;
+    }
+}
+@media screen and (min-width: 769px) {  /* for navigation menu */
+    .burger-menu {
+        display: none;
+    }
+    nav ul {
+        display: flex;
+    }
+}
+    </style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Webpage Day-18</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="heading" style="text-align: center;">
+    <h1>21DaysOfCode-Day18</h1>
+</div>
+    <header>
+        <h1>Example of a Responsive Webpage</h1>
+    </header>
+    <nav>
+        <div class="burger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Welcome to our website</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam eveniet, vitae delectus veritatis, molestias modi corrupti vero nisi rem praesentium obcaecati fuga non aliquam cupiditate nesciunt vel explicabo assumenda dolorem ex nemo in at beatae saepe tenetur! Quia error ex obcaecati praesentium cupiditate, ducimus sint minus, aliquid, eligendi optio nisi perferendis porro pariatur quidem quis dicta? Ipsum, hic fuga optio, distinctio doloribus enim dolorem unde iusto ad cumque nemo, maiores alias quibusdam non totam ut? Placeat, blanditiis facere minima quod officia nihil mollitia soluta repudiandae sit aperiam molestias ut eos omnis cum reprehenderit ullam beatae. Minus molestiae eligendi at quaerat assumenda, velit, ipsa, sequi tempore magni eos illo adipisci ea libero quasi! Reiciendis asperiores sint quaerat eligendi error amet beatae, tempore, consequuntur optio magni quae ab. Ducimus sunt inventore hic natus facilis fugiat voluptatem itaque earum dolorem aut! Magni laboriosam corrupti quam, cupiditate molestiae earum architecto est eveniet accusamus expedita consequuntur deleniti eaque! Asperiores, nam corporis. Hic sed tempore quasi dicta, harum eum dolorem, provident esse dolore qui modi repudiandae excepturi. Eligendi nulla minima, incidunt tenetur reprehenderit quae possimus labore vitae provident, quod saepe consectetur ipsam sunt soluta quasi pariatur reiciendis officia fugiat consequatur, similique repellat? Dolore odio ea repudiandae cupiditate dolorem minus, sunt quidem at earum ullam, quis possimus rerum ducimus! Enim neque explicabo hic libero at reiciendis iusto quis. Ut voluptas accusantium inventore, nobis, quos at rerum culpa repellendus sit reiciendis labore a sapiente possimus ipsam in modi corporis, debitis fugit nam nostrum iste soluta. Optio ea repellat nam ad. Cupiditate tempora vitae quas quod rerum reiciendis quo dolor nulla est fugiat porro atque dolorem laborum officiis impedit, earum dignissimos in corporis sunt soluta illum tempore maxime! Ab itaque a distinctio unde sed nam molestias, blanditiis quisquam dolore earum provident qui explicabo aspernatur, veritatis fugit animi facilis mollitia perferendis architecto nisi quidem eius sapiente. Molestiae, nobis odit. Rerum error commodi minima quaerat aliquam fugiat nesciunt facere molestiae iure expedita dolorum ad culpa, harum enim molestias quae maxime illum inventore odio voluptatem? Facere esse, nihil fugiat voluptates aut, ut enim mollitia cum eos quod eveniet id debitis et nisi iste neque obcaecati, officia fugit laboriosam labore! Nihil, reprehenderit delectus a illo quas ut nulla ducimus quos vitae corporis eos quis, numquam necessitatibus aliquam facere suscipit laudantium reiciendis animi sunt doloremque itaque natus esse earum perspiciatis! Optio, hic mollitia adipisci voluptatum quia, in voluptates iusto architecto distinctio pariatur itaque culpa?</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Created by Shambhavee Srivastava.</p>
+    </footer>
+</body>
+</html>
