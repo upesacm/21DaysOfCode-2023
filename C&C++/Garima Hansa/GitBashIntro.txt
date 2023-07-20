@@ -1,4 +1,5 @@
-Heyyyyy!!!
-
-Issue has been resolved. I have successfully clone the the repo.
-YAYYY!!!
+Heyyyyy.
+Issue has been resolved. 
+I have successfully clone the the repo.
+YAYYY.
+This will also be getting used for the file reading code.

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Grid Layout</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 200px 400px 300px;
+            grid-gap: 20px;
+            grid-template-areas:
+                "header header header"
+                "sidebar main content"
+                "footer footer footer";
+        }
+
+        header {
+            grid-area: header;
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 20px;
+        }
+
+        sidebar {
+            grid-area: sidebar;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+
+        main {
+            grid-area: main;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+
+        content {
+            grid-area: content;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Header</h1>
+        </header>
+        <sidebar>
+            <h2>Sidebar</h2>
+        </sidebar>
+        <main>
+            <h2>Main</h2>
+        </main>
+        <content>
+            <h2>Content</h2>
+        </content>
+        <footer>
+            <h2>Footer</h2>
+        </footer>
+    </div>
+</body>
+
+</html>
+

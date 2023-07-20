@@ -1,0 +1,8 @@
+import numpy as np
+
+# Create a NumPy array of shape (3, 3) with random integers between 1 and 10
+arr = np.random.randint(1, 11, size=(3, 3))
+
+# Print the array with a descriptive message
+print("Random Array filled with integers between 1 and 10:")
+print(arr)

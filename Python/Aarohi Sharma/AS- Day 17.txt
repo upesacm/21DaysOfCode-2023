@@ -1,0 +1,23 @@
+Q1. 
+list1= []
+n = int(input("Enter number of elements : "))
+for i in range(0, n):
+	ele1 = int(input())
+	list1.append(ele1)
+print("list1=", list1)
+list2= []
+m = int(input("Enter number of elements : "))
+for i in range(0, m):
+	ele2 = int(input())
+	list2.append(ele2)
+print("list1=", list2)
+list3=list(set(list1) & set(list2))
+print(list3)
+Q2. 
+list1=[1,2,3,4,5,6,6,5,4,3,2,1.0]
+def CountFrequency(my_list):
+	count = {}
+	for i in my_list:
+		count[i] = count.get(i, 0) + 1
+	return count
+print(CountFrequency(list1))

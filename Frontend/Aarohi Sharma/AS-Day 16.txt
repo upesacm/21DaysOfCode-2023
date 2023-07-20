@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Project</title>
+<style>
+.grid-container {
+  display: grid; column-gap: 50 px; row-gap: 50 px; height: 400 px;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 10px; 
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  align-content: center; justify-content: start;
+  padding: 20px 0;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+<h1>Indian Culture</h1>
+<br>
+<h2>Here are 9 fascinating Indian Culture, Traditions and customs:</h2>
+<div class="grid-container">
+  <div class="grid-item">Greetings</div>
+  <div class="grid-item">Religious Customs</div>
+  <div class="grid-item">Festivals of India</div>
+  <div class="grid-item">Symbols</div>
+  <div class="grid-item">Cuisine</div>
+  <div class="grid-item">Traditional Clothing</div>
+  <div class="grid-item">Dances</div>
+  <div class="grid-item">Epics & Mythology</div>
+  <div class="grid-item">Martial Arts</div>
+</div>
+</body>
+</html>
