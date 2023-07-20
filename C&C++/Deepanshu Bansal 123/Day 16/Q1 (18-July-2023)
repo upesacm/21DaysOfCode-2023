@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+string s="(i) line-1 in file 1";
+
+void fun(string a)
+{
+	if(a=="print file 1")
+	{
+		cout<<s;
+	}
+	else{
+		cout<<"write \"print file 1\" for read file 1";
+	}
+}
+
+int main()
+{
+	string a;
+	cout<<"Enter a for file 1 reading ";
+	getline(cin,a);
+	fun(a);
+}

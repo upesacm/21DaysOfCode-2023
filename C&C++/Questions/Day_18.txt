@@ -1,0 +1,5 @@
+Questions for Day - 18 (20-07-2023)
+
+1. Write a program to swap the values of two variables using pointers.
+
+2. Implement a function to concatenate two strings using pointers.
