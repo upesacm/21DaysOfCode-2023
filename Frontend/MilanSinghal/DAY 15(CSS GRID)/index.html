@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Grid Layout with Multiple Sections</title>
+<style>
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 10px;
+}
+
+.header {
+  grid-area: header;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+.content {
+  grid-area: content;
+  background-color: #fff;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: #ddd;
+  padding: 10px;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">Header</div>
+  <div class="content">Content</div>
+  <div class="sidebar">Sidebar</div>
+  <div class="footer">Footer</div>
+</div>
+</body>
+</html>
