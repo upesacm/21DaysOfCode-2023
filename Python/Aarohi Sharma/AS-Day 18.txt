@@ -1,0 +1,13 @@
+Q1. 
+list1= []
+n = int(input("Enter number of elements : "))
+for i in range(0, n):
+	ele1 =(input("Enter words:"))
+	list1.append(ele1)
+print("list1=", list1)
+def CountFrequency(my_list):
+	count = {}
+	for i in my_list:
+		count[i] = count.get(i, 0) + 1
+	return count
+print(CountFrequency(list1))
