@@ -1,0 +1,8 @@
+def checkPassFail(score):
+    if score >= 60:
+        print("Congratulations! You have passed.")
+    else:
+        print("Sorry! You have failed.")
+
+score = float(input("Enter the student's score: "))
+checkPassFail(score)

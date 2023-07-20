@@ -1,0 +1,147 @@
+<html>
+  <head>
+    <title>Header-navigation-section-footer Webpage</title>
+  </head>
+  <style>
+    body{
+      display: flex;
+      margin: 0px;
+    }
+    header{
+      background-image:url("Header-day15.jpg");
+      /* background-repeat: no-repeat; */
+      width: 400px;
+      height:745px;
+      transition: width 2s,height 2s,background 2s;
+    }
+    header:hover{
+      width:600px;
+    }
+    nav{
+      background-color: rgb(140, 255, 140);
+      height: 200px;
+      margin-left: 100px;
+      margin-right: 100px;
+      padding:5px;
+      border-radius: 20px;
+    }
+    .a1{
+      text-decoration: none;
+      margin-left: 20px;
+      padding-top:100px;
+      padding: 50px;
+      text-decoration: none;
+      color: black;
+    }
+    .a1:hover{
+      color: green;
+    }
+    .h11{
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 200px;
+    }
+    section{
+      margin:230px;
+      border: 2px solid black;
+      padding:20px;
+    }
+    .p1{
+      text-align:center;
+      font-size: larger;
+    }
+    .a2{
+      margin-top: 20px;
+      text-decoration: none;
+      margin-left: 20px;
+      padding-top:100px;
+      padding: 50px;
+      text-decoration: none;
+      color:black;
+    }
+    .a2:hover{
+      color: green;
+    }
+    .h12{
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 200px;
+      color: white;
+    }
+    .a3{
+      margin-top: 20px;
+      text-decoration: none;
+      margin-left: 10px;
+      padding-top:100px;
+      padding: 50px;
+      text-decoration: none;
+      color:black;
+    }
+    .a3:hover{
+      color: green;
+    }
+    .p2{
+      background-color: yellow;
+      padding:5px;
+      border-radius:20px;
+    }
+    footer{
+      background-image: url("Footer-day15.jpg");
+      padding:28px;
+      /* animation:mymove 1s infinite; */
+      transition: width 2s,height 2s,background 2s;
+    }
+    footer:hover
+    {
+      width:600px;
+    } 
+    /*  @keyframes mymove{
+      0%{top:0px;}
+      50%{bottom:20px;}
+      1000%{top:0px;} 
+    } */
+  </style>
+  <body>
+    <header>
+      <h1 class="h11">Tags Webpage</h1>
+      <nav>
+        <a href="#" class="a1">Home</a>
+        <br>
+        <br>
+        <br>
+        <a href="#" class="a1">Certify</a>
+        <br>
+        <br>
+        <br>
+        <a href="#" class="a1">Contact us</a>
+        <br>
+        <br>
+        <br>
+        <a href="#" class="a1">Profile</a>
+      </nav>
+    </header>
+    <section>Hey, Welcome in webpage. this is an content section
+      <br>
+      <br>
+      <p class="p1">🤗</p>
+    </section>
+    <footer>
+      <h1 class="h12">Footer Webpage</h1>
+      <p class="p2">
+        <a href="#" class="a2">About us</a>
+        <br>
+        <br>
+        <br>
+        <a href="#" class="a2">Location</a>
+        <br>
+        <br>
+        <br>
+        <a href="#" class="a3">&copy; copyright | 2023</a>
+        <br>
+        <br>
+        <br>
+        <a href="#" class="a2">Privacy</a>
+        </p>
+    </footer>
+  </body>
+</html>

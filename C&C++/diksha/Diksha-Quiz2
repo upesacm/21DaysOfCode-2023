@@ -1,0 +1,89 @@
+                                                   QUE 1
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    int row,column;
+    //printf("enter the no of rows and columns:\n" );
+    scanf("%d %d",&row,&column);
+    int arr[row][column];
+    //printf("enter the elements of your matrix:\n");
+    for(int i=0;i<row;i++)
+    {
+        for(int j=0;j<column;j++)
+        {
+            scanf("%d",&arr[i][j]);
+        }
+        printf("\n");
+    }
+    int max=arr[0][0];
+    for(int i=0;i<row;i++)
+    {
+        for(int j=0;j<column;j++)
+        {
+            if(arr[i][j]>max)
+            {
+                max=arr[i][j];
+            }
+        }
+    }
+    printf("Maximum Element:%d\n",max);
+    int sum=0;
+    for(int i=0;i<row;i++)
+    {
+        for(int j=0;j<column;j++)
+        {
+            if(arr[i][j]%max==0)
+            {
+                sum=sum+arr[i][j];
+            }
+        }
+    }
+    printf("Sum Of Divisible Elements:%d",sum);
+    return 0;
+}
+
+                                                             QUE 2
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+int row,column;
+    //printf("enter the no of rows and columns:\n" );
+    scanf("%d %d",&row,&column);
+    int arr[row][column];
+    //printf("enter the elements of your matrix:\n");
+    for(int i=0;i<row;i++)
+    {
+        for(int j=0;j<column;j++)
+        {
+            scanf("%d",&arr[i][j]);
+        }
+        printf("\n");
+    }
+    for(int i=0;i<row;i++)
+    {
+        for(int j=0;j<column;j++)
+        {
+            if(arr[i][j]==arr[j][i])
+            {
+                continue;
+            }
+            else
+            {
+                printf("Mismatch found at position (%d,%d) and (%d,%d)",i,j,j,i);
+                printf("The matrix is not symmetric");
+                exit(0);
+            }
+        }
+    }
+    printf("The matrix is symmetric");
+  return 0;
+}

@@ -1,0 +1,2 @@
+a=input("ENTER A WORD TO REVERSE IT ");
+print(a[::-1]);

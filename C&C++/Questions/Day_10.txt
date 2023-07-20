@@ -1,0 +1,5 @@
+Questions for Day - 10 (12-07-2023)
+
+1. Write a recursive function to calculate the Fibonacci sequence up to a given number and return the sequence as an array.
+
+2. Implement a recursive function to check if a given array is sorted in ascending order. 

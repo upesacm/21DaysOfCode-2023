@@ -1,0 +1,23 @@
+#Que1}
+n=3
+l=[]
+for i in range(n):
+    s=int(input('Please enter a number'))
+    l.append(s)
+print(l)
+print(f"The largest number among the numbers you entered is {max(l)}")
+
+
+#Que2}
+
+def inn():
+    global sum
+    n=int(input('Enter an integer:'))
+    if(n>0):
+        sum+=n
+        return inn()
+    else:
+        print(f'The sum of all the positive integers you entered is {sum}')
+sum=0
+global n
+inn()

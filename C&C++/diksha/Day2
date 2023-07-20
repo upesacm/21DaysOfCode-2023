@@ -1,0 +1,32 @@
+                                                 QUE 1
+#include<stdio.h>
+int main()
+{
+    int year;
+    printf("Enter the year to be checked:\n");
+    scanf("%d",&year);
+    if((year%400==0)||((year%4==0)&&(year%100!=0)))
+    {
+    printf("leap year");
+    }
+    else
+    {
+        printf("not a leap year");
+    }
+    return 0;
+}
+
+                                               QUE 2
+#include<stdio.h>
+int main()
+{
+    int a,b;
+    printf("Enter the values of the two variables a and b respectively:\n");
+    scanf("%d %d",&a,&b);
+    a=a^b;
+    b=a^b;
+    a=a^b;
+    printf("Values of a and b after swapping are:\n");
+    printf("a=%d,b=%d",a,b);
+    return 0;
+}

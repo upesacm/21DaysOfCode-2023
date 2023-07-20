@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>
+      Div container
+    </title>
+    <style>
+      div{
+        border: 2px solid black;
+        width: 500px;
+        height: 300px;
+        margin: 10px;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      Hello, Welcome in my webpage "Div container":
+      <ul>
+        <li>Apply css</li>
+        <ul>
+          <li>Width: 500pixels</li>
+          <li>Height: 300pixels</li>
+        </ul>
+        <li>Apply CSS 20-pixel of padding</li>
+        <li>Apply CSS 2-pixel of border with solid line</li>
+        <li>Apply CSS 10-pixel of margin</li>
+      </ul>
+    </div>
+  </body>
+</html>

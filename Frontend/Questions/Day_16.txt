@@ -1,0 +1,8 @@
+Question for Day - 16 (18-07-2023)
+
+CSS grid layouts
+
+1. Create a new HTML file.
+2. Design a webpage layout using CSS grid with multiple sections.
+3. Apply CSS styles to define grid areas and arrange the sections accordingly.
+4. Utilize both implicit and explicit grid definitions.

@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+
+void fun(int n)
+{
+	int i,fib[100];
+	fib[0]=0;
+	fib[1]=1;
+	for(i=2;i<n;i++)
+	{
+		fib[i]=fib[i-2]+fib[i-1];
+	}
+	for(i=0;i<n;i++)
+	{
+		cout<<fib[i]<<" ";
+	}
+}
+
+int main()
+{
+	int n;
+	cout<<"Enter n number of fibonacci series ";
+	cin>>n;
+	fun(n);
+	return 0;
+}

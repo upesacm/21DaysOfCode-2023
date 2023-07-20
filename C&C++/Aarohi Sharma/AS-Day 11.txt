@@ -1,0 +1,57 @@
+Q1. 
+#include <stdio.h>
+struct Book {
+    char title[100];
+    char author[100];
+    int publicationYear;
+};
+void displayBooks(struct Book library[]) {
+    printf("Title: %s\n", library.title);
+    printf("Author: %s\n", library.author);
+    printf("Publication Year: %d\n", library.publicationYear);
+}
+int main() {
+    struct Book library[100];
+    library.title="The Fault in Our Stars";
+    library.author="John Green";
+    library.publicationYear=1998;
+    displayBooks(library);
+    return 0;
+}
+Q2. 
+#include<stdio.h>
+#include<conio.h>
+
+
+struct date
+{
+int day;
+int month;
+int year;
+};
+void main()
+{
+struct date d1,d2;
+printf("Enter first date(dd/mm/yyyy):");
+scanf("%d%d%d",&d1.day,&d1.month,&d1.year);
+printf("Enter second date(dd/mm/yyyy):");
+scanf("%d%d%d",&d2.day,&d2.month,&d2.year);
+if((d1.day==d2.day)&&(d1.month==d2.month)&&(d1.year==d2.year))
+printf("EQUAL");
+else if ((d1.year)<(d2.year))
+{
+    printf ("d1 is earlier");
+}
+else if((d1.month)<(d2.month) && (d1.year==d2.year))
+{
+    printf ("d1 is earlier");
+}
+else if((d1.day)<(d2.day) && (d1.month==d2.month) && (d1.year==d2.year))
+{
+    printf("d1 is earlier");
+}
+else 
+{
+    printf("d2 is earlier");
+}
+}

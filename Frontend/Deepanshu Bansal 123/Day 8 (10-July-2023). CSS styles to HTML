@@ -1,0 +1,69 @@
+<html>
+  <head>
+    <title>
+      CSS styles to HTML
+    </title>
+  </head>
+  <style>
+    body{
+      margin: 0px;
+    }
+    header{
+      background-color: aqua;
+    }
+    h1{
+      text-align: center;
+      padding:20px;
+    }
+    .hr1{
+      margin: 0px;
+      background-color: black;
+    }
+    nav{
+      background-color: rgb(112, 255, 112);
+      height:30px;
+    }
+    a{
+      text-decoration: none;
+      padding:10px;
+      margin: 20px;
+      font-size: 16px;
+      color: black;
+    }
+    a:hover{
+      color: rgb(255, 255, 255);
+    }
+    section{
+      margin-left: 440px;
+      margin-top: 150px;
+      font-size: large;
+      border: 1px solid black;
+      width:600px;
+      padding: 50px;
+      border-radius: 5px;
+    }
+  </style>
+  <body>
+    <header>
+      <h1>
+        CSS styles to HTML
+      </h1>
+      <hr class="hr1">
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Certify</a>
+        <a href="#">Contest</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Profile</a>
+      </nav>
+    </header>
+    <section>
+      Hello, today's We explain some css keys in this webpage such as Header, nav, section with some tasks:
+      <ul>
+        <li>Header tag with background color- aqua</li>
+        <li>nav tag with font-size 6-pixels</li>
+        <li>seaction tag with border of 1-pixel</li>
+      </ul>
+    </section>
+  </body>
+</html>
