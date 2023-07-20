@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Project</title>
+<style>
+* {margin: 0; padding: 0; box-sizing: border-box;}
+header {background-color: #333; color: #fff; padding: 10px; text-align: center;}
+nav {background-color: #444; display: flex; justify-content: space-between; align-items: center; padding: 10px;}
+nav ul {list-style: none; display: flex;}
+nav li {margin-right: 20px;}
+nav a {color: #fff; text-decoration: none;}
+section {padding: 20px;}
+footer {background-color: #333; color: #fff; padding: 10px; text-align: center;}
+@media (max-width: 768px) {nav {
+        flex-direction: column;
+        align-items: flex-start;}
+      nav ul {
+        margin-top: 10px;
+        display: none;}
+      nav.active ul {
+        display: flex;}
+      nav li {
+        margin: 5px 0;}}
+</style>
+</head>
+<body>
+<header><h1>Responsive Webpage</h1>
+</header>
+<nav>
+<div class="menu-icon">☰</div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+<section>
+    <h2>Welcome to our Website</h2>
+    <p>This is the main content section of our webpage.</p>
+</section>
+<footer>
+    <p>&copy; 2023 Your Company. All rights reserved.</p>
+</footer>
+<script>
+    const menuIcon = document.querySelector('.menu-icon');
+    const navMenu = document.querySelector('nav ul');
+    menuIcon.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+</script>
+</body>
+</html>
