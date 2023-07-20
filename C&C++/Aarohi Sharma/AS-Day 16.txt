@@ -1,0 +1,55 @@
+Q1. 
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    char ch, file_name[20];
+    FILE *fp;
+    printf("Enter the name of file:: ");
+    gets(file_name);
+    fp = fopen(file_name,"r");
+    if( fp == NULL )
+    {
+        printf("\nCan not open the file.");
+        exit(0);
+    }
+    printf("\nThe contents of %s file is :\n", file_name);
+    while( ( ch = fgetc(fp) ) != EOF )
+        printf("%c",ch);
+    fclose(fp);
+    return 0;
+}
+Q2. 
+#include <stdio.h>
+#include <stdlib.h> 
+int main()
+{
+    FILE *fptr1, *fptr2;
+	char filename[100], c;
+	printf("Enter the filename to open for reading \n");
+	scanf("%s", filename);
+	fptr1 = fopen(filename, "r");
+	if (fptr1 == NULL)
+	{
+		printf("Cannot open file %s \n", filename);
+		exit(0);
+	}
+	printf("Enter the filename to open for writing \n");
+	scanf("%s", filename);
+	fptr2 = fopen(filename, "w");
+	if (fptr2 == NULL)
+	{
+		printf("Cannot open file %s \n", filename);
+		exit(0);
+	}
+	c = fgetc(fptr1);
+	while (c != EOF)
+	{
+		fputc(c, fptr2);
+		c = fgetc(fptr1);
+	}
+	printf("\nContents copied to %s", filename);
+	fclose(fptr1);
+	fclose(fptr2);
+	return 0;
+}
