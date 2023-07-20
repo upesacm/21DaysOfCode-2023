@@ -1,0 +1,8 @@
+Question for Day - 18 (20-07-2023)
+
+CSS Media Queries
+
+1. Create a new HTML file.
+2. Design a responsive webpage layout with a header, navigation menu, content section, and footer.
+3. Apply CSS styles to adjust the layout for different screen sizes using media queries.
+4. Ensure that the navigation menu collapses into a burger menu icon on smaller screens.
