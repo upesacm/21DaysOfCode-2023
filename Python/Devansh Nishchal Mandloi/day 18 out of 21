@@ -1,0 +1,41 @@
+#Que1}
+
+
+n=int(input('Enter the number of words you want to enter:'))
+l=[]
+
+word_freq={}
+
+
+for i in range(n):
+    w=input('Enter a word:')
+    l.append(w)
+
+
+s1=set(l)
+for word in s1:
+    if word in  l:
+        word_freq[word]+=1
+    else:
+        word_freq[word]=1
+        
+
+#Que2}
+
+import matplotlib.pyplot as plt
+
+def plot_population_growth():
+   
+    years = range(2010, 2021) 
+    population = [10000, 12000, 14000, 16000, 18000, 21000, 23000, 25000, 27000, 29000, 31000]
+
+    plt.plot(years, population, marker='o', linestyle='-')
+
+    plt.xlabel('Year')
+    plt.ylabel('Population')
+    plt.title('City Population Growth over 10 Years')
+
+    plt.grid(True)  
+    plt.show()
+ 
+plot_population_growth()
