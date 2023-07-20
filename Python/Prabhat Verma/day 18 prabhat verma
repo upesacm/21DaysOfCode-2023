@@ -1,0 +1,21 @@
+1. Write a Python function that takes a list of words as input and returns a dictionary where the keys are the words and the values are the frequencies of those words in the list.
+def word_frequency(words):
+    frequency = {}
+    for word in words:
+        if word in frequency:
+            frequency[word] += 1
+        else:
+            frequency[word] = 1
+    return frequency
+
+2. Plot a simple line graph using Matplotlib that shows the population growth of a city over 10 years. Label the axes and provide a title for the graph.
+import matplotlib.pyplot as plt
+
+years = [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019]
+population = [1000000, 1200000, 1400000, 1600000, 1800000, 2000000, 2200000, 2400000, 2600000, 2800000]
+
+plt.plot(years, population)
+plt.xlabel('Year')
+plt.ylabel('Population')
+plt.title('Population Growth of a City Over 10 Years')
+plt.show()
