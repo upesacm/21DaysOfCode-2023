@@ -1,0 +1,49 @@
+<!--Flexbox layout
+
+1. Create a new HTML file.
+2. Design a webpage with a container div and three child div elements inside it.
+3. Apply CSS styles to the container div to create a flexbox layout with the child divs displayed in a row.
+4. Apply CSS styles to the child divs to make them take up an equal amount of space within the container.
+5. Apply CSS styles to add a 10-pixel gap between the child divs.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox layout</title>
+    <style>
+        .container {
+            background-color: black;
+            display: flex;
+            flex-direction: row;
+            width: 20vw;
+            height: 10vh;
+            margin: 0 auto;
+            gap: 10px;
+            padding: 20%;
+        }
+
+        .child1,
+        .child2,
+        .child3 {
+            background-color: aliceblue;
+            width: 100px;
+            height: 100px;
+            margin: auto 0;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="child1"></div>
+        <div class="child2"></div>
+        <div class="child3"></div>
+    </div>
+</body>
+
+</html>
