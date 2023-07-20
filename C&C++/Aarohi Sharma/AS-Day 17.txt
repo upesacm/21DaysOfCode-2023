@@ -1,0 +1,44 @@
+Q1. 
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+    char s[100];
+    printf("Enter a word:");
+    scanf("%s", &s);
+    int len= strlen(s);
+    int flag;
+    for(int i=0; i<len; i++)
+    {
+        if(s[i]!=s[len-i-1])
+        flag=1;
+        break;
+    }
+    if (flag)
+    printf("No");
+    else
+    printf("Yes");
+    return 0;
+}
+Q2. 
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+    char str[100];
+    printf("Enter a sentence:");
+    scanf("%s", &str);
+    int len = strlen(str);
+    char delimiter[] = " ";
+    char *p = strtok(str, delimiter);
+    int flag;
+    while (p!=NULL)
+    {
+        printf("'%s'\n", p);
+        p = strtok(NULL, delimiter);
+        flag++;
+    }
+    printf("\n");
+    printf("No of words are: %d", flag);
+    return 0;
+}

@@ -1,0 +1,39 @@
+//I don't know these thing , so I have to learn it simultaneusly chatgpt ,same for ques1
+
+#include <iostream>
+#include <fstream>
+#include <string>
+
+using namespace std;
+
+int main() {
+    string sorceFile, destnFile;
+    cout << "Enter the source filename: ";
+    cin >> sorceFile;
+    cout << "Enter the destination filename: ";
+    cin >> destnFile;
+
+    ifstream sourceFile(sorceFile);
+    if (!sourceFile) {
+        cerr << "Error: Failed to open the source file." << endl;
+        return 1;
+    }
+
+    ofstream destinationFile(destnFile);
+    if (!destinationFile) {
+        cerr << "erro Failed to open  destination file." << endl;
+        return 1;
+    }
+
+    string line;
+    while (getline(sourceFile, line)) {
+        destinationFile << line << endl;
+    }
+
+    sourceFile.close();
+    destinationFile.close();
+
+    cout << "File copied successfully." << endl;
+
+    return 0;
+}

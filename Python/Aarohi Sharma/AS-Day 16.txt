@@ -1,0 +1,11 @@
+Q1. 
+import numpy as np
+np.random.randint(1,10,(3,3))
+Q2. 
+import numpy as np
+np.random.rand(100)
+arr=np.random.rand(100)
+arr.sum()
+mean=arr.sum()/100
+print(mean)
+arr.std()

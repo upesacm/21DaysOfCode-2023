@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: auto 1fr auto; 
+    gap:10px;
+    min-height: 100vh; 
+}
+
+.header {
+    grid-column: 1 / span 3; 
+    background-color: #090088;
+    color: #fff;
+    padding: 20px;
+}
+
+.nav {
+    grid-column: 1;
+    background-color: #9bc1fd;
+    padding: 20px;
+}
+
+.main {
+    grid-column: 2 / span 2;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.sidebar {
+    grid-column: 3;
+    background-color: #9bc1fd;
+    padding: 20px;
+}
+
+.footer {
+    grid-column: 1 / span 3; 
+    background-color: #090088;
+    color: #fff;
+    padding: 20px;
+}
+
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-16</title>
+</head>
+<body>
+    <div class="heading" style="text-align: center;"><h1>21DaysOfCode-Day16</h1></div>
+    <div class="grid-container">
+        <header class="header">Header</header>
+        <nav class="nav">Navigation</nav>
+        <main class="main">Main Content</main>
+        <aside class="sidebar">Sidebar</aside>
+        <footer class="footer">Footer</footer>
+    </div>
+</body>
+</html>
