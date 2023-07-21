@@ -16,7 +16,7 @@ int count_lines(const char* file_path) {
 }
 int main() {
     const char* file_path = "path/to/your/text/file.txt";
-    int line_count = count_lines_in_file(file_path);
+    int line_count = count_lines(file_path);
     printf("Number of lines in the file: %d\n", line_count);
     return 0;
 }
