@@ -1,15 +1,14 @@
-def word_frequency(words_list):
-    word_count = {}
-
-    for word in words_list:
-        if word in word_count:
-            word_count[word] += 1
-        else:
-            word_count[word] = 1
-
-    return word_count
+def linear_search(arr, target):
+    for i, element in enumerate(arr):
+        if element == target:
+            return i
+    return -1
 
 # Example usage:
-words_list = ["apple", "banana", "orange", "apple", "banana", "apple"]
-result = word_frequency(words_list)
-print(result)
+arr = [3, 9, 5, 1, 8, 2, 7]
+target = 5
+result = linear_search(arr, target)
+if result != -1:
+    print(f"Element {target} found at index {result}.")
+else:
+    print(f"Element {target} not found in the list.")
