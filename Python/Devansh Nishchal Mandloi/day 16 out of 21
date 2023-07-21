@@ -1,0 +1,29 @@
+#Que1}
+
+
+import numpy as np
+arr=np.array([[1,2,3],[4,3,2],[5,6,7]])
+print(f"The array is: {arr}")
+
+
+
+#Que2}
+
+
+import numpy as np
+random_num=np.random.rand(100)
+
+
+#to know the random numbers generated, I can print the random_num first but the output would not look good then
+
+print(random_num)
+
+#calculating mean and standard deviation by using methods of numpy insteada of using actual formulae!
+mean=np.mean(random_num)
+std_diviation=np.std(random_num)
+
+#printing the mean and standard deviation calculated above
+
+print(mean)
+print(std_diviation)
+
