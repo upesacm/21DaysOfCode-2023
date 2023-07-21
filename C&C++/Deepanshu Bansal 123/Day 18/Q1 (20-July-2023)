@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+
+void fun(int a, int b)
+{
+	int *c,*d,temp;
+	c=&a;
+	d=&b;
+	temp=*c;
+	*c=*d;
+	*d=temp;
+	cout<<"Swaping the pointers "<<*c<<" "<<*d;
+}
+
+int main()
+{
+	int a,b;
+	cout<<"Enter a, b ";
+	cin>>a>>b;
+	fun(a,b);
+}
