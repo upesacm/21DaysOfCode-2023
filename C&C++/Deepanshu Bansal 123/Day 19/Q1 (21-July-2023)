@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+
+void fun(string file1_txt)
+{
+	int count=0;
+	for(int i=0;i<file1_txt.length();i++)
+	{
+		
+		int s=file1_txt[i];
+		if((s>=65 && s<=90) || (s>=97 && s<=122) || file1_txt[i]==' ')
+		{
+		}
+		else{
+			count++;
+		}
+	}
+	cout<<"Number of lines in text file "<<count;
+}
+
+int main()
+{
+    string file1_txt;
+	cout<<"Enter file1_txt as name ";
+	getline(cin,file1_txt);
+	fun(file1_txt);
+}
