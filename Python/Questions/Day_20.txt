@@ -1,0 +1,5 @@
+Questions for Day - 20 (22-07-2023)
+
+1. Write a Python program that sorts a given list of numbers in ascending order using the bubble sort algorithm. Print the sorted list with a descriptive message.
+
+2. Implement the merge sort algorithm in Python to sort a given list of numbers in descending order. Display the sorted list with a descriptive message. 
