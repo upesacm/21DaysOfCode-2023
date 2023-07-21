@@ -1,0 +1,6 @@
+Questions for Day - 03 (05-07-2023)
+
+1. Write a Python program that takes three numbers as input and prints the maximum of the three.
+
+2. Write a Python program that prompts the user to enter a series of integers, one at a time, until they enter a negative number. 
+The program should then terminate and compute and print the sum of all the positive integers entered by the user.

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Project</title>
+</head>
+<body>
+<h1>Different Indian Dance Forms</h1>
+<img src="C:\Users\Aarohi\Desktop\kathak.jpeg" alt="Kathak: Traditionally regarded to have originated from the travelling bards of North India referred as Kathakars or storytellers">
+<br>
+<img src="C:\Users\Aarohi\Desktop\kathakali.jpeg" alt="Kathakali: Dance drama from the south Indian state of Kerala">
+<br>
+<img src="C:\Users\Aarohi\Desktop\bharatnatyam.jpeg" alt="Bharatanatyam: Indian classical dance that originated in the Hindu temples of Tamil Nadu and neighbouring areas">
+<br>
+<img src="C:\Users\Aarohi\Desktop\manipuri.jpeg" alt="Manipuri: Imbued with the devotional themes of Madhura Raas of Radha-Krishna and characterised by gentle eyes and soft peaceful body movements">
+</body>
+</html>

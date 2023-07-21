@@ -1,0 +1,8 @@
+Question for Day - 02 (04-07-2023)
+
+Embedding a YouTube Video
+
+1. Create a new HTML file.
+2. Embed a YouTube video using the <iframe> tag and the appropriate video URL.
+3. Adjust the dimensions of the iframe to ensure proper display.
+4. Save the file and open it in a web browser to verify that the YouTube video is embedded and playable.

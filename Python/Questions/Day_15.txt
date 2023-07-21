@@ -1,0 +1,9 @@
+Questions for Day - 15 (17-07-2023)
+
+1. Write a function that accepts two lists of integers and returns a new list containing the common elements between the two lists, without duplicates.
+
+Example:
+Input: [1, 2, 3, 4, 5], [4, 5, 6, 7, 8]
+Output: [4, 5]
+
+2. Write a recursive Python function to calculate the nth Fibonacci number. Test the function by finding the 10th Fibonacci number and display it with a descriptive message.

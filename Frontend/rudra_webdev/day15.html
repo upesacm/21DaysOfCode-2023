@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flexbox Layout with CSS Styles</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url("header-bg.jpg");
+            background-size: cover;
+            height: 150px;
+            transition: background-image 0.5s ease;
+        }
+
+        header:hover {
+            background-image: url("header-bg-hover.jpg");
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #f1f1f1;
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ff6600;
+        }
+
+        main {
+            border: 1px solid #ccc;
+            padding: 20px;
+        }
+
+        footer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url("footer-bg.jpg");
+            background-size: cover;
+            height: 150px;
+            animation: rotate 5s infinite linear;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <main>
+        <h2>Content Section</h2>
+        <p>This is the main content of the webpage.</p>
+    </main>
+
+    <footer>
+        <p>This is the footer of the webpage.</p>
+    </footer>
+</body>
+
+</html>
+

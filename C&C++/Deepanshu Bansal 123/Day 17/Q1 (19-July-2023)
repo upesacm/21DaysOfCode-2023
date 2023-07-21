@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+
+void fun(string s)
+{
+	string s1;
+	for(int i=s.length()-1;i>=0;i--)
+	{
+		s1.push_back(s[i]);
+	}
+	if(s==s1)
+	{
+		cout<<"string s is palindrome";
+	}
+	else{
+		cout<<"string s is not palindrome";
+	}
+}
+
+int main()
+{
+	string s;
+	cout<<"Enter string s ";
+	getline(cin,s);
+	fun(s);
+}

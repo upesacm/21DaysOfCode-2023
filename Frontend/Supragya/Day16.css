@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+    min-height: 100vh;
+  }
+  
+  .sidebar {
+    background-color: #f1c40f;
+    grid-column: span 3;
+    padding: 20px;
+  }
+  
+  .main {
+    background-color: #ecf0f1;
+    grid-column: span 7;
+    padding: 20px;
+  }
+  
+  .section-1 {
+    background-color: #e74c3c;
+    grid-column: span 4;
+    grid-row: span 2;
+    padding: 20px;
+  }
+  
+  .section-2 {
+    background-color: #9b59b6;
+    grid-column: span 4;
+    grid-row: span 2;
+    padding: 20px;
+  }
+  
+  .section-3 {
+    background-color: #27ae60;
+    grid-column: span 2;
+    padding: 20px;
+  }
+  
+  .section-4 {
+    background-color: #f39c12;
+    grid-column: span 2;
+    padding: 20px;
+  }
+  
+  .footer {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    grid-column: 1 / -1; /* Span all columns */
+  }
+  
+  /* Hover effect for sections */
+  .section-1:hover,
+  .section-2:hover,
+  .section-3:hover,
+  .section-4:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  /* Hover effect on text */
+  .section-1 h2:hover,
+  .section-2 h2:hover,
+  .section-3 h2:hover,
+  .section-4 h2:hover {
+    color: #fff;
+    background-color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, padding 0.3s;
+  }
+  
+  /* Footer animation */
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .footer {
+    animation: fade-in 1s ease-in-out;
+  }
+  
+  /* Responsive Layout */
+  @media screen and (max-width: 1200px) {
+    .grid-container {
+      grid-template-columns: repeat(8, 1fr);
+    }
+  }
+  
+  @media screen and (max-width: 992px) {
+    .grid-container {
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: auto;
+      grid-auto-rows: minmax(150px, auto);
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .grid-container {
+      grid-template-columns: 1fr;
+    }
+  }
+  

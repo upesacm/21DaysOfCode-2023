@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+
+void fun(string a, string b)
+{
+	string *c,*d,temp;
+	c=&a;
+	d=&b;
+	cout<<"Concatenate of two string using pointer "<<"\""<<*c<<" "<<*d<<"\"";
+}
+
+int main()
+{
+    string a,b;
+	cout<<"Enter string a, b ";
+	getline(cin,a);
+	getline(cin,b);
+	fun(a,b);
+}

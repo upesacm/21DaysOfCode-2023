@@ -1,0 +1,21 @@
+Q1. 
+temp=float(input("Enter temperature in celsius:"))
+tempf=(temp*(9/5))+32
+print("Temperature in fahreheit is: ", tempf)
+Q2. 
+n1=float(input("Enter first number:"))
+n2=float(input("Enter second number:"))
+op=(input("Enter operator:"))
+n3=0
+if op=="+":
+    n3=n1+n2
+    print("Result is ", n3)
+elif op=="-":
+    n3=n2-n1
+    print("Result is ", n3)
+elif op=="*":
+    n3=n2*n1
+    print("Result is ", n3)
+else:
+    n3=n2/n1
+    print("Result is ", n3)

@@ -1,0 +1,5 @@
+Questions for Day - 09 (11-07-2023)
+
+1. Create a function that takes an array of integers and its size as parameters, and returns the average of all the elements in the array.
+
+2. Implement a function that takes an array of integers and its size as parameters. The function should rearrange the array in such a way that all the negative numbers appear before the positive numbers while preserving the relative order of the negative and positive numbers.

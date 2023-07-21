@@ -1,0 +1,5 @@
+set1 = {"hello", "everyone", "what", "are", "you", "doing"}
+set2 = {"hello","everyone","I", "am", "doing", "fine"}
+x = set2.union(set1)
+print("Final Set: ")
+print(x)

@@ -1,0 +1,3 @@
+a=input("Enter a string :").split()
+print("The words in a sentence are ")
+print(len(a))

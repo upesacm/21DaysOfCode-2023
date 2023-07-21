@@ -1,0 +1,10 @@
+Question for Day - 15 (17-07-2023)
+
+1. Create a new HTML file.
+2. Design a webpage with a header, a navigation menu, a content section, and a footer using appropriate HTML elements.
+3. Apply CSS styles to create a flexbox layout for the header, navigation menu, and footer, with the content section taking up the remaining space.
+4. Apply CSS styles to add a background image to the header and footer.
+5. Apply CSS styles to change the font color and size of the navigation menu.
+6. Apply CSS styles to add a border around the content section and adjust its padding.
+7. Apply CSS styles to add a smooth transition effect to the background color of the header when hovering over it.
+8. Apply CSS styles to create a keyframe animation that rotates the footer continuously.

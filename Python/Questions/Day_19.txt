@@ -1,0 +1,5 @@
+Questions for Day - 19 (21-07-2023)
+
+1. Write a Python program that implements a linear search algorithm to find a specific element in a given list. Display a message indicating whether the element is found or not.
+
+2. Write a Python program that implements a binary search algorithm to search for a target number in a sorted list. If the target number is found, display its index. If the target number is not found, display the index where it should be inserted to maintain the sorted order.

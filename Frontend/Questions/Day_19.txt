@@ -1,0 +1,8 @@
+Question for Day - 19 (21-07-2023)
+
+Combining CSS Grid and Flexbox
+
+1. Create a new HTML file.
+2. Design a webpage layout using both CSS Grid and Flexbox, with a header, sidebar, main content, and footer.
+3. Apply CSS styles to achieve the desired layout using a combination of Grid and Flexbox properties.
+4. Ensure that the header and footer sections are fixed at the top and bottom of the viewport, while the sidebar and main content adjust their size based on available space.

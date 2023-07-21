@@ -1,0 +1,56 @@
+//Que1}
+
+
+#include <stdio.h>
+
+int main() {
+    const char* file_path = "path/to/file.txt";
+    FILE* file = fopen(file_path, "r");
+    
+    if (file != NULL) {
+        printf("File exists.\n");
+        fclose(file);
+    } else {
+        printf("File does not exist.\n");
+    }
+    
+    return 0;
+}
+
+
+//Que2}
+
+
+#include <stdio.h>
+
+#define FILE_NOT_FOUND_ERROR 1
+#define PERMISSION_DENIED_ERROR 2
+#define INVALID_INPUT_ERROR 3
+
+void handle_error(int error_code) {
+    switch (error_code) {
+        case FILE_NOT_FOUND_ERROR:
+            printf("Error: File not found.\n");
+            break;
+        case PERMISSION_DENIED_ERROR:
+            printf("Error: Permission denied.\n");
+            break;
+        case INVALID_INPUT_ERROR:
+            printf("Error: Invalid input.\n");
+            break;
+        default:
+            printf("Error: Unknown error code.\n");
+            break;
+    }
+}
+
+int main() {
+    // Simulating an error scenario
+    int error_code = FILE_NOT_FOUND_ERROR;
+    
+    handle_error(error_code);
+    
+    return 0;
+}
+
+

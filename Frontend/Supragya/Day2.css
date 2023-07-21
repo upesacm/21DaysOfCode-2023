@@ -1,0 +1,16 @@
+body {
+    background-color:black;
+}
+body {
+    color: white; 
+}
+img {
+    display: block;
+    margin: 0 auto;
+}
+.container{
+    display: block;
+    margin: 0 auto;
+    width: 1280px;
+    height: 720px;
+}

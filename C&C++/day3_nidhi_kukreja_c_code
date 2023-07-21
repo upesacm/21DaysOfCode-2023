@@ -1,0 +1,10 @@
+#include <stdio.h>
+#include <math.h>
+int main() 
+{
+    float input;
+    printf("Enter the number to find it's logarithm: ");
+    scanf("%f", &input);
+    printf("The logarithm of the number is %f " , log(input));
+    return 0;
+}
