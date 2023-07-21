@@ -1,0 +1,80 @@
+<html>
+  <head>
+    <title>Webpage with CSS Grid, Flexbox</title>
+    <style>
+      body{
+        margin:0px;
+        display: grid; /*Grid in body*/
+        grid-template-columns: auto auto; /*2 columns grid*/ 
+      }
+      header{
+        background-color: rgb(111, 243, 111);
+        padding:2px;
+        border-bottom: 2px solid green;
+      }
+      h1{
+        text-align: center;
+      }
+      nav{
+        background-color: rgb(167, 167, 167);
+        padding:5px;
+      }
+      a{
+        text-decoration: none;
+        padding:15px;
+        color: black;
+      }
+      aside{
+        border: 1px solid black;
+        width:300px;
+        height:592px;
+        text-align: center;
+      }
+      .para{
+        margin-top: 200px;
+      }
+      section{
+        border: 1px solid black;
+        width:300px;
+        height:100px;
+        text-align: center;
+        padding:100px;
+        margin-top: 150px;
+        margin-left:300px;
+      }
+      main{
+        display: flex; /*Flexbox in main tab with aside, section tab*/ 
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Header grid- flex</h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Certify</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Profile</a>
+      </nav>
+    </header>
+    <main>
+    <aside>
+      <p class="para">ASIDE TAB</p>
+    </aside>
+    <section>Hey, Welcome in webpage with header, aside, section, and footer
+      <ul>
+        <p>CSS apply with Grid and Flexbox</p>
+      </ul>
+    </section>
+    </main>
+    <footer>
+      <nav>
+        <a href="#">About Us</a>
+        <a href="#">Location</a>
+        <a href="#">&copy; copyight | 2023</a>
+        <a href="#">Terms and Conditions</a>
+        <a href="#">privacy</a>
+      </nav>
+    </footer>
+  </body>
+</html>
