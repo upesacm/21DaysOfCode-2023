@@ -1,0 +1,67 @@
+/* Reset some default styles for better consistency */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply styles to header, navigation menu, and footer */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Apply styles for small screens using media query */
+@media only screen and (max-width: 600px) {
+    nav {
+        display: none; /* Hide the navigation menu */
+    }
+
+    /* Show the burger menu icon when navigation is collapsed */
+    label.menu-icon {
+        display: block;
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    /* Show the navigation menu when the burger menu icon is clicked */
+    #menu-toggle:checked ~ nav {
+        display: block;
+    }
+
+    /* Adjust the header styles for small screens */
+    header {
+        padding: 10px;
+    }
+}
