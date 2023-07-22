@@ -1,0 +1,9 @@
+Question for Day - 21 (23-07-2023)
+
+Create an HTML and CSS pricing table for an OTT Subscription service. The table should have three plans (Basic, Pro, Premium), each in a separate column, with the following details:
+
+1. Plan name
+2. Price per month
+3. Features list (at least 3 features listed with bullet points)
+4. "Sign Up" button at the bottom of each column.
+5. Style the Pricing table as per your choice.
