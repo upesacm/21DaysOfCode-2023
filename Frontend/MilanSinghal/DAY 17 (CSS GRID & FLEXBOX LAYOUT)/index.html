@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Grid and Flexbox Layout</title>
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+main {
+  margin: 0 auto;
+  width: 80%;
+}
+
+sidebar {
+  width: 20%;
+  float: left;
+}
+
+.content {
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  main {
+    width: 100%;
+  }
+
+  sidebar {
+    display: none;
+  }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>CSS Grid and Flexbox Layout</h1>
+</header>
+<main>
+  <sidebar>
+    <h2>Sidebar</h2>
+    <p>This is the sidebar.</p>
+  </sidebar>
+  <div class="content">
+    <h2>Main Content</h2>
+    <p>This is the main content.</p>
+  </div>
+</main>
+<footer>
+  <h2>Footer</h2>
+  <p>This is the footer.</p>
+</footer>
+</body>
+</html>

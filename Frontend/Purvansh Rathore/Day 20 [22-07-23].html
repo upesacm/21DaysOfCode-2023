@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Webpage with Custom Properties</title>
+    <style>
+        :root {
+            --main-bg-color: #f0f0f0;
+            --button-bg-color: #007bff;
+            --button-text-color: #ffffff;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--main-bg-color);
+        }
+
+        button {
+            background-color: var(--button-bg-color);
+            color: var(--button-text-color);
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .sections {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .section {
+            background-color: #ffffff;
+            padding: 20px;
+            width: 45%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <button id="changeColorBtn">Change Color</button>
+    <div class="sections">
+        <section class="section" id="section1">
+            <h2>Section 1</h2>
+            <p>This is the content of section 1.</p>
+        </section>
+        <section class="section" id="section2">
+            <h2>Section 2</h2>
+            <p>This is the content of section 2.</p>
+        </section>
+    </div>
+
+    <script>
+        const button = document.getElementById("changeColorBtn");
+        const sections = document.querySelectorAll(".section");
+
+        button.addEventListener("click", () => {
+            // Generate a random color
+            const randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+
+            // Update the custom properties with the new color
+            document.documentElement.style.setProperty("--main-bg-color", randomColor);
+            document.documentElement.style.setProperty("--button-bg-color", randomColor);
+
+            // Change the text color to contrast with the new background color
+            const luminance = 0.2126 * parseInt(randomColor.substr(1, 2), 16) +
+                            0.7152 * parseInt(randomColor.substr(3, 2), 16) +
+                            0.0722 * parseInt(randomColor.substr(5, 2), 16);
+
+            const textColor = luminance > 128 ? "#000000" : "#ffffff";
+            document.documentElement.style.setProperty("--button-text-color", textColor);
+        });
+    </script>
+</body>
+</html>

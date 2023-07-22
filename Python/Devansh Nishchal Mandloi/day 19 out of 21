@@ -1,0 +1,66 @@
+#Que1}
+
+def linear_search(arr, target):
+    for i, element in enumerate(arr):
+        if element == target:
+            return i
+    return -1
+
+def main():
+    # Sample list to search in
+    my_list = [4, 8, 15, 16, 23, 42]
+
+    # Element to search for
+    search_element = 16
+
+    # Perform linear search
+    result = linear_search(my_list, search_element)
+
+    # Display the result
+    if result != -1:
+        print(f"Element {search_element} found at index {result}.")
+    else:
+        print(f"Element {search_element} not found in the list.")
+
+if __name__ == "__main__":
+    main()
+
+#Que2}
+
+
+def binary_search(arr, target):
+    low, high = 0, len(arr) - 1
+
+    while low <= high:
+        mid = (low + high) // 2
+        mid_val = arr[mid]
+
+        if mid_val == target:
+            return mid
+        elif mid_val < target:
+            low = mid + 1
+        else:
+            high = mid - 1
+
+
+    return low
+
+def main():
+   
+    my_list = [4, 8, 15, 16, 23, 42]
+
+ 
+    search_element = 16
+
+  
+    result = binary_search(my_list, search_element)
+
+ 
+    if result < len(my_list) and my_list[result] == search_element:
+        print(f"Element {search_element} found at index {result}.")
+    else:
+        print(f"Element {search_element} not found in the list. It should be inserted at index {result} to maintain the sorted order.")
+
+if __name__ == "__main__":
+    main()
+

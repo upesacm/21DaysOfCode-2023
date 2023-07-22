@@ -1,0 +1,90 @@
+//Que1}
+
+
+#include <stdio.h>
+
+int countLines(FILE *file) {
+    int count = 0;
+    int ch;
+
+    while ((ch = fgetc(file)) != EOF) {
+        if (ch == '\n') {
+            count++;
+        }
+    }
+
+ 
+    if (ftell(file) > 0) {
+        count++;
+    }
+
+    return count;
+}
+
+int main() {
+    char filename[100];
+    printf("Enter the file name: ");
+    scanf("%s", filename);
+
+    FILE *file = fopen(filename, "r");
+    if (file == NULL) {
+        printf("Error opening the file.\n");
+        return 1;
+    }
+
+    int lineCount = countLines(file);
+    printf("The number of lines in the file is: %d\n", lineCount);
+
+    fclose(file);
+    return 0;
+}
+
+
+
+//Que2}
+
+
+#include <stdio.h>
+#include <string.h>
+
+void searchWord(FILE *file, const char *word) {
+    char line[300; 
+    int lineNum = 0;
+    int wordCount = 0;
+
+    
+    while (fgets(line, sizeof(line), file) != NULL) {
+        lineNum++;
+        char *ptr = line;
+        char *found;
+
+        
+        while ((found = strstr(ptr, word)) != NULL) {
+            wordCount++;
+            ptr = found + 1; 
+        }
+    }
+
+    printf("Word \"%s\" found %d times in the file.\n", word, wordCount);
+}
+
+int main() {
+    char filename[100];
+    printf("Enter the file name: ");
+    scanf("%s", filename);
+
+    char word[50];
+    printf("Enter the word to search for: ");
+    scanf("%s", word);
+
+    FILE *file = fopen(filename, "r");
+    if (file == NULL) {
+        printf("Error opening the file.\n");
+        return 1;
+    }
+
+    searchWord(file, word);
+
+    fclose(file);
+    return 0;
+}
