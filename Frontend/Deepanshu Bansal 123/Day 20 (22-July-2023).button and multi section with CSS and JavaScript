@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <title>Button and Section with CSS and JavaScript</title>
+  </head>
+  <style>
+    h1{
+      text-align: center;
+      margin-top: 50px;
+      background-color: rgb(117, 252, 117);
+      padding:10px;
+      margin-left:450px ;
+      margin-right: 450px;
+      border-radius:10px ;
+    }
+    section{
+      border:1px solid black;
+      width:200px;
+      height:200px;
+      text-align: center;
+      background-color: rgb(236, 236, 124);
+      margin-left:130px;
+      margin-top: 50px;
+    }
+    p{
+      margin-top: 85px;
+    }
+    button{
+      margin-top: 20px;
+      padding:10px;
+      cursor: pointer;
+    }
+    .button1{
+      margin-left: 210px;
+    }
+    .button2{
+      margin-left: 265px;
+    }
+    .button3{
+      margin-left: 265px;
+    }
+    .button4{
+      margin-left: 280px;
+    }
+    main{
+      display: flex;
+    }
+  </style>
+  <body>
+    <h1>Button section with CSS and JavaScript</h1>
+    <main>
+    <section class="sec1"><p>First section </p></section>
+    <section class="sec2"><p>Second section </p></section>
+    <section class="sec3"><p>Third section</p></section>
+    <section class="sec4"><p>Fourth section</p></section>
+    </main>
+    <button class="button1">First</button>
+    <button class="button2">Second</button>
+    <button class="button3">Third</button>
+    <button class="button4">Fourth</button>
+
+    <script>onclick=(button1)=>{
+      alert("You click on button")
+      let a=prompt("Enter you button name you click")
+      if(a=="first" ||  a=="second")
+      {
+        confirm("Your button is correct")
+      }
+      else{
+        confirm("Your button is not correct")
+      }
+    }
+      </script>
+  </body>
+</html>
