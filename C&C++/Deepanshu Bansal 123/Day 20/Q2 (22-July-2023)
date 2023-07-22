@@ -1,0 +1,26 @@
+#include<iostream>
+#include<algorithm> 
+using namespace std;                               // not use an radix sort
+
+void fun(int n,int a[])
+{
+	sort(a,a+n);
+	cout<<"Sorted array ";
+	for(int i=0;i<n;i++)
+	{
+		cout<<a[i]<<" ";
+	}
+}
+
+int main()
+{
+    int n,a[100];
+    cout<<"Enter n number of array elements ";
+    cin>>n;
+    for(int i=0;i<n;i++)
+    {
+    	cout<<"Enter element ";
+    	cin>>a[i];
+	}
+    fun(n,a);
+}
