@@ -1,0 +1,9 @@
+this is a file
+it will 
+open 
+and will 
+be used 
+for counting 
+the numbers of 
+line in it 
+which is equal to 9
