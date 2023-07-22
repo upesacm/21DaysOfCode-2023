@@ -1,0 +1,33 @@
+body {
+  margin: 0; padding: 0; display: grid;
+  grid-template-rows: auto 1fr auto; 
+  min-height: 100vh;
+}
+header, footer {
+  background-color: #333; color: #fff;
+  padding: 10px;
+}
+.container {
+  display: grid; grid-template-columns: 200px 1fr; 
+  gap: 20px;
+}
+.sidebar {
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+.main-content {
+  background-color: #fff;
+  padding: 20px;
+}
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr; /* Only Main Content (No Sidebar) on small screens */
+  }
+}
+header, footer {
+  position: sticky;
+  top: 0;
+}
+footer {
+  bottom: 0;
+}

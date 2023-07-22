@@ -1,0 +1,8 @@
+Question for Day - 20 (22-07-2023)
+
+CSS custom properties
+
+1. Create a new HTML file.
+2. Design a webpage with a button element and multiple sections.
+3. Apply CSS styles using custom properties to define dynamic colors and sizes for the button and sections.
+4. Utilize CSS custom properties in conjunction with JavaScript to create interactive effects.
