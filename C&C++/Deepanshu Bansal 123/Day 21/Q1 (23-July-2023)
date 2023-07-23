@@ -1,0 +1,20 @@
+#include<iostream>
+#include<algorithm>
+using namespace std;
+
+void fun(int n)
+{
+	cout<<"Multiplication table of "<<n<<"\n";
+	for(int i=1;i<=10;i++)
+	{
+		cout<<n<<" * "<<i<<"= "<<n*i<<"\n";
+	}
+}
+
+int main()
+{
+    int n;
+    cout<<"Enter n number for multiplication table ";
+    cin>>n;
+    fun(n);
+}
