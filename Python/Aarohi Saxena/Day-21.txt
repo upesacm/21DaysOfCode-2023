@@ -1,0 +1,23 @@
+#Answer-1
+def fizzbuzz_range(start, end):
+    result = []
+    for num in range(start, end + 1):
+        if num % 3 == 0 and num % 5 == 0:
+            result.append("FizzBuzz")
+        elif num % 3 == 0:
+            result.append("Fizz")
+        elif num % 5 == 0:
+            result.append("Buzz")
+        else:
+            result.append(str(num))
+    return result
+
+#Answer-2
+def are_anagrams(str1, str2):
+    str1 = str1.replace(" ", "").lower()
+    str2 = str2.replace(" ", "").lower()
+
+    sorted_str1 = sorted(str1)
+    sorted_str2 = sorted(str2)
+
+    return sorted_str1 == sorted_str2
