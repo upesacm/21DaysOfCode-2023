@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Custom Properties</title>
+<style>
+  --button-color: #000;
+  --button-size: 100px;
+  --section-color: #fff;
+  --section-size: 500px;
+
+  button {
+    color: var(--button-color);
+    width: var(--button-size);
+  }
+
+  section {
+    color: var(--section-color);
+    height: var(--section-size);
+  }
+
+  /* JavaScript to update the button color and size */
+  function updateButton() {
+    var button = document.querySelector("button");
+    button.style.color = Math.random() * 0xffffff;
+    button.style.width = Math.random() * 100 + "px";
+  }
+</style>
+</head>
+<body>
+  <button onclick="updateButton()">Click Me!</button>
+  <section>This is a section</section>
+  <section>This is another section</section>
+</body>
+</html>

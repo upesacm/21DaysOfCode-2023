@@ -1,0 +1,5 @@
+Questions for Day - 20 (22-07-2023)
+
+1. Write a C/C++ program that uses a global constant PI with a value of 3.14159. The program should prompt the user to enter the radius of a circle, calculate the circumference using the constant, and print the result on the console.
+
+2. Implement radix sort in C/C++ to sort an array of elements in ascending order. Prompt the user to input the number of elements and the array elements. Display the sorted array on the console.

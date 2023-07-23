@@ -1,0 +1,5 @@
+Questions for Day - 21 (23-07-2023)
+
+1. Write a Python function called "fizzbuzz_range" that takes two integers start and end as input. The function should generate and return a list of strings representing the numbers from start to end. However, replace multiples of 3 with "Fizz", multiples of 5 with "Buzz", and multiples of both 3 and 5 with "FizzBuzz". If the number doesn't meet any of these conditions, simply include the number itself in the list.
+
+2. Write a Python function called "are_anagrams" that inputs two strings. The function should determine if the two strings are anagrams of each other (i.e., they contain the same characters, but possibly in a different order). The function should return True if the strings are anagrams, and False otherwise. Consider case sensitivity and ignore spaces in the strings.
