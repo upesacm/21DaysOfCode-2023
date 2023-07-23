@@ -1,0 +1,41 @@
+#include<iostream>
+using namespace std;
+
+void fun(string file1_txt, string word)
+{
+	string s;
+	char s1;
+	int num;
+	for(int i=0;i<file1_txt.length();i++)
+	{
+		num=file1_txt[i];
+		if((num>=65 && num<=90) || (num>=97 && num<=122) || file1_txt[i]==' ')
+		{
+		    if(file1_txt[i]!=' ')
+		    {
+		     	s.push_back(file1_txt[i]);
+	       	}
+		    else{
+			if(s==word)
+			{
+				cout<<"Word found in file1_txt";
+				return;
+			}
+			else{
+				s="";
+			}
+		}
+		}
+	}
+	cout<<"Word not found in file1_txt";
+}
+
+int main()
+{
+    string file1_txt, word;
+	cout<<"Enter file1_txt as name ";
+	getline(cin,file1_txt);
+	cout<<"Enter word for search in file1_txt ";
+	cin>>word;
+	fun(file1_txt,word);
+}
