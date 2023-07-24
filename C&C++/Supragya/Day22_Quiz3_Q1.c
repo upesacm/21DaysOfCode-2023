@@ -1,20 +1,27 @@
-def is_prime(num):
-    if num < 2:
-        return False
-    for i in range(2, int(num**0.5) + 1):
-        if num % i == 0:
-            return False
-    return True
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
 
-def primes(n):
-    primes = []
-    num = 2
-    while len(primes) < n:
-        if is_prime(num):
-            primes.append(num)
-        num += 1
-    return primes
+int main() {
 
-n = int(input())
-prime_numbers = primes(n)
-print(*prime_numbers)
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+    int n;
+    scanf("%d",&n);
+    int a[n];
+    for(int i=0;i<n;i++){
+        scanf("%d",&a[i]);
+    }
+    int k;
+    scanf("%d",&k);
+    int count=0;
+    for(int i=0;i<n-1;i++){
+        for(int j=i+1;j<n;j++){
+        if(a[i]+a[j]==k){
+            count++;
+        }
+    }
+}
+        printf("%d",count);
+    return 0;
+}
