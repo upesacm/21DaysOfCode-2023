@@ -1,5 +1,3 @@
-// Merge two sorted quantum states, representing equal-sized arrays, into a new sorted quantum state with double the elements. 
-
 #include <stdio.h>
 
 void mergeArrays(int n, int arr1[], int arr2[], int result[]) {
