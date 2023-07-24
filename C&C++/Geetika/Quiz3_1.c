@@ -1,5 +1,3 @@
- // We have an array of quantum particles represented as qubits. Count the pairs of quantum particles whose states sum up to a particular quantum target state.
-
 #include <stdio.h>
 
 int countPairs(int n, int arr[], int target) {
