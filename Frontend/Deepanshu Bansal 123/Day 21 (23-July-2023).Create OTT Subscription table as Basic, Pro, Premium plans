@@ -1,0 +1,113 @@
+<html>
+  <head>
+    <title>OTT Subscription webpage</title>
+  </head>
+  <link rel="icon" href="OTT Subscription.webp">
+  <style>
+    h1{
+      text-align: center;
+      margin-top: 50px;
+      background-color: rgb(170, 170, 170);
+      margin-left: 575px;
+      margin-right: 575px;
+      border-radius: 10px;
+    }
+    .p2{
+      text-align: center;
+      font-size: large;
+      background-color: rgb(255, 255, 80);
+      padding: 10px;
+      margin-left: 570px;
+      margin-right: 570px;
+      border-radius: 5px;
+    }
+    table{
+      margin-top: 80px;
+      margin-left: 325px;
+    }
+    td{
+      border:1px solid black;
+      padding:10px;
+      width:100px;
+      background-color: rgb(255, 255, 148);
+      text-align: center;
+    }
+    th{
+      border:1px solid black;
+      padding:10px;
+      width:200px;
+      text-align: center;
+    }
+    .main{
+      background-color: rgb(157, 157, 157);
+      font-size: large;
+    }
+    .plan{
+      background-color: rgb(251, 207, 125);
+    }
+    .platf{
+      background-color: rgb(147, 147, 255);
+    }
+    .p1{
+      margin-top: 30px;
+      margin-left: 700px;
+    }
+    button{
+      margin-left: 750px;
+      padding: 5px;
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <h1>OTT Subscriptions table</h1>
+    <br><br>
+    <p class="p2">Basic, Pro, Premium subscription for One month.</p>
+    <table>
+      <tr>
+        <th class="main">Platform\plan</th>
+        <th class="plan">Basic</th>
+        <th class="plan">Pro</th>
+        <th class="plan">Premium</th>
+      </tr>
+      <tr>
+        <th class="platf">Amazon Prime video</th>
+        <td>RS 299</td>
+        <td>RS 199.67</td>
+        <td>RS 124.92</td>
+      </tr>
+      <tr>
+        <th class="platf">Disney+ Hotstar</th>
+        <td>RS 299</td>
+        <td>RS 299.67</td>
+        <td>RS 124.92</td>
+      </tr>
+      <tr>
+        <th class="platf">Netflix</th>
+        <td>RS 199</td>
+        <td>RS 499</td>
+        <td>RS 649</td>
+      </tr>
+      <tr>
+        <th class="platf">MX player</th>
+        <td>RS 199</td>
+        <td>RS 99.67</td>
+        <td>RS 42</td>
+      </tr>
+      <tr>
+        <th class="platf">Zee5</th>
+        <td>RS 99</td>
+        <td>RS 199.67</td>
+        <td>RS 83.25</td>
+      </tr>
+      <tr>
+        <th class="platf">Jio cinema</th>
+        <td>RS 2</td>
+        <td>RS 33</td>
+        <td>RS 50</td>
+      </tr>
+    </table>
+    <p class="p1">Click on Sign Up button</p>
+    <button>Sign Up</button>
+
+  </body>
+</html>
