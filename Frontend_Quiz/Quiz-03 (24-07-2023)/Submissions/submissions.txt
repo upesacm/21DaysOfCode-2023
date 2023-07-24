@@ -1,0 +1,3 @@
+Add your finished files to this folder and create pull requests.
+
+To submit your finished files, you will have to create a folder with your name inside this Submissions folder and create a pull request in due time. We won't accept any submissions after 11 PM.
