@@ -1,0 +1,32 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+      int arr[100000],arr1[100000],n;
+    cin>>n;
+    for(int i=0;i<n;i++)
+    {
+        cin>>arr[i];
+    }
+    for(int i=0;i<n;i++)
+    {
+        cin>>arr1[i];
+    }
+    int count=0;
+    for(int i=n;i<n+n;i++)
+    {
+        arr[i]=arr1[count];
+        count++;
+    }
+    sort(arr,arr+n+n);
+    for(int i=0;i<n+n;i++)
+    {
+        cout<<arr[i]<<" ";
+    }
+    return 0;
+}
