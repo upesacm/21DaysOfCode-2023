@@ -1,0 +1,32 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+   int arr[100000],n,count=0,target=0;
+    cin>>n;
+    for(int i=0;i<n;i++)
+    {
+        cin>>arr[i];
+    }
+    cin>>target;
+    for(int i=0;i<n;i++)
+    {
+        for(int j=0;j<n;j++)
+        {
+            if(i!=j)
+            {
+                if(arr[i]+arr[j]==target)
+                {
+                    count++;
+                }
+            }
+        }
+    }
+    cout<<count/2;
+    return 0;
+}
