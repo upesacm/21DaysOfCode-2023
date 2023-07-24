@@ -4,6 +4,8 @@ For this quiz, you have been given an image of a webpage representing a quote ge
 
 To help you get started, you will find a starter-code.css file with specified fonts and colors in this directory. Additionally, there is an images folder containing all the necessary images used in the webpage. Be sure to adhere strictly to these resources during your replication process.
 
+Webpage to replicate: https://drive.google.com/file/d/1HeOCFoeM5L6kJTDKA1uTpxCGhLdxjoh2/view?usp=sharing
+
 Once you have completed the task, submit your work by creating a folder with your name inside the submissions folder of this directory (Quiz - 03). Place your finished HTML and CSS files in that folder, and then create a pull request.
 
 The deadline for submissions is 11 PM.
