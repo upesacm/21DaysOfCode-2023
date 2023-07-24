@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Project</title>
+<style>
+.div { width: 200px; height: 200px; background-color: red; transition: width 2s ease-in-out; animation: rotate 5s infinite linear; }
+.div: hover { width: 1000px; }
+@keyframes rotate { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+</style>
+</head>
+<body>
+<div class="div"><h1>Indian Culture</h1></div>
+</body>
+</html>

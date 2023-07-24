@@ -1,0 +1,65 @@
+//Que1}
+
+#include<stdio.h>
+
+int main()
+{
+  int a1,a2,a3;
+  printf("Enter the sides of triangle:\n");
+  scanf("%d", &a1);
+  scanf("%d", &a2);
+  scanf("%d", &a3);
+  if(a1==a2 && a2==a3)
+  {
+    printf("The triangle is an equilateral triangle.");
+  } 
+  else if(a1!=a2 && a2!=a3 && a1!=a3)
+  {
+    printf("The triangle is a scalene triangle.");
+  }
+  else if(a1==a2!=a3 || a1==a3!=a2 || a2==a3!=a1)
+  {
+    printf("The triangle is an isosceles triangle.");
+  }
+  else
+  {
+    printf("We are unable to identify the type of triangle by the sides you have entered.");
+  }
+  return 0;
+  
+}
+
+
+//Que2}
+
+#include<stdio.h>
+#include<math.h>
+
+
+int main()
+{
+ int a, b, c;
+ printf("Enter the values of coefficient of x^2, x and the constant in that order:");
+ scanf("%d", &a);
+ scanf("%d", &b);
+ scanf("%d", &c);
+ int desc= pow(b,2)-4*a*c;
+
+ if(desc==0)
+ {
+  printf("The roots of the equation will be Real and Equal.");
+ }
+ else if(desc>0)
+ {
+  printf("The roots of the equation will be Real and Distinct.");
+ }
+ else if(desc<0)
+ {
+  printf("The roots of the equation will be Imaginary");
+ }
+ else{
+  printf("Non-determinable roots");
+ }
+ return 0;
+
+}

@@ -1,0 +1,147 @@
+<html>
+    <head>
+        <title>HTML Table- Fast Food</title>
+    </head>
+    <style>
+        th,td{
+            border: 0.5px solid black;
+            padding:5px;
+        }
+        table{
+            border: 0.5px solid black;
+            margin-left: 275px;
+            margin-top: 50px;
+        }
+        h1{
+            text-align: center;
+            margin-top:20px;
+            background-color: rgb(173, 173, 173);
+            margin-left: 610px;
+            margin-right:610px;
+            border-radius: 5px;
+        }
+        .common{
+            background-color: rgb(182, 182, 182);
+        }
+        .head{
+            background-color: rgb(255, 233, 122);
+        }
+        .head1{
+            background-color: rgb(236, 236, 236);
+        }
+    </style>
+    <body>
+        <h1>Fast-Food Prices</h1>
+        <table>
+            <thead>
+            <tr>
+                <th class="common">Items\Months</th>
+               <th class="head">January</th>
+               <th class="head">Febuary</th>
+               <th class="head">March</th>
+               <th class="head">April</th>
+               <th class="head">May</th>
+               <th class="head">June</th>
+               <th class="head">July</th>
+               <th class="head">Augest</th>
+               <th class="head">September</th>
+               <th class="head">October</th>
+               <th class="head">November</th>
+               <th class="head">December</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th class="head1">Cheeseburger</th>
+                    <td>20 RS</td>
+                    <td>30 RS</td>
+                    <td>25 RS</td>
+                    <td>10 RS</td>
+                    <td>50 RS</td>
+                    <td>20 RS</td>
+                    <td>10 RS</td>
+                    <td>60 RS</td>
+                    <td>30 RS</td>
+                    <td>35 RS</td>
+                    <td>40 RS</td>
+                    <td>25 RS</td>
+                </tr>
+                <tr>
+                    <th class="head1">Sandwich</th>
+                    <td>25 RS</td>
+                    <td>30 RS</td>
+                    <td>25 RS</td>
+                    <td>35 RS</td>
+                    <td>40 RS</td>
+                    <td>50 RS</td>
+                    <td>20 RS</td>
+                    <td>15 RS</td>
+                    <td>35 RS</td>
+                    <td>45 RS</td>
+                    <td>40 RS</td>
+                    <td>10 RS</td>
+                </tr>
+                <tr>
+                    <th class="head1">Ice cream</th>
+                    <td>50 RS</td>
+                    <td>55 RS</td>
+                    <td>35 RS</td>
+                    <td>30 RS</td>
+                    <td>40 RS</td>
+                    <td>45 RS</td>
+                    <td>20 RS</td>
+                    <td>25 RS</td>
+                    <td>15 RS</td>
+                    <td>10 RS</td>
+                    <td>50 RS</td>
+                    <td>65 RS</td>
+                </tr>
+                <tr>
+                    <th class="head1">Tea</th>
+                    <td>5 RS</td>
+                    <td>10 RS</td>
+                    <td>25 RS</td>
+                    <td>20 RS</td>
+                    <td>35 RS</td>
+                    <td>30 RS</td>
+                    <td>15 RS</td>
+                    <td>5 RS</td>
+                    <td>10 RS</td>
+                    <td>25 RS</td>
+                    <td>15 RS</td>
+                    <td>45 RS</td>
+                </tr>
+                <tr>
+                    <th class="head1">Popcorn</th>
+                    <td>20 RS</td>
+                    <td>30 RS</td>
+                    <td>25 RS</td>
+                    <td>35 RS</td>
+                    <td>40 RS</td>
+                    <td>35 RS</td>
+                    <td>30 RS</td>
+                    <td>55 RS</td>
+                    <td>35 RS</td>
+                    <td>25 RS</td>
+                    <td>30 RS</td>
+                    <td>15 RS</td>
+                </tr>
+                <tr>
+                    <th class="head1">Noodles</th>
+                    <td>80 RS</td>
+                    <td>100 RS</td>
+                    <td>40 RS</td>
+                    <td>30 RS</td>
+                    <td>180 RS</td>
+                    <td>35 RS</td>
+                    <td>20 RS</td>
+                    <td>55 RS</td>
+                    <td>60 RS</td>
+                    <td>15 RS</td>
+                    <td>20 RS</td>
+                    <td>30 RS</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

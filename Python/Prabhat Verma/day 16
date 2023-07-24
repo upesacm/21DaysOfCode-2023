@@ -1,0 +1,18 @@
+1)
+  import numpy as np
+
+arr = np.random.randint(1, 11, size=(3, 3))
+print("Random integer array of shape (3, 3):")
+print(arr)
+2)
+  import numpy as np
+
+arr = np.random.rand(100)
+
+mean = np.mean(arr)
+std_dev = np.std(arr)
+
+print("100 random numbers between 0 and 1:")
+print(arr)
+print(f"Mean: {mean:.2f}")
+print(f"Standard deviation: {std_dev:.2f}")

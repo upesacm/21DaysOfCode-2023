@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: grid;
+    grid-template-rows: auto 1fr auto; 
+    min-height: 100vh;
+  }
+  
+  header {
+    background-color: #283747; 
+    color: #fff; 
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    position: relative; 
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff; 
+    padding: 0.5rem;
+  }
+  
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #34495e; 
+    padding: 0.5rem;
+    min-width: 120px;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 200px 1fr; 
+    grid-gap: 20px;
+    padding: 20px;
+  }
+  
+  .sidebar {
+    background-color: pink;
+    padding: 1rem;
+    position: relative;
+    transition: width 0.3s ease-in-out;
+    min-width: 200px; 
+  }
+  
+  .sidebar-toggle-btn {
+    position: absolute;
+    top: 0;
+    right: -30px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .sidebar-toggle-btn:focus {
+    outline: none;
+  }
+  
+  .sidebar-header {
+    display: none;
+  }
+ 
+  .sidebar.sticky {
+    position: sticky;
+    top: 80px; 
+  }
+  
+  .content {
+    background-color: grey; 
+    padding: 1rem;
+    overflow-y: auto; 
+  }
+  
+  footer {
+    background-color: #283747;
+    color: #fff; 
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+    }
+  
+    nav {
+      margin-bottom: 1rem;
+    }
+  
+    
+    .sidebar-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+
+    .sidebar-toggle-btn {
+      display: block;
+    }
+  
+    .sidebar {
+      min-width: 0;
+      width: 0;
+      overflow: hidden;
+    }
+  
+    .sidebar.collapsed {
+      width: 200px;
+    }
+  
+    .content {
+      grid-column: span 2; 
+  
+    nav ul li {
+      position: static;
+    }
+  
+    .dropdown-menu {
+      position: static;
+      display: none;
+      background-color: transparent;
+      padding: 0;
+      min-width: auto;
+    }
+  
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+  }
+}
+  

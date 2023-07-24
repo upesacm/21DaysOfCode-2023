@@ -1,0 +1,5 @@
+Questions for Day - 05 (07-07-2023)
+
+1. Write a Python program that takes a student's score as input and determines whether the student has passed or failed. Assume that the passing score is 60 or greater.
+
+2. Write a Python program that prints all the prime numbers between two given numbers provided by the user.

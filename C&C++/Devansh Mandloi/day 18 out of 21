@@ -1,0 +1,93 @@
+//Que1}
+
+
+#include <stdio.h>
+
+
+//Function to swap the values where ptr1 and ptr2 pointers are just another name of ptr1 and ptr2 variables.
+void swap(int *ptr1, int *ptr2) {
+    int temp = *ptr1;
+    *ptr1 = *ptr2;
+    *ptr2 = temp;
+}
+
+int main() {
+    int num1, num2;
+
+    printf("Enter the value of num1: ");
+    scanf("%d", &num1);
+
+    printf("Enter the value of num2: ");
+    scanf("%d", &num2);
+
+    printf("Before swapping: num1 = %d, num2 = %d\n", num1, num2);
+
+    swap(&num1, &num2);
+
+    //printing the result
+    printf("After swapping: num1 = %d, num2 = %d\n", num1, num2);
+
+    return 0;
+}
+
+
+//Que2}
+
+
+#include<stdio.h>
+#include<stdlib.h>
+
+
+void concatenate(*str1, *str2)
+{
+  //This while loop traverse to the end of the string but does not involve the null element
+
+  while(*str1!='/0')
+  {
+    str1+=+;
+    maxLen--;
+  }
+
+  //This while loop traverses to the the str2 string and copies each element into str1 one by one until it reaches its end
+
+  while(str2!='/0' && maxLen>1)
+  {
+    *str1=*str2;
+    str1++;
+    str2++;
+    maxLen--;
+  }
+
+  //This will put a NUll Terminator at the end of the concatenated string to make sure that it is truly terminated.
+  *str1='/0';
+  
+}
+
+
+int main()
+{
+  char str1[100], str2[100];
+
+
+  //Taking inputs for the strings
+  printf("Enter the first string:");
+  scanf("%d", &str1);
+  
+  printf("Enter the second string:");
+  scanf("%d", &str2);
+
+  int maxLen=sizeof(str1)-strlen(str1)-1
+
+  //function call for concatenation function
+  concatenate_strings(str1, str2);
+
+
+  //Printing the concatenated string (str1 in this case)
+  printf("The concatenated string is %s", str1);
+
+  return 0;
+
+}
+
+
+

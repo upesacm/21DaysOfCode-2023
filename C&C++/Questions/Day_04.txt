@@ -1,0 +1,5 @@
+Questions for Day - 04 (06-07-2023)
+
+1. Write a program to determine the type of a triangle based on the lengths of its sides and print the result (e.g., equilateral, isosceles, scalene). Take the input of the length of sides from the User.
+
+2. Write a program to determine the roots of a quadratic equation (ax^2 + bx + c = 0) based on the values of a, b, and c entered by the user. Handle all possible cases (real and distinct roots, real and equal roots, imaginary roots) and print the appropriate message.

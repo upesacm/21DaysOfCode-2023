@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Transition and Animation</title>
+<style>
+*{
+    background-color: beige;
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(138, 129, 129);
+  transition: width 2s ease-in-out;
+}
+
+div:hover {
+  width: 300px;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+div {
+  animation: rotate 2s infinite;
+}
+</style>
+</head>
+<body>
+<div></div>
+</body>
+</html>

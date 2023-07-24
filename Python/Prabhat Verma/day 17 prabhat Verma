@@ -1,0 +1,13 @@
+1. Write a Python function that takes two lists as input and returns a new list containing only the common elements between the two input lists.
+def common_elements(list1, list2):
+    return list(set(list1) & set(list2))
+
+2. Write a Python program to count the frequency of each element in a list and return a dictionary with the elements as keys and their frequencies as values.
+def count_frequency(lst):
+    freq = {}
+    for item in lst:
+        if item in freq:
+            freq[item] += 1
+        else:
+            freq[item] = 1
+    return freq

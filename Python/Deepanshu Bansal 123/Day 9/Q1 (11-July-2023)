@@ -1,0 +1,16 @@
+string=str(input("Enter string "))
+count=0
+list1=[]
+for i in range(0,len(string)):
+    if i==len(string)-1:
+        list1.append(string[i])
+        count=count+1
+    
+    if string[i]==' ' or i==len(string)-1:
+        print("Print frequency and word on sentence",count,list1)
+        list1=[]
+        count=0
+        continue
+        
+    list1.append(string[i])
+    count=count+1

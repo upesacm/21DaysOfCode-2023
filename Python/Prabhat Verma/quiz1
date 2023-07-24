@@ -1,0 +1,47 @@
+1) def sort_and_remove_duplicates():
+    user_input = input("Enter a list of integers separated by spaces: ")
+    
+    int_list = [int(x) for x in user_input.split()]
+    if len(int_list) > 10**6:
+        print("Invalid input: too many integers")
+        return
+    for num in int_list:
+        if num < -10*9 or num > 10*9:
+            print("Invalid input: integer out of range")
+            return
+    sorted_list = sorted(set(int_list))
+    return sorted_list
+
+Sorted_Not_Duplicated_List_is = sort_and_remove_duplicates()
+print(Sorted_Not_Duplicated_List_is)
+2) def largest_product(list1):
+    if len(list1) < 2:
+        return -1
+    elif len(list1) == 2:
+        return list1[0] * list1[1]
+    else:
+        max_num = max(list1)
+        list1.remove(max_num)
+        second_max_num = max(list1)
+        return max_num * second_max_num
+
+list1 = [1, 8, 2, 9, 1, 0, 7, 8, 2, 1, 10]
+print(largest_product(list1))
+3) def triplet_exists(a, b, c):
+    if a == 0 or b == 0 or c == 0:
+        return "Triplet Doesn't Exist"
+    elif c % gcd(a, b) != 0:
+        return "Triplet Doesn't Exist"
+    else:
+        return "Triplet Exists"
+
+def gcd(a, b):
+    if b == 0:
+        return a
+    else:
+        return gcd(b, a % b)
+
+a = 0
+b = 0
+c = 0
+print(triplet_exists(a, b, c))

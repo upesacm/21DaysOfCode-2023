@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #333;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-top: 2px;
+    color: #fff;
+    text-align: center;
+}
+
+h1{
+    background-color: #333;
+    color: #fff;
+    
+}
+
+footer{
+    background-color: #333;
+    color: #fff;
+    margin-bottom: 2px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    align-items: center;
+    text-align: center;
+}
+
+#resources{
+    background-color: #eee;
+}
+
+.roadmap-card{
+    background-color: #f1f1f1;
+    padding: 1px 1px 1px 1  ;
+}
+
+h2{
+    font-size: x-large;
+    font-weight: bold;
+    margin-left: 35px;
+}
+
+.roadmap-card{
+    pointer-events: hover;
+    cursor: pointer;
+    button: hover;
+}
+
+button{
+    padding: 5px 15px 5px 15px;
+}
+
+li a{
+    color: #333;
+}
+
+li a:hover{
+    color: #007bff;
+}
+/* Colors Used:   
+
+Header background colour - #333
+Header color - #fff
+Roadmap card background colour - #f1f1f1
+Resources background colour - #eee
+Resources Link colour - #333
+Resources Link hover colour - #007bff
+Footer background colour - #333
+Footer colour - #fff */
+
+
+/* Write your code here: */

@@ -1,0 +1,21 @@
+def _count(str1):
+    sentence = str1.lower().strip(".,!?")
+    words = str1.split()
+    word_f = {}
+
+    for i in words:
+        if i in word_f:
+            word_f[i] += 1
+        else:
+            word_f[i] = 1
+
+    return word_f
+
+
+
+str1 = input("Enter a sentence: ")
+f = _count(str1)
+
+
+for i, count in f.items():
+    print(f"{i}: {count}")

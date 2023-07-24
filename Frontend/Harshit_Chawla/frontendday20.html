@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Webpage</title>
+  <style>
+    :root {
+      --button-color: #3498db;
+      --button-hover-color: #2980b9;
+      --section-color: #ecf0f1;
+      --section-text-color: #333;
+      --section-max-width: 600px;
+    }
+
+    button {
+      background-color: var(--button-color);
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: var(--button-hover-color);
+    }
+
+    .section {
+      background-color: var(--section-color);
+      color: var(--section-text-color);
+      padding: 20px;
+      margin: 20px auto;
+      border-radius: 5px;
+      max-width: var(--section-max-width);
+    }
+  </style>
+</head>
+<body>
+  <button id="dynamicButton">Click Me</button>
+  <div class="section" id="section1">
+    <h2>Section 1</h2>
+    <p>This is the first section.</p>
+  </div>
+  <div class="section" id="section2">
+    <h2>Section 2</h2>
+    <p>This is the second section.</p>
+  </div>
+  <script>
+    const button = document.getElementById('dynamicButton');
+    const section1 = document.getElementById('section1');
+    const section2 = document.getElementById('section2');
+
+    button.addEventListener('click', () => {
+      section1.classList.toggle('hidden');
+      section2.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
